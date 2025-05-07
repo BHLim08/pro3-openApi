@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1060px;
+  max-width: 1280px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 221, 221, 0.452);
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+header {
+  width: 100%;
+  background-color: aqua;
+}
