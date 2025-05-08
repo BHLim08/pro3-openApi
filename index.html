@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>영풍문고 - 서점다운 서점</title>
 
+    <!-- CDN -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/index.css">
+
+    <!-- JS -->
+     <script src="./JS/main.js"></script>
 
 </head>
 
@@ -17,38 +24,55 @@
     <header>
         <div class="container">
             <div id="topNav">
-                <ul class="topR">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                <ul>
+                    <li><a href="#">매장안내</a></li>
+                    <li><a href="#">혜택안내</a></li>
+                    <li><a href="#">나우드림</a></li>
                 </ul>
-                <ul class="topL">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">주문배송</a></li>
+                    <li><a href="#">고객센터</a></li>
                 </ul>
             </div>
 
-            <div>
-                <div id="logo"><a href=""><img src="" alt=""></a></div>
-                <div id="search"></div>
-                <div id="ad"></div>
+            <div id="topSearch">
+                <div id="logo">
+                    <a href="#">
+                        <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/yp_logo.png" alt="logo">
+
+                    </a>
+                </div>
+                <div id="search">
+                    <input type="text" placeholder="    쇼펜하우어 인생 수업, 10만부 판매 기념 리커버!">
+                    <button></button>
+                </div>
+                <div id="ad">
+                    <img src="./img/topmd.jpg" alt="md">
+                    <h6>사랑하는 엄마에게 가장
+                        <br>
+                        특별한 선물!
+                    </h6>
+                </div>
             </div>
+
         </div>
     </header>
 
-    <!-- 메인슬라이드 -->
+    <!-- 메인 -->
 
     <div id="main">
-
-
+        
+        <!-- 메인네비 -->
         <div id="mainNav">
 
             <div class="container">
-                <!-- 카데고리메뉴 -->
+                <div id="m_Nav">
+                <!-- 햄버거카데고리메뉴 -->
                 <div id="catagory">
                     <button type="button">
+                        전체카테고리
                     </button>
 
                     <!-- 카테고리 마우스오버 메뉴 -->
@@ -77,37 +101,109 @@
 
                 </div>
 
+                <!-- 메뉴 -->
                 <ul id="menu">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">추천</a></li>
+                    <li><a href="#">기프티콘</a></li>
+                    <li><a href="#">컬쳐페이지</a></li>
                 </ul>
 
                 <ul id="menu_other">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    <li><a href="#">혜택</a></li>
+                    <li><a href="#">사은품</a></li>
+                    <li><a href="#">문화행사</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">출석체크</a></li>
                 </ul>
+                </div>
             </div>
+
         </div>
 
 
-        <div id="mainslid">
+        <div id="mainslid_wrap">
+            <ul class="slid">
+
+                <li>
+                    <a href="#">
+                        <img src="./img/main_slid_0.png" alt="mainslid">
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <img src="./img/main_slid_1.png" alt="mainslid">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./img/main_slid_2.png" alt="mainslid">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./img/main_slid_3.jpg" alt="mainslid">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./img/main_slid_4.jpg" alt="mainslid">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./img/main_slid_5.png" alt="mainslid">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./img/main_slid_6.png" alt="mainslid">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./img/main_slid_7.png" alt="mainslid">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./img/main_slid_8.png" alt="mainslid">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./img/main_slid_9.png" alt="mainslid">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./img/main_slid_10.png" alt="mainslid">
+                    </a>
+                </li>
+
+
+            </ul>
         </div>
     </div>
 
-    <!-- 오늘의 책 -->
+
     <div class="container">
 
-
+        <!-- 바로가기 -->
         <div id="shortcut">
             <div class="title">
-                <h1></h1>
-                <p></p>
+                <h2>바로가기</h2>
             </div>
 
             <ul id="tab">
@@ -129,22 +225,79 @@
             </ul>
 
         </div>
-
+        <!-- 오늘의 책 -->
         <div id="todayBook">
+
             <div class="title">
-                <h1></h1>
-                <p></p>
+                <h2>오늘의☀️책이에요</h2>
             </div>
 
-            <ul class="booklist">
-             <li><a href="#"></a></li>
-             <li><a href="#"></a></li>
-             <li><a href="#"></a></li>
-             <li><a href="#"></a></li>
-             <li><a href="#"></a></li>
-            </ul>
+            <div class="bookList">
+
+                <div class="book">
+                    <div class="book_img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="book_text">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="book">
+                    <div class="book_img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="book_text">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="book">
+                    <div class="book_img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="book_text">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="book">
+                    <div class="book_img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="book_text">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="book">
+                    <div class="book_img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="book_text">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="book">
+                    <div class="book_img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="book_text">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
+
     </div>
 
 
@@ -153,8 +306,23 @@
 
         <div class="container">
             <div class="title">
-                <h1></h1>
-                <p></p>
+                <h2>주간 베스트✨셀러예요</h2>
+
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
 
             <div id="weekcatagory">
@@ -187,57 +355,143 @@
             </div>
 
             <!-- 화제의신간 -->
-            <div id="newBook"></div>
+            <div id="newBook">
+                <div class="title">
+                    <h2>화제의🌟신간이에요</h2>
+                </div>
+            </div>
 
         </div>
 
 
         <!-- 배너1 -->
-        <div class="banner"></div>
+        <div class="banner">
+            <div class="container">
+                <img src="" alt="">
+            </div>
+        </div>
+
 
 
         <div class="container">
-
             <!-- 인기검색어 -->
-            <div id="bestBook"></div>
+            <div id="bestBook">
+                <div class="title">
+                    <h2>인기🔥검색어예요</h2>
+                </div>
+            </div>
             <!-- MD추천도서 -->
             <div id="mdBook">
-                <ul class="booklist">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                   </ul>
+                <div class="title">
+                    <h2>⭐MD 추천 도서예요</h2>
+                </div>
+                <div class="bookList">
+
+                    <div class="book">
+                        <div class="book_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="book_text">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="book">
+                        <div class="book_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="book_text">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="book">
+                        <div class="book_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="book_text">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="book">
+                        <div class="book_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="book_text">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="book">
+                        <div class="book_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="book_text">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="book">
+                        <div class="book_img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="book_text">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
             <!-- 급상승도서 -->
-            <div id="upBook"></div>
+            <div id="upBook">
+                <div class="title">
+                    <h2>✨급상승 도서예요</h2>
+                </div>
+            </div>
             <!-- 핫북 -->
-            <div id="hotBook"></div>
+            <div id="hotBook">
+                <div class="title">
+                    <h2>🔥HOT BOOK이에요</h2>
+                </div>
+            </div>
 
         </div>
 
         <!-- 배너2 -->
-        <div class="banner"></div>
-
-        <div class="container">
-            <!-- 책추천 슬라이드 -->
-            <div id="mdSlid"></div>
-            <!-- 리뷰 -->
-            <div id="review"></div>
+        <div class="banner">
+            <div class="container">
+                <img src="" alt="">
+            </div>
         </div>
 
-        <!-- 배너3 -->
-        <div class="banner"></div>
+
+
+        <!-- 책추천 슬라이드 -->
+        <div id="mdSlid">
+            <div class="title">
+                <h2>이런 책은🤔어떠세요?</h2>
+            </div>
+        </div>
+        <div class="container">
+            <!-- 리뷰 -->
+            <div id="review">
+                <div class="title">
+                    <h2>좋은 평가를⭐받고 있어요</h2>
+                </div>
+            </div>
+        </div>
+
 
         <div class="container">
-
-            <!-- 특가상품 -->
-            <div id="saleprice_itmes"></div>
-
-            <!-- 정가인하도서 -->
-            <div id="saleprice_book"></div>
-
             <!-- 공지사항 -->
             <div id="notic"></div>
         </div>
@@ -248,7 +502,9 @@
 
             <div class="container">
                 <div id="footer1"></div>
-                <div id="footer2"></div>
+                <div id="footer2">
+                    <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/yp_logo.png" alt="">
+                </div>
             </div>
         </footer>
 
