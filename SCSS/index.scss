@@ -356,6 +356,26 @@ border-radius: 50%;}
   width: 1280px;
   height: 572px;
   background-color: coral;
+
+  ul {display: flex;}
+}
+
+.rw_slid_list {
+  width: 340px;
+  height: 472px;
+
+  border-radius: 10px;
+  background-color: hotpink;
+
+
+  div:nth-child(1) {
+    height: 75%;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #44940f;}
+  div:nth-child(2) {
+    height: 25%;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #d3d028;}
 }
 
 
