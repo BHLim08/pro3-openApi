@@ -45,7 +45,21 @@ button {
 .book {
   width: 192px;
   height: 289px;
+  display: flex;
+  flex-direction: column;
+
+  img{width: 192px; height: 289px;}
   background-color: gray;
+}
+
+// 섹션 타이틀
+.title {display: flex;
+ height: 35px;
+ background-color: rebeccapurple;
+ h2 {color: #222;}
+ span {line-height: 40px; font-size: 14px;
+    color: #333;
+margin-left: 20px;}
 }
 
 //   헤더
@@ -105,13 +119,29 @@ border-radius: 8px;}
 // 메인네비
 #mainNav {
   width: 100%;
-  height: 49px;
+  height: 40px;
 }
-#m_Nav{ width: 100%; display: flex; background-color: chocolate;}
+#m_Nav{ width: 100%;
+  height: 40px;
+  display: flex;
+  font-weight: bold;
+
+  a,button,li {color: #eee;}
+}
 
 // 햄버거카테고리
 #catagory {
-  background-color: crimson;
+  button {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    line-height: 30px;
+    border: none; 
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+   }
 }
 
 //마우스오버메뉴
@@ -120,25 +150,32 @@ border-radius: 8px;}
 }
 
 // 메인네비 _ 메뉴
-#menu {
-  background-color: rgb(176, 120, 250);
-  display: flex;
+#menu {height: 40px;
+   display: flex;
+    align-items: center;
+    li{margin: 13px;}
 }
 
 #menu_other {
-  background-color: darkgreen;
+  width: 50%;
+  height: 40px;
+  font-size: 15px;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
 
-  li {
+  li { margin: 5px;
     &::after {
       content: "|";
+      margin-left: 6px;
       float: right;
     }
-  }
-
-  &:last-child::after {
+     &:last-child::after {
     content: "";
   }
+  }
+
 }
 
 
@@ -151,7 +188,7 @@ border-radius: 8px;}
 }
 
 .slid {
-  width: 1000%;
+  width: 1500%;
   height: 430px;
   position: absolute;
   top: 30px;
@@ -171,8 +208,15 @@ border-radius: 8px;}
 #shortcut {
   width: 1280px;
   height: 183px;
+
+  ul{display: flex;}
   background-color: chartreuse;
 }
+
+.sc_tab_icon {
+  width: 64px; height: 64px;
+  background-color: rgb(158, 158, 158);
+border-radius: 50%;}
 
 // 오늘의 책
 #todayBook {
@@ -180,6 +224,10 @@ border-radius: 8px;}
   height: 438px;
   background-color: gold;
 }
+
+.bookList {
+  margin-top: 30px;}
+
 
 // 주가베스트
 
