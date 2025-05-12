@@ -41,18 +41,44 @@ button {
   width: 1280px;
   height: 338px;
   display: flex;
-  justify-content: space-between;
+ justify-content: space-around;
 }
 
 .book {
   width: 192px;
-  height: 289px;
+  height: 338px;
+  border-radius: 3px 8px 8px 3px;
+
   display: flex;
   flex-direction: column;
-
-  img{width: 192px; height: 289px;}
-  background-color: gray;
 }
+
+.book_img {
+  width: 192px;
+  height: 289px;
+  border-radius: 3px 8px 8px 3px;
+  box-shadow: 5px 0 #44444438;
+
+  img {
+    border-radius: 3px 8px 8px 3px;
+    width: 100%;
+    height: 100%;
+  }
+
+  background-color: #44940f;
+}
+
+.book_text {
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+
+  p:nth-child(2) {
+    font-size: 13px;
+    color: #777;
+  }
+}
+
 
 // 섹션 타이틀
 .title {display: flex;
@@ -78,6 +104,7 @@ li {
       border-radius: 20px;
       padding: 0px 14px;
       font-size: 14px;
+      cursor: pointer;
     background-color: #fff;}}}
 
 //   헤더
@@ -211,7 +238,6 @@ border-radius: 8px;}
 }
 
 
-
 // 메인슬라이드
 #mainslid_wrap{
   width: 100%;
@@ -230,7 +256,7 @@ background-color: #c4c4c49d;}
 .prev {left: 20%;}
 .next {right: 20%;}
 
-.slid {
+.main_slid {
   width: 1000%;
   height: 430px;
   position: absolute;
@@ -278,20 +304,69 @@ border-radius: 50%;}
 #todayBook {
   width: 1280px;
   height: 438px;
-  background-color: gold;
 }
 
 .bookList {
   margin-top: 30px;}
 
 
-// 주가베스트
+// 주간베스트
 
 #weekBook {
   width: 100%;
   height: 434px;
   background-color: rosybrown;
 }
+
+#weekBook_list {width: 100%; height: 100%; display: flex;}
+#week_left_slid {width: 360px; height: 235px;}
+#week_right_slid {width: 660px; height: 150px;}
+
+// 스와이프 - 주간 , 북 슬라이드
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-pagination {
+      width: 100%; height: 10px;
+      background-color: red;}
 
 // 화제의 신간
 
@@ -300,6 +375,16 @@ border-radius: 50%;}
   height: 502px;
   background-color: bisque;
 }
+
+.book_slide {
+  margin-top: 20px;
+  width: 100%; height: 338px;
+}
+
+
+
+  
+
 
 //  올 배너
 .banner {
@@ -335,6 +420,7 @@ border-radius: 50%;}
   background-color: darkcyan;
 }
 
+
 // 핫북
 #hotBook {
   width: 1280px;
@@ -356,28 +442,32 @@ border-radius: 50%;}
   width: 1280px;
   height: 572px;
   background-color: coral;
-
-  ul {display: flex;}
 }
 
-.rw_slid_list {
-  width: 340px;
-  height: 472px;
+#rw_slid_wrap{width: 100%; 
+  height: 471px;
+    margin: 20px auto;
+    display: flex;
+  
+    .swiper-slide {
+      width: 100%; height: 100%;
+      border-radius: 20px;
+      background-color: gold;
 
-  border-radius: 10px;
-  background-color: hotpink;
+      div:nth-child(1) {width: 340px; height: 323px;
+    background-color: red;
+       img {width: 100%; height: 100%;}}
 
+       div:nth-child(2) {width: 100%; height: 20%;  
+        display: flex;
 
-  div:nth-child(1) {
-    height: 75%;
-    border-radius: 10px 10px 0px 0px;
-    background-color: #44940f;}
-  div:nth-child(2) {
-    height: 25%;
-    border-radius: 0px 0px 10px 10px;
-    background-color: #d3d028;}
-}
-
+        img {width: 70px; height: 107px;
+        background-color: aqua;} 
+        
+  
+      background-color: #44940f;}
+   }
+  }
 
 // 공지사항
 #notic {

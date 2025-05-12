@@ -11,7 +11,15 @@
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-  
+
+
+    <!-- 스와이프 CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/index.css">
@@ -53,19 +61,20 @@
                     <button></button>
 
                     <ul>
-                        <li>한강<빛과 실></li>
+                        <li>한강<빛과 실>
+                        </li>
                         <li>유시민 청춘의 독서</li>
                         <li>기울어진 평등</li>
                         <li>김영하 신간</li>
                         <li>프란치스코 교황</li>
 
                     </ul>
-                    
+
                     <div>
                         <span>&lt</span>
                         <span>&gt</span>
                     </div>
-                 
+
                 </div>
                 <div id="ad">
                     <img src="./img/topmd.jpg" alt="md">
@@ -146,7 +155,7 @@
 
         <div id="mainslid_wrap">
 
-            <ul class="slid">
+            <ul class="main_slid">
 
                 <li>
                     <a href="#">
@@ -477,63 +486,80 @@
 
                 <div class="book">
                     <div class="book_img">
-                        <img src="" alt="">
+                        <a href="#">
+                            <img src="https://cdn.ypbooks.co.kr/image/product/202504/c696bc44-7c77-4b6a-854c-d6e9aea8c63d_512.jpg"
+                                alt="book_list">
+                        </a>
                     </div>
+
                     <div class="book_text">
-                        <p>책이름</p>
+                        <p><a href="#">책이름</a></p>
                         <p>작가</p>
                     </div>
                 </div>
 
+
                 <div class="book">
+
                     <div class="book_img">
-                        <img src="" alt="">
+                        <a href="">
+                            <img src="" alt="book_list">
+                        </a>
                     </div>
+
                     <div class="book_text">
-                        <span></span>
-                        <span></span>
+                        <p><a href="#">책이름</a></p>
+                        <p>작가</p>
                     </div>
+
+                </div>
+
+
+                <div class="book">
+
+                    <div class="book_img">
+                        <a href="">
+                            <img src="" alt="book_list">
+                        </a>
+                    </div>
+
+                    <div class="book_text">
+                        <p><a href="#">책이름</a></p>
+                        <p>작가</p>
+                    </div>
+
                 </div>
 
                 <div class="book">
+
                     <div class="book_img">
-                        <img src="" alt="">
+                        <a href="">
+                            <img src="" alt="book_list">
+                        </a>
                     </div>
+
                     <div class="book_text">
-                        <span></span>
-                        <span></span>
+                        <p><a href="#">책이름</a></p>
+                        <p>작가</p>
                     </div>
+
                 </div>
 
                 <div class="book">
+
                     <div class="book_img">
-                        <img src="" alt="">
+                        <a href="">
+                            <img src="" alt="book_list">
+                        </a>
                     </div>
+
                     <div class="book_text">
-                        <span></span>
-                        <span></span>
+                        <p><a href="#">책이름</a></p>
+                        <p>작가</p>
                     </div>
+
                 </div>
 
-                <div class="book">
-                    <div class="book_img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="book_text">
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-
-                <div class="book">
-                    <div class="book_img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="book_text">
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
 
             </div>
 
@@ -555,7 +581,6 @@
 
                 <ul class="catagory_tab_menu">
 
-                    <li class="catagory_list"><button>종합</button></li>
                     <li class="catagory_list"><button>국내소설</button></li>
                     <li class="catagory_list"><button>외국소설</button></li>
                     <li class="catagory_list"><button>비소설</button></li>
@@ -564,78 +589,263 @@
                     <li class="catagory_list"><button>어린이</button></li>
                     <li class="catagory_list"><button>외국어</button></li>
                     <li class="catagory_list"><button>자기계발</button></li>
-                    <li class="catagory_list"><button>유아</button></li>
-                    <li class="catagory_list"><button>가정/생활/요리</button></li>
-                    <li class="catagory_list"><button>청소년</button></li>
-                    <li class="catagory_list"><button>만화</button></li>
 
                 </ul>
 
             </div>
-
-        </div>
-
-        <div id="weekcatagory">
-            <ul class="week_tab">
-                <li class="week_items"></li>
-                <li class="week_items"></li>
-                <li class="week_items"></li>
-                <li class="week_items"></li>
-                <li class="week_items"></li>
-                <li class="week_items"></li>
-                <li class="week_items"></li>
-                <li class="week_items"></li>
-                <li class="week_items"></li>
-                <li class="week_items"></li>
-                <li class="week_items"></li>
-                <li class="week_items"></li>
-            </ul>
-        </div>
+            <div id="weekBook_list">
 
 
-        <div id="weekBook_list">
-
-            <div class="container">
-                <div id="week_Lslid">
-                </div>
-                <div id="week_Sslid">
+                <div id="week_left_slid">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper_left">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
 
+                <div id="week_right_slid">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper_right">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
+
+        <!-- 주간 - Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper_left", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                speed: 1500,
+
+            });
+
+            var swiper = new Swiper(".mySwiper_right", {
+                slidesPerView: 5,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                speed: 1500,
+            });
+
+        </script>
 
         <!-- 화제의신간 -->
         <div class="container">
             <div id="newBook">
-               
+
                 <div class="title">
                     <h2>화제의🌟신간이에요</h2>
                 </div>
-           
 
-               <div class="catagory_tab">
+                <div class="catagory_tab">
 
-                <ul class="catagory_tab_menu">
+                    <ul class="catagory_tab_menu">
 
-                    <li class="catagory_list"><button>종합</button></li>
-                    <li class="catagory_list"><button>소설/에세이/시</button></li>
-                    <li class="catagory_list"><button>자녀교육/건강/여행/요리</button></li>
-                    <li class="catagory_list"><button>유아/어린이/초등학습</button></li>
-                    <li class="catagory_list"><button>중/고학습</button></li>
-                    <li class="catagory_list"><button>인문/역사</button></li>
-                    <li class="catagory_list"><button>외국어</button></li>
-                    <li class="catagory_list"><button>예술</button></li>
-                    <li class="catagory_list"><button>기술/공학</button></li>
-                    <li class="catagory_list"><button>경제/자기계발</button></li>
-                    <li class="catagory_list"><button>자연과학</button></li>
-                    
+                        <li class="catagory_list"><button>소설/에세이/시</button></li>
+                        <li class="catagory_list"><button>자녀교육/건강/여행/요리</button></li>
+                        <li class="catagory_list"><button>유아/어린이/초등학습</button></li>
+                        <li class="catagory_list"><button>중/고학습</button></li>
+                        <li class="catagory_list"><button>인문/역사</button></li>
 
-                </ul>
+                    </ul>
+
+                    <!-- Swiper -->
+                    <div class="book_slide">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
 
                 </div>
-            </div>
 
+            </div>
         </div>
 
 
@@ -645,7 +855,8 @@
         <!-- 배너1 -->
         <div class="banner">
             <div class="container">
-                <img src="https://cdn.ypbooks.co.kr/image/banner/202504/714715ed-010b-48f4-9814-ec5097e75f81.png" alt="">
+                <img src="https://cdn.ypbooks.co.kr/image/banner/202504/714715ed-010b-48f4-9814-ec5097e75f81.png"
+                    alt="">
             </div>
         </div>
 
@@ -660,20 +871,170 @@
 
                 <div class="catagory_tab">
 
-                <ul class="catagory_tab_menu">
+                    <ul class="catagory_tab_menu">
 
-                    <li class="catagory_list"><button>1.데미안</button></li>
-                    <li class="catagory_list"><button>2.강아지</button></li>
-                    <li class="catagory_list"><button>3.동물</button></li>
-                    <li class="catagory_list"><button>4.책문</button></li>
-                    <li class="catagory_list"><button>5.영어</button></li>
-                    <li class="catagory_list"><button>6.퍼스널</button></li>
-                    <li class="catagory_list"><button>7.치하야후루</button></li>
-                    <li class="catagory_list"><button>8.시원스쿨</button></li>
-                    <li class="catagory_list"><button>9.이재명</button></li>
-                    <li class="catagory_list"><button>10.기술사</button></li>                    
+                        <li class="catagory_list"><button>1.데미안</button></li>
+                        <li class="catagory_list"><button>2.강아지</button></li>
+                        <li class="catagory_list"><button>3.동물</button></li>
+                        <li class="catagory_list"><button>4.책문</button></li>
+                        <li class="catagory_list"><button>5.영어</button></li>
 
-                </ul>
+                    </ul>
+
+                    <div class="book_slide">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -685,64 +1046,83 @@
                 <div class="bookList">
 
                     <div class="book">
+
                         <div class="book_img">
-                            <img src="" alt="">
+                            <a href="">
+                                <img src="" alt="book_list">
+                            </a>
                         </div>
+
                         <div class="book_text">
-                            <span></span>
-                            <span></span>
+                            <p><a href="#">책이름</a></p>
+                            <p>작가</p>
                         </div>
+
+                    </div>
+
+
+                    <div class="book">
+
+                        <div class="book_img">
+                            <a href="">
+                                <img src="" alt="book_list">
+                            </a>
+                        </div>
+
+                        <div class="book_text">
+                            <p><a href="#">책이름</a></p>
+                            <p>작가</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="book">
+
+                        <div class="book_img">
+                            <a href="">
+                                <img src="" alt="book_list">
+                            </a>
+                        </div>
+
+                        <div class="book_text">
+                            <p><a href="#">책이름</a></p>
+                            <p>작가</p>
+                        </div>
+
                     </div>
 
                     <div class="book">
+
                         <div class="book_img">
-                            <img src="" alt="">
+                            <a href="">
+                                <img src="" alt="book_list">
+                            </a>
                         </div>
+
                         <div class="book_text">
-                            <span></span>
-                            <span></span>
+                            <p><a href="#">책이름</a></p>
+                            <p>작가</p>
                         </div>
+
                     </div>
 
                     <div class="book">
+
                         <div class="book_img">
-                            <img src="" alt="">
+                            <a href="">
+                                <img src="" alt="book_list">
+                            </a>
                         </div>
+
                         <div class="book_text">
-                            <span></span>
-                            <span></span>
+                            <p><a href="#">책이름</a></p>
+                            <p>작가</p>
                         </div>
+
                     </div>
 
-                    <div class="book">
-                        <div class="book_img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="book_text">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
 
-                    <div class="book">
-                        <div class="book_img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="book_text">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-
-                    <div class="book">
-                        <div class="book_img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="book_text">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
 
                 </div>
 
@@ -753,11 +1133,327 @@
                 <div class="title">
                     <h2>✨급상승 도서예요</h2>
                 </div>
+
+                <div id="up_slide">
+                    <!-- Swiper -->
+                    <div class="book_slide">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- 핫북 -->
             <div id="hotBook">
                 <div class="title">
                     <h2>🔥HOT BOOK이에요</h2>
+                </div>
+
+                <div id="hot_slide">
+                    <!-- Swiper -->
+                    <div class="book_slide">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book">
+
+                                        <div class="book_img">
+                                            <a href="">
+                                                <img src="" alt="book_list">
+                                            </a>
+                                        </div>
+
+                                        <div class="book_text">
+                                            <p><a href="#">책이름</a></p>
+                                            <p>작가</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -766,7 +1462,8 @@
         <!-- 배너2 -->
         <div class="banner">
             <div class="container">
-                <img src="https://cdn.ypbooks.co.kr/image/banner/202504/589cb70d-77fd-45b2-aba7-51e56319b7ca.png" alt="">
+                <img src="https://cdn.ypbooks.co.kr/image/banner/202504/589cb70d-77fd-45b2-aba7-51e56319b7ca.png"
+                    alt="">
             </div>
         </div>
 
@@ -786,66 +1483,170 @@
                 </div>
 
                 <div id="rw_slid_wrap">
-
-                    <ul class="rw_slid">
-
-                        <li class="rw_slid_list">
-                            <a href="">
-                                <div>
-                                    <img src="" alt="">
-                                </div>
-                                <div>
-                                    <img src="" alt="">
-                                    <div class="rw_text">
-                                        <p></p>
-                                        <p></p>
-                                        <p></p>
+                    <div class="swiper rs_Swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> 
+                                <a href="#">
+                                    <div>
+                                        <img src="" alt="rw">
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="rw_slid_list">
-                            <a href="">
-                                <div>
-                                    <img src="" alt="">
-                                </div>
-                                <div>
-                                    <img src="" alt="">
-                                    <div class="rw_text">
-                                        <p></p>
-                                        <p></p>
-                                        <p></p>
+                                
+                                    <div>
+                                        <img src="" alt="rw">
+                                        <div class="rw_text">
+                                            <p>아아</p>
+                                            <p>아아</p>
+                                            <p>아아</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="rw_slid_list">
-                            <a href="">
-                                <div>
-                                    <img src="" alt="">
-                                </div>
-                                <div>
-                                    <img src="" alt="">
-                                    <div class="rw_text">
-                                        <p></p>
-                                        <p></p>
-                                        <p></p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide"> <a href="#">
+                                    <div>
+                                        <img src="" alt="rw">
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-
+                                    <div>
+                                        <img src="" alt="rw">
+                                        <div class="rw_text">
+                                            <p>아</p>
+                                            <p></p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="swiper-slide"> <a href="#">
+                                    <div>
+                                        <img src="" alt="rw">
+                                    </div>
+                                    <div>
+                                        <img src="" alt="rw">
+                                        <div class="rw_text">
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="swiper-slide"> <a href="#">
+                                    <div>
+                                        <img src="" alt="rw">
+                                    </div>
+                                    <div>
+                                        <img src="" alt="rw">
+                                        <div class="rw_text">
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="swiper-slide"> <a href="#">
+                                    <div>
+                                        <img src="" alt="rw">
+                                    </div>
+                                    <div>
+                                        <img src="" alt="rw">
+                                        <div class="rw_text">
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="swiper-slide"> <a href="#">
+                                    <div>
+                                        <img src="" alt="rw">
+                                    </div>
+                                    <div>
+                                        <img src="" alt="rw">
+                                        <div class="rw_text">
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="swiper-slide"> <a href="#">
+                                    <div>
+                                        <img src="" alt="rw">
+                                    </div>
+                                    <div>
+                                        <img src="" alt="rw">
+                                        <div class="rw_text">
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="swiper-slide"> 
+                                <a href="#">
+                                    <div>
+                                        <img src="" alt="rw">
+                                    </div>
+                                    <div>
+                                        <img src="" alt="rw">
+                                        <div class="rw_text">
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="swiper-slide"> <a href="#">
+                                    <div>
+                                        <img src="" alt="rw">
+                                    </div>
+                                    <div>
+                                        <img src="" alt="rw">
+                                        <div class="rw_text">
+                                            <p></p>
+                                            <p></p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                        </div>
+                <div class="swiper-pagination"></div> 
                         
-                        
-                    </ul>
+                    </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+             
+
             </div>
+             
+
+                         <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper(".rs_Swiper", {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                            freeMode: true,
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            }
+                        });
+                    </script>
         </div>
 
 
         <div class="container">
             <!-- 공지사항 -->
-            <div id="notic"></div>
+            <div id="notic">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
 
 
@@ -862,17 +1663,17 @@
                                 <th>상담가능시간</th>
                                 <td>평일 09:00 ~ 18:00 / 점심시간 12:15 ~13 : 15</td>
                             </tr>
-                            
+
                             <tr>
                                 <th>대표 메일</th>
                                 <td>customer@ypbook.co.kr</td>
                             </tr>
-                            
+
                             <tr>
                                 <th>대량 주문</th>
                                 <td>webmaster@ypbooks.co.kr</td>
                             </tr>
-                            
+
                         </table>
                         <div>
                             <button>FAQ</button>
@@ -908,7 +1709,7 @@
                                     <li>적립금 사용</li>
                                     <li>교환권 사용</li>
                                     <li>청약 철회</li>
-                    
+
                                 </ul>
                             </li>
 
@@ -935,7 +1736,7 @@
                             <li>영상정보관리방침</li>
                             <li>청소년보호정책</li>
                             <li>이메일 무단 수집거부</li>
-                        
+
                         </ul>
 
                         <div class="footer_icon">
@@ -953,7 +1754,7 @@
 
                         <span>COPYRIGHT © YOUNGPOONG BOOKSTORE INC. ALL RIGHTS RESERVED.</span>
                     </div>
-                    
+
                 </div>
             </div>
         </footer>
@@ -961,7 +1762,22 @@
 
     </div>
 
-
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+        });
+    </script>
 </body>
 
 </html>

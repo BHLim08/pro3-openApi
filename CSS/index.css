@@ -35,19 +35,38 @@ button {
   width: 1280px;
   height: 338px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .book {
   width: 192px;
-  height: 289px;
+  height: 338px;
+  border-radius: 3px 8px 8px 3px;
   display: flex;
   flex-direction: column;
-  background-color: gray;
 }
-.book img {
+
+.book_img {
   width: 192px;
   height: 289px;
+  border-radius: 3px 8px 8px 3px;
+  box-shadow: 5px 0 rgba(68, 68, 68, 0.2196078431);
+  background-color: #44940f;
+}
+.book_img img {
+  border-radius: 3px 8px 8px 3px;
+  width: 100%;
+  height: 100%;
+}
+
+.book_text {
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+}
+.book_text p:nth-child(2) {
+  font-size: 13px;
+  color: #777;
 }
 
 .title {
@@ -85,6 +104,7 @@ button {
   border-radius: 20px;
   padding: 0px 14px;
   font-size: 14px;
+  cursor: pointer;
   background-color: #fff;
 }
 
@@ -267,18 +287,18 @@ header {
   right: 20%;
 }
 
-.slid {
+.main_slid {
   width: 1000%;
   height: 430px;
   position: absolute;
 }
-.slid li {
+.main_slid li {
   width: 684px;
   height: 430px;
   margin: 50px;
   float: left;
 }
-.slid li img {
+.main_slid li img {
   width: 684px;
   height: 430px;
 }
@@ -324,7 +344,6 @@ header {
 #todayBook {
   width: 1280px;
   height: 438px;
-  background-color: gold;
 }
 
 .bookList {
@@ -337,10 +356,80 @@ header {
   background-color: rosybrown;
 }
 
+#weekBook_list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#week_left_slid {
+  width: 360px;
+  height: 235px;
+}
+
+#week_right_slid {
+  width: 660px;
+  height: 150px;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-pagination {
+  width: 100%;
+  height: 10px;
+  background-color: red;
+}
+
 #newBook {
   width: 100%;
   height: 502px;
   background-color: bisque;
+}
+
+.book_slide {
+  margin-top: 20px;
+  width: 100%;
+  height: 338px;
 }
 
 .banner {
@@ -390,25 +479,38 @@ header {
   height: 572px;
   background-color: coral;
 }
-#review ul {
+
+#rw_slid_wrap {
+  width: 100%;
+  height: 471px;
+  margin: 20px auto;
   display: flex;
 }
-
-.rw_slid_list {
-  width: 340px;
-  height: 472px;
-  border-radius: 10px;
-  background-color: hotpink;
+#rw_slid_wrap .swiper-slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: gold;
 }
-.rw_slid_list div:nth-child(1) {
-  height: 75%;
-  border-radius: 10px 10px 0px 0px;
+#rw_slid_wrap .swiper-slide div:nth-child(1) {
+  width: 340px;
+  height: 323px;
+  background-color: red;
+}
+#rw_slid_wrap .swiper-slide div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+#rw_slid_wrap .swiper-slide div:nth-child(2) {
+  width: 100%;
+  height: 20%;
+  display: flex;
   background-color: #44940f;
 }
-.rw_slid_list div:nth-child(2) {
-  height: 25%;
-  border-radius: 0px 0px 10px 10px;
-  background-color: #d3d028;
+#rw_slid_wrap .swiper-slide div:nth-child(2) img {
+  width: 70px;
+  height: 107px;
+  background-color: aqua;
 }
 
 #notic {
