@@ -7,7 +7,6 @@
 .container {
   width: 1280px;
   margin: 0 auto;
-  border: 1px solid rgba(255, 221, 221, 0.452);
 }
 
 ul,
@@ -35,13 +34,14 @@ button {
   width: 1280px;
   height: 338px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .book {
   width: 192px;
   height: 338px;
   border-radius: 3px 8px 8px 3px;
+  text-align: left;
   display: flex;
   flex-direction: column;
 }
@@ -72,7 +72,6 @@ button {
 .title {
   display: flex;
   height: 35px;
-  background-color: rebeccapurple;
 }
 .title h2 {
   color: #222;
@@ -87,7 +86,7 @@ button {
 .catagory_tab {
   width: 100%;
   height: 48px;
-  background-color: cornflowerblue;
+  margin-bottom: 10px;
 }
 .catagory_tab ul {
   display: flex;
@@ -105,11 +104,12 @@ button {
   padding: 0px 14px;
   font-size: 14px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #ebebeb;
 }
 
 header {
   width: 100%;
+  margin-bottom: 25px;
 }
 
 #topNav {
@@ -199,6 +199,7 @@ header {
 #main {
   width: 100%;
   height: 470px;
+  margin-bottom: 50px;
   position: relative;
   background-color: rgb(192, 218, 134);
 }
@@ -306,7 +307,7 @@ header {
 #shortcut {
   width: 1280px;
   height: 183px;
-  background-color: chartreuse;
+  margin-bottom: 50px;
 }
 
 #sc_tab {
@@ -322,28 +323,44 @@ header {
 }
 
 #sc_tab_list1, #sc_tab_list2 {
+  width: 100%;
+  height: 100px;
   display: flex;
-  background-color: aqua;
-}
-#sc_tab_list1 li, #sc_tab_list2 li {
-  width: 8%;
-  margin: 2%;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 #sc_tab_list2 {
   display: none;
 }
 
-.tab_icon {
+.tab_items {
+  width: 5%;
+  height: 100px;
+  text-align: center;
+}
+.tab_items a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tab_items a img {
   width: 64px;
   height: 64px;
-  background-color: rgb(158, 158, 158);
   border-radius: 50%;
+  background-color: #555;
+}
+.tab_items a span {
+  width: 100%;
+  margin-top: 8px;
+  background-color: #44940f;
 }
 
 #todayBook {
   width: 1280px;
   height: 438px;
+  margin-bottom: 50px;
 }
 
 .bookList {
@@ -353,23 +370,55 @@ header {
 #weekBook {
   width: 100%;
   height: 434px;
-  background-color: rosybrown;
+  margin-bottom: 50px;
+  position: relative;
 }
 
 #weekBook_list {
   width: 100%;
-  height: 100%;
+  height: 351px;
+  position: relative;
   display: flex;
+  background-color: #fffbf0;
 }
 
 #week_left_slid {
-  width: 360px;
-  height: 235px;
+  width: 380px;
+  height: 100%;
+  position: absolute;
+  top: 15px;
 }
 
 #week_right_slid {
-  width: 660px;
-  height: 150px;
+  width: 800px;
+  height: 200px;
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+}
+
+.week_book {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.week_book img {
+  width: 30%;
+  height: 100%;
+  background-color: #df7575;
+}
+.week_book .week_text {
+  width: 70%;
+  height: 100%;
+  padding: 10px;
+  text-align: left;
+}
+.week_book .week_text span {
+  font-size: 13px;
+  position: absolute;
+  bottom: 20px;
+  color: #44940f;
 }
 
 html,
@@ -379,7 +428,6 @@ body {
 }
 
 body {
-  background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -393,6 +441,7 @@ body {
 }
 
 .swiper-slide {
+  height: 90%;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -417,67 +466,152 @@ body {
 .swiper-pagination {
   width: 100%;
   height: 10px;
-  background-color: red;
+}
+
+:root {
+  --swiper-theme-color: #343434 !important;
 }
 
 #newBook {
   width: 100%;
-  height: 502px;
-  background-color: bisque;
+  height: 510px;
+  margin-bottom: 50px;
 }
 
 .book_slide {
   margin-top: 20px;
   width: 100%;
-  height: 338px;
+  height: 400px;
+  position: relative;
 }
 
-.banner {
+.banner1, .banner2 {
   width: 100%;
   height: 120px;
-  background-color: blueviolet;
+  margin-bottom: 50px;
+}
+.banner1 img, .banner2 img {
+  width: 100%;
+  height: 120px;
+}
+
+.banner1 {
+  background-color: #222222;
+}
+
+.banner2 {
+  background-color: #FFACCF;
 }
 
 .banner > div > img {
   width: 1280px;
   height: 120px;
-  background-color: orange;
 }
 
 #bestBook {
   width: 1280px;
   height: 502px;
-  background-color: burlywood;
+  margin-bottom: 50px;
 }
 
 #mdBook {
   width: 1280px;
   height: 438px;
-  background-color: brown;
+  margin-bottom: 50px;
 }
 
 #upBook {
-  width: 1280px;
-  height: 438px;
-  background-color: darkcyan;
+  width: 100%;
+  height: 480px;
+  margin-bottom: 50px;
 }
 
 #hotBook {
   width: 1280px;
-  height: 438px;
-  background-color: crimson;
+  height: 480px;
+  margin-bottom: 50px;
 }
 
-#mdSlid {
+#md_content {
   width: 100%;
   height: 518px;
-  background-color: cadetblue;
+  margin-bottom: 50px;
+}
+
+#md_slide_content {
+  width: 100%;
+  height: 485px;
+  position: relative;
+}
+
+#md_slide {
+  position: absolute;
+  left: -360px;
+  width: 250%;
+  height: 405px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.md_slide_list {
+  width: 10%;
+  min-width: 540px;
+  max-width: 600px;
+  height: 100%;
+  margin-right: 40px;
+  color: #333;
+}
+
+.md_list_img {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.md_list_img img {
+  width: 120px;
+  height: 180px;
+  border-radius: 5px;
+  background-color: #df7575;
+}
+
+.md_list_text {
+  width: 90%;
+  height: 30%;
+  margin: 10px auto;
+}
+.md_list_text p {
+  padding: 25px 0;
+}
+.md_list_text p, .md_list_text span {
+  font-size: 13px;
+  color: #555;
+}
+
+.md_list_logo {
+  width: 90%;
+  height: 10%;
+  margin: 0 auto;
+  border-top: 1px solid #777;
+  display: flex;
+  align-items: center;
+}
+.md_list_logo img {
+  width: 27px;
+  height: 27px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+.md_list_logo span {
+  font-size: 13px;
+  line-height: 30px;
 }
 
 #review {
   width: 1280px;
-  height: 572px;
-  background-color: coral;
+  height: 580px;
+  margin-bottom: 50px;
 }
 
 #rw_slid_wrap {
@@ -487,8 +621,7 @@ body {
   display: flex;
 }
 #rw_slid_wrap .swiper-slide {
-  width: 100%;
-  height: 100%;
+  height: 93%;
   border-radius: 20px;
   background-color: gold;
 }
@@ -516,7 +649,23 @@ body {
 #notic {
   width: 1280px;
   height: 55px;
-  background-color: darkorchid;
+  border-top: 1px solid #d6d6d6;
+  display: flex;
+  overflow: hidden;
+}
+#notic p {
+  width: 8%;
+  text-align: center;
+  line-height: 55px;
+  font-weight: 500;
+}
+#notic ul {
+  width: 92%;
+  height: 400%;
+}
+#notic li {
+  width: 100%;
+  height: 55px;
 }
 
 footer {
@@ -533,7 +682,7 @@ footer {
 }
 
 #footer1 {
-  padding-bottom: 30px;
+  padding: 40px 0;
   border-bottom: 2px solid #eee;
 }
 #footer1 div:nth-child(1) {
