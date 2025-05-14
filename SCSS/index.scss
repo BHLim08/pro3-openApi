@@ -35,48 +35,6 @@ button {
 
 // 믹스인
 
-// 올북
-.bookList {
-  width: 1280px;
-  height: 338px;
-  display: flex;
- justify-content: space-between;
-}
-
-.book {
-  width: 192px;
-  height: 338px;
-  border-radius: 3px 8px 8px 3px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-}
-
-.book_img {
-  width: 192px;
-  height: 289px;
-  border-radius: 3px 8px 8px 3px;
-  box-shadow: 5px 0 #44444438;
-
-  img {
-    border-radius: 3px 8px 8px 3px;
-    width: 100%;
-    height: 100%;
-  }
-
-  background-color: #44940f;
-}
-
-.book_text {
-  width: 100%;
-  height: auto;
-  margin-top: 8px;
-
-  p:nth-child(2) {
-    font-size: 13px;
-    color: #777;
-  }
-}
 
 
 // 섹션 타이틀
@@ -96,15 +54,7 @@ ul{display: flex; width: 100%; height: 100%;}
 li {
   margin-top: 8px;
   margin-right: 8px;
-    
-    button{
-      height: 40px;
-      border: none;
-      border-radius: 20px;
-      padding: 0px 14px;
-      font-size: 14px;
-      cursor: pointer;
-    background-color: #ebebeb;}}}
+}}
 
 //   헤더
 header {
@@ -308,19 +258,6 @@ li {width: 11%; cursor: pointer;
 }
 
 
-// .sc_tab_icon {
-//   width: 100%; height: 100%;
-//   text-align: center;
-
-// .tab_icon{width: 64px; height: 64px;
-//       border-radius: 50%;
-//     background-color: #f6f6f6;
-//   img {width: 100%;height: 100%; margin: 0 auto;
-// border-radius: 50%;}}
-// }
-
-
-
 // 오늘의 책
 #todayBook {
   width: 1280px;
@@ -328,28 +265,44 @@ li {width: 11%; cursor: pointer;
    margin-bottom: 50px;
 }
 
-.bookList {
-  margin-top: 30px;}
+.five_book,.five_book_md {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; height: 373px;
+  margin-top: 30px;
+
+  div {width: 15%; height: 100%; 
+        border-radius: 3px 8px 8px 3px;
+  img {width: 100%; height: auto;
+      border-radius: 3px 8px 8px 3px;
+      box-shadow: 7px 0px rgba(158, 158, 158, 0.637)}}
+}
 
 
 // 주간베스트
 
-#weekBook {
-  width: 100%;
+#weekBook_content {
+  width: 1280px;
   height: 434px;
+  margin: 0 auto;
   margin-bottom: 50px;
   position: relative;
 
+  .swiper-button-prev {position: absolute; left: -50px; top: 280px; }
+  .swiper-button-next {position: absolute; right: -50px; top: 280px;}
 }
 
 #weekBook_list {width: 100%; height: 351px; 
   position: relative;
 display: flex;
 background-color: #fffbf0;}
+
 #week_left_slid {width: 380px; height: 100%;
 position: absolute; top: 15px;}
+
 #week_right_slid {width: 800px; height: 200px; position: absolute;
 right: 15px; bottom: 0;}
+
 .week_book {width: 100%; height: 100%; display: flex;
   position: relative;
 img {width: 30%; height: 100%; background-color: #df7575;}
@@ -362,7 +315,15 @@ span {font-size: 13px;
 
 
 
-// 스와이프 - 주간 , 북 슬라이드
+// 스와이퍼 - 주간 , 북 슬라이드
+
+// 올북
+.book_slide {
+  margin-top: 20px;
+  width: 100%; height: 400px;
+  position: relative;
+}
+
     html,
     body {
       position: relative;
@@ -381,6 +342,7 @@ span {font-size: 13px;
       width: 100%;
       height: 100%;
     }
+    .swiper:not(:first-child){display: none;}
 
     .swiper-slide {
       height: 90%;
@@ -388,8 +350,9 @@ span {font-size: 13px;
       font-size: 18px;
       background: #fff;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      background-color: rgb(226, 110, 110);
   
     }
 
@@ -417,16 +380,12 @@ span {font-size: 13px;
 #newBook {
   width: 100%;
   height: 510px;
-   margin-bottom: 50px;
-
-}
-
-.book_slide {
-  margin-top: 20px;
-  width: 100%; height: 400px;
+  margin-bottom: 50px;
   position: relative;
-}
 
+  .swiper-button-prev {position: absolute; left: -50px; top: 260px; }
+  .swiper-button-next {position: absolute; right: -50px; top: 260px;}
+}
 
 
 //  올 배너

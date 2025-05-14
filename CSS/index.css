@@ -30,45 +30,6 @@ button {
   font-family: "Pretendard", sans-serif;
 }
 
-.bookList {
-  width: 1280px;
-  height: 338px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.book {
-  width: 192px;
-  height: 338px;
-  border-radius: 3px 8px 8px 3px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-}
-
-.book_img {
-  width: 192px;
-  height: 289px;
-  border-radius: 3px 8px 8px 3px;
-  box-shadow: 5px 0 rgba(68, 68, 68, 0.2196078431);
-  background-color: #44940f;
-}
-.book_img img {
-  border-radius: 3px 8px 8px 3px;
-  width: 100%;
-  height: 100%;
-}
-
-.book_text {
-  width: 100%;
-  height: auto;
-  margin-top: 8px;
-}
-.book_text p:nth-child(2) {
-  font-size: 13px;
-  color: #777;
-}
-
 .title {
   display: flex;
   height: 35px;
@@ -96,15 +57,6 @@ button {
 .catagory_tab li {
   margin-top: 8px;
   margin-right: 8px;
-}
-.catagory_tab li button {
-  height: 40px;
-  border: none;
-  border-radius: 20px;
-  padding: 0px 14px;
-  font-size: 14px;
-  cursor: pointer;
-  background-color: #ebebeb;
 }
 
 header {
@@ -363,15 +315,41 @@ header {
   margin-bottom: 50px;
 }
 
-.bookList {
+.five_book, .five_book_md {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 373px;
   margin-top: 30px;
 }
-
-#weekBook {
+.five_book div, .five_book_md div {
+  width: 15%;
+  height: 100%;
+  border-radius: 3px 8px 8px 3px;
+}
+.five_book div img, .five_book_md div img {
   width: 100%;
+  height: auto;
+  border-radius: 3px 8px 8px 3px;
+  box-shadow: 7px 0px rgba(158, 158, 158, 0.637);
+}
+
+#weekBook_content {
+  width: 1280px;
   height: 434px;
+  margin: 0 auto;
   margin-bottom: 50px;
   position: relative;
+}
+#weekBook_content .swiper-button-prev {
+  position: absolute;
+  left: -50px;
+  top: 280px;
+}
+#weekBook_content .swiper-button-next {
+  position: absolute;
+  right: -50px;
+  top: 280px;
 }
 
 #weekBook_list {
@@ -421,6 +399,13 @@ header {
   color: #44940f;
 }
 
+.book_slide {
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
 html,
 body {
   position: relative;
@@ -440,14 +425,19 @@ body {
   height: 100%;
 }
 
+.swiper:not(:first-child) {
+  display: none;
+}
+
 .swiper-slide {
   height: 90%;
   text-align: center;
   font-size: 18px;
   background: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background-color: rgb(226, 110, 110);
 }
 
 .swiper-slide img {
@@ -476,13 +466,17 @@ body {
   width: 100%;
   height: 510px;
   margin-bottom: 50px;
-}
-
-.book_slide {
-  margin-top: 20px;
-  width: 100%;
-  height: 400px;
   position: relative;
+}
+#newBook .swiper-button-prev {
+  position: absolute;
+  left: -50px;
+  top: 260px;
+}
+#newBook .swiper-button-next {
+  position: absolute;
+  right: -50px;
+  top: 260px;
 }
 
 .banner1, .banner2 {
