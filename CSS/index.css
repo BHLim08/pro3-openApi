@@ -219,7 +219,8 @@ header {
 
 #mainslid_wrap {
   width: 100%;
-  height: 430px;
+  min-width: 1900px;
+  height: 550px;
   position: relative;
   overflow: hidden;
 }
@@ -232,33 +233,36 @@ header {
   background-color: rgba(196, 196, 196, 0.6156862745);
 }
 
-.prev {
-  left: 20%;
+.top_prev {
+  left: 31.5%;
 }
 
-.next {
-  right: 20%;
+.top_next {
+  right: 31.5%;
 }
 
 .main_slid {
-  width: 1000%;
-  height: 430px;
+  width: 360%;
+  height: 550px;
+  display: flex;
+  justify-content: space-around;
   position: absolute;
 }
 .main_slid li {
-  width: 684px;
-  height: 430px;
-  margin: 50px;
-  float: left;
+  width: 30%;
+  height: 500px;
+  margin: 55px;
 }
 .main_slid li img {
-  width: 684px;
-  height: 430px;
+  width: 100%;
+  height: 500px;
+  border-radius: 40px;
 }
 
 #shortcut {
   width: 1280px;
   height: 183px;
+  margin-top: 180px;
   margin-bottom: 50px;
 }
 
