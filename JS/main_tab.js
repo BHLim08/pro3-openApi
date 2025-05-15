@@ -21,7 +21,7 @@
 
         async function bookData() {
             try {
-                const querys = ['소설', '자녀', '유아', '중학습', '인문'];
+                const querys = ['안녕', '건강', '유아', '중학습', '인문'];
 
                 querys.forEach(async (query, i) => {
                     const data = await fetchBooks(query);
