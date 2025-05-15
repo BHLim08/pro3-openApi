@@ -193,7 +193,7 @@ border-radius: 8px;}
 #mainslid_wrap{
   width: 100%;
   min-width: 1900px;
-  height: 550px;
+  height: 460px;
   position: relative;
   overflow: hidden;
 
@@ -210,16 +210,16 @@ background-color: #c4c4c49d;}
 
 .main_slid {
   width: 360%;
-  height: 550px;
+  height: 380px;
   display: flex;
   justify-content: space-around;
   position: absolute;
 
   li {
     width: 30%;
-    height: 500px;
-    margin: 55px;
-    img {width: 100%; height: 500px;
+    height: 380px;
+    margin: 75px;
+    img {width: 100%; height: 380px;
     border-radius: 40px;}
   }
 
@@ -231,7 +231,7 @@ background-color: #c4c4c49d;}
 #shortcut {
   width: 1280px;
   height: 183px;
-  margin-top: 180px;
+  margin-top: 80px;
    margin-bottom: 50px;
 }
 
@@ -239,15 +239,22 @@ background-color: #c4c4c49d;}
 li {width: 11%; cursor: pointer;
 &:nth-child(1)::after {content: "|"; margin-left: 15px;}}}
 
-#sc_tab_list1 , #sc_tab_list2{ 
-  width: 100%; height: 100px;
-  display: flex; 
+.sc_tab_list {
+   display: none;
+  width: 100%;
+  height: 100px;
   justify-content: space-between;
   margin-top: 20px;
-  
-  }
+}
 
-#sc_tab_list2 {display: none;}
+.sc_tab_list.hidden {
+  display: none; 
+}
+
+.sc_tab_list:first-of-type {
+  display: flex;
+}
+
 
 .tab_items {
   width: 5%; height: 100px;
@@ -285,11 +292,12 @@ li {width: 11%; cursor: pointer;
 // 주간베스트
 
 #weekBook_content {
-  width: 1280px;
+  width: 100%;
   height: 434px;
   margin: 0 auto;
   margin-bottom: 50px;
   position: relative;
+  background-color: #fffbf0;
 
   .swiper-button-prev {position: absolute; left: -50px; top: 280px; }
   .swiper-button-next {position: absolute; right: -50px; top: 280px;}
@@ -298,7 +306,7 @@ li {width: 11%; cursor: pointer;
 #weekBook_list {width: 100%; height: 351px; 
   position: relative;
 display: flex;
-background-color: #fffbf0;}
+}
 
 #week_left_slid {width: 380px; height: 100%;
 position: absolute; top: 15px;}
@@ -373,6 +381,9 @@ span {font-size: 13px;
 
     .swiper-pagination {
       width: 100%; height: 10px;
+      margin-top: -20px;
+     
+      background-color: red;
      }
     
     :root {
@@ -403,17 +414,16 @@ span {font-size: 13px;
 .banner1 {background-color: #222222;}
 .banner2 {background-color: #FFACCF;}
 
-.banner>div>img {
-  width: 1280px;
-  height: 120px;
-
-}
 
 // 인기검색어
 #bestBook {
-  width: 1280px;
-  height: 502px;
- margin-bottom: 50px;
+  width: 100%;
+  height: 510px;
+  margin-bottom: 50px;
+  position: relative;
+
+  .swiper-button-prev {position: absolute; left: -50px; top: 260px; }
+  .swiper-button-next {position: absolute; right: -50px; top: 260px;}
 }
 
 // MD추천도서
@@ -426,16 +436,24 @@ span {font-size: 13px;
 // 급상승도서
 #upBook {
   width: 100%;
-  height: 480px;
+  height: 510px;
   margin-bottom: 50px;
+  position: relative;
+
+  .swiper-button-prev {position: absolute; left: -50px; top: 260px; }
+  .swiper-button-next {position: absolute; right: -50px; top: 260px;}
 }
 
 
 // 핫북
 #hotBook {
-  width: 1280px;
-  height: 480px;
-   margin-bottom: 50px;
+  width: 100%;
+  height: 510px;
+  margin-bottom: 50px;
+  position: relative;
+
+  .swiper-button-prev {position: absolute; left: -50px; top: 260px; }
+  .swiper-button-next {position: absolute; right: -50px; top: 260px;}
 }
 
 // 배너2
@@ -489,6 +507,8 @@ position: relative;}
   }
         span {font-size: 13px; line-height: 30px;}
       }
+
+      .md_prev, .md_next {position: absolute;}
 
 // 리뷰
 #review {
