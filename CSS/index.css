@@ -6,6 +6,7 @@
 
 .container {
   width: 1280px;
+  min-width: 1600px;
   margin: 0 auto;
 }
 
@@ -167,7 +168,9 @@ header {
   display: flex;
   font-weight: bold;
 }
-#m_Nav a, #m_Nav button, #m_Nav li {
+#m_Nav a,
+#m_Nav button,
+#m_Nav li {
   color: #eee;
 }
 
@@ -260,7 +263,7 @@ header {
 }
 
 #shortcut {
-  width: 1280px;
+  width: 100%;
   height: 183px;
   margin-top: 80px;
   margin-bottom: 50px;
@@ -306,8 +309,8 @@ header {
   flex-direction: column;
 }
 .tab_items a img {
-  width: 64px;
-  height: 64px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: #555;
 }
@@ -318,24 +321,27 @@ header {
 }
 
 #todayBook {
-  width: 1280px;
+  width: 100%;
   height: 438px;
   margin-bottom: 50px;
 }
 
-.five_book, .five_book_md {
+.five_book,
+.five_book_md {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 373px;
   margin-top: 30px;
 }
-.five_book div, .five_book_md div {
+.five_book div,
+.five_book_md div {
   width: 15%;
   height: 100%;
   border-radius: 3px 8px 8px 3px;
 }
-.five_book div img, .five_book_md div img {
+.five_book div img,
+.five_book_md div img {
   width: 100%;
   height: auto;
   border-radius: 3px 8px 8px 3px;
@@ -344,28 +350,29 @@ header {
 
 #weekBook_content {
   width: 100%;
-  height: 434px;
+  min-width: 1600px;
+  height: 500px;
   margin: 0 auto;
   margin-bottom: 50px;
   position: relative;
   background-color: #fffbf0;
 }
-#weekBook_content .swiper-button-prev {
-  position: absolute;
-  left: -50px;
-  top: 280px;
-}
-#weekBook_content .swiper-button-next {
-  position: absolute;
-  right: -50px;
-  top: 280px;
-}
 
 #weekBook_list {
   width: 100%;
-  height: 351px;
+  height: 400px;
   position: relative;
   display: flex;
+}
+#weekBook_list .swiper-button-prev {
+  position: absolute;
+  left: -55px;
+  top: 50%;
+}
+#weekBook_list .swiper-button-next {
+  position: absolute;
+  right: -55px;
+  top: 50%;
 }
 
 #week_left_slid {
@@ -376,8 +383,8 @@ header {
 }
 
 #week_right_slid {
-  width: 800px;
-  height: 200px;
+  width: 60%;
+  height: 250px;
   position: absolute;
   right: 15px;
   bottom: 0;
@@ -438,20 +445,20 @@ body {
 }
 
 .swiper-slide {
-  height: 90%;
+  height: 95%;
   text-align: center;
   font-size: 18px;
   background: #fff;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   background-color: rgb(226, 110, 110);
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -464,7 +471,6 @@ body {
 .swiper-pagination {
   width: 100%;
   height: 10px;
-  margin-top: -20px;
   background-color: red;
 }
 
@@ -489,12 +495,14 @@ body {
   top: 260px;
 }
 
-.banner1, .banner2 {
+.banner1,
+.banner2 {
   width: 100%;
   height: 120px;
   margin-bottom: 50px;
 }
-.banner1 img, .banner2 img {
+.banner1 img,
+.banner2 img {
   width: 100%;
   height: 120px;
 }
@@ -525,7 +533,7 @@ body {
 }
 
 #mdBook {
-  width: 1280px;
+  width: 100%;
   height: 438px;
   margin-bottom: 50px;
 }
@@ -574,6 +582,7 @@ body {
   width: 100%;
   height: 485px;
   position: relative;
+  overflow: hidden;
 }
 
 #md_slide {
@@ -616,7 +625,8 @@ body {
 .md_list_text p {
   padding: 25px 0;
 }
-.md_list_text p, .md_list_text span {
+.md_list_text p,
+.md_list_text span {
   font-size: 13px;
   color: #555;
 }
@@ -640,8 +650,23 @@ body {
   line-height: 30px;
 }
 
-.md_prev, .md_next {
+.md_prev,
+.md_next {
   position: absolute;
+  top: 50%;
+  background-color: red;
+}
+.md_prev i,
+.md_next i {
+  font-size: 50px;
+}
+
+.md_prev {
+  left: 17%;
+}
+
+.md_next {
+  right: 17%;
 }
 
 #review {
@@ -711,7 +736,8 @@ footer {
   background-color: #f9f9f9;
 }
 
-#footer1, #footer2 {
+#footer1,
+#footer2 {
   display: flex;
   width: 100%;
   margin-top: 25px;
