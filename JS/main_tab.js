@@ -27,13 +27,17 @@
                     const data = await fetchBooks(query);
 
                     // for문 (8개)
-                    const divs = $('.swiper-wrapper').eq(i).find('.swiper-slide');
+                    const divs = $('.mySwiper').eq(i).find('.swiper-wrapper');
 
-                    for (let j = 0; j < divs.length; j++) {
-                        divs.eq(j).append("<img src=" + data.documents[j].thumbnail + "/>");
-                        divs.eq(j).append("<h3>" + data.documents[j].title + "</h3>");
-                        divs.eq(j).append("<h6>" + data.documents[j].authors + "</h6>");
+                    console.log(divs)
 
+                    for (let j = 0; j < 10; j++) {
+                        divs.append(`
+                            <div class="swiper-slide">
+                                <img src=${data.documents[j].thumbnail}/>
+                                <h3>${data.documents[j].title}</h3>
+                                <h6>${data.documents[j].authors}</h6>
+                            </div>`)
                     }
                 })
             } catch (error) {
@@ -41,13 +45,43 @@
             }
         }
 
+         async function bookDataHot() {
+            try {
+                const querys = ['에세이', '자녀교육', '커피', '교육', '나라'];
+
+                querys.forEach(async (query, i) => {
+                    const data = await fetchBooks(query);
+
+                    // for문 (8개)
+                    const divs = $('.mySwiperHot').eq(i).find('.swiper-wrapper');
+
+                    console.log(divs)
+
+                    for (let j = 0; j < 10; j++) {
+                        divs.append(`
+                            <div class="swiper-slide">
+                                <img src=${data.documents[j].thumbnail}/>
+                                <h3>${data.documents[j].title}</h3>
+                                <h6>${data.documents[j].authors}</h6>
+                            </div>`)
+                    }
+                })
+            } catch (error) {
+                console.log('에러발생', error);
+            }
+        }
+
+       
         bookData();
+        bookDataHot();
 
         //multipage
         $('.catagory_tab_menu li').click(function () {
             let i = $(this).index();
-            $('.swiper').eq(i).show().siblings('.swiper').hide();
+            $('.mySwiper').eq(i).show().siblings('.mySwiper').hide();
         });
+
+
 
         
     //바로가기 탭

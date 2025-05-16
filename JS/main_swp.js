@@ -6,44 +6,13 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 35,
     freeMode: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".mySwiper .swiper-pagination",
         clickable: true,
     },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     }
-});
-
-
-//주간 - Initialize Swiper
-
-var swiper = new Swiper(".mySwiper_left", {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    loop: true,
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    speed: 1500,
-
-});
-
-var swiper = new Swiper(".mySwiper_right", {
-    slidesPerView: 5,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    speed: 1500,
 });
 
 
@@ -55,11 +24,11 @@ var swiper = new Swiper(".rs_Swiper", {
     spaceBetween: 30,
     freeMode: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".rs_Swiper .swiper-pagination",
         clickable: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".rs_Swiper .swiper-button-next",
+        prevEl: ".rs_Swiper .swiper-button-prev",
     }
 });
