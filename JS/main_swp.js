@@ -17,18 +17,3 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-// 리뷰 슬라이드 Initialize Swiper 
-
-var swiper = new Swiper(".rs_Swiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    freeMode: true,
-    pagination: {
-        el: ".rs_Swiper .swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".rs_Swiper .swiper-button-next",
-        prevEl: ".rs_Swiper .swiper-button-prev",
-    }
-});

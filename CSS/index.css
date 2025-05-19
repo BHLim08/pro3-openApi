@@ -5,8 +5,8 @@
 }
 
 .container {
-  width: 1280px;
-  min-width: 1600px;
+  width: 1200px;
+  min-width: 1100px;
   margin: 0 auto;
 }
 
@@ -29,6 +29,82 @@ select,
 textarea,
 button {
   font-family: "Pretendard", sans-serif;
+}
+
+.book_slide {
+  margin-top: 20px;
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 450px;
+}
+.swiper .swiper-wrapper {
+  height: 95%;
+}
+
+.swiper:not(:first-child) {
+  display: none;
+}
+
+.swiper-slide {
+  width: 18%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.swiper-slide h5 {
+  color: #333;
+}
+.swiper-slide p {
+  font-size: 13px;
+  color: #555;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 90%;
+  height: 85%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px 8px 8px 3px;
+  box-shadow: 7px 0px rgba(158, 158, 158, 0.637);
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-pagination {
+  width: 100%;
+  height: 10px;
+  background-color: red;
+}
+
+:root {
+  --swiper-theme-color: #343434 !important;
 }
 
 .title {
@@ -223,7 +299,7 @@ header {
 #mainslid_wrap {
   width: 100%;
   min-width: 1900px;
-  height: 460px;
+  height: 480px;
   position: relative;
   overflow: hidden;
 }
@@ -237,28 +313,29 @@ header {
 }
 
 .top_prev {
-  left: 31.5%;
+  left: 31%;
 }
 
 .top_next {
-  right: 31.5%;
+  right: 31%;
 }
 
 .main_slid {
-  width: 360%;
-  height: 380px;
+  width: 400%;
+  height: 400px;
   display: flex;
   justify-content: space-around;
   position: absolute;
+  left: -5%;
 }
 .main_slid li {
-  width: 30%;
-  height: 380px;
+  width: 40%;
+  height: 100%;
   margin: 75px;
 }
 .main_slid li img {
   width: 100%;
-  height: 380px;
+  height: 100%;
   border-radius: 40px;
 }
 
@@ -357,117 +434,67 @@ header {
   position: relative;
   background-color: #fffbf0;
 }
-
-#weekBook_list {
-  width: 100%;
-  height: 400px;
-  position: relative;
-  display: flex;
-}
-#weekBook_list .swiper-button-prev {
+#weekBook_content .swiper-button-prev {
   position: absolute;
   left: -55px;
   top: 50%;
 }
-#weekBook_list .swiper-button-next {
+#weekBook_content .swiper-button-next {
   position: absolute;
   right: -55px;
   top: 50%;
 }
 
-#week_left_slide {
-  width: 380px;
-  height: 100%;
+.weekBook_wrap {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: flex;
+}
+
+.week_left_slide {
+  width: 450px;
+  height: 380px;
   position: absolute;
   top: 15px;
 }
+.week_left_slide .swiper {
+  width: 100%;
+  height: 100%;
+}
+.week_left_slide .swiper-slide {
+  position: relative;
+}
+.week_left_slide img {
+  width: 55%;
+  height: 100%;
+}
+.week_left_slide .week_text_box {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+}
 
-#week_rigth_slide {
-  width: 70%;
-  height: 280px;
+.week_rigth_slide {
+  width: 60%;
+  height: 240px;
   position: absolute;
   right: 15px;
-  bottom: 0;
+  top: 35%;
+  background-color: aqua;
 }
-#week_rigth_slide .swiper-wrapper {
+.week_rigth_slide .swiper {
   width: 100%;
-  height: 200px;
-  background-color: #44940f;
-}
-#week_rigth_slide .swiper-wrapper .swiper-slide {
   height: 100%;
 }
-
-.book_slide {
-  margin-top: 20px;
+.week_rigth_slide img {
   width: 100%;
-  height: 400px;
-  background-color: palevioletred;
-  position: relative;
-}
-
-html,
-body {
-  position: relative;
   height: 100%;
-}
-
-body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-.swiper {
-  width: 100%;
-  height: 400px;
-}
-
-.swiper:not(:first-child) {
-  display: none;
-}
-
-.swiper-slide {
-  width: 20%;
-  height: 360px;
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: rgb(226, 110, 110);
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 80%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-pagination {
-  width: 100%;
-  height: 10px;
-  background-color: red;
-}
-
-:root {
-  --swiper-theme-color: #343434 !important;
 }
 
 #newBook {
   width: 100%;
-  height: 510px;
+  height: 560px;
   margin-bottom: 50px;
   position: relative;
 }
@@ -504,7 +531,7 @@ body {
 
 #bestBook {
   width: 100%;
-  height: 510px;
+  height: 560px;
   margin-bottom: 50px;
   position: relative;
 }
@@ -527,24 +554,24 @@ body {
 
 #upBook {
   width: 100%;
-  height: 510px;
+  height: 580px;
   margin-bottom: 50px;
   position: relative;
 }
 #upBook .swiper-button-prev {
   position: absolute;
   left: -50px;
-  top: 260px;
+  top: 240px;
 }
 #upBook .swiper-button-next {
   position: absolute;
   right: -50px;
-  top: 260px;
+  top: 240px;
 }
 
 #hotBook {
   width: 100%;
-  height: 510px;
+  height: 580px;
   margin-bottom: 50px;
   position: relative;
 }
@@ -669,28 +696,37 @@ body {
   display: flex;
 }
 #rw_slid_wrap .swiper-slide {
-  height: 93%;
   border-radius: 20px;
   background-color: gold;
 }
-#rw_slid_wrap .swiper-slide div:nth-child(1) {
-  width: 340px;
-  height: 323px;
-  background-color: red;
-}
-#rw_slid_wrap .swiper-slide div:nth-child(1) img {
+#rw_slid_wrap .swiper-slide a {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
+}
+#rw_slid_wrap .swiper-slide a div:nth-child(1) {
+  width: 100%;
+  height: 75%;
+  border-radius: 20px 20px 0 0;
+  background-color: red;
+}
+#rw_slid_wrap .swiper-slide a div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+  box-shadow: none;
 }
 #rw_slid_wrap .swiper-slide div:nth-child(2) {
   width: 100%;
-  height: 20%;
+  height: 25%;
   display: flex;
+  border-radius: 0 0 20px 20px;
   background-color: #44940f;
 }
 #rw_slid_wrap .swiper-slide div:nth-child(2) img {
   width: 70px;
   height: 107px;
+  padding: 7px;
   background-color: aqua;
 }
 
