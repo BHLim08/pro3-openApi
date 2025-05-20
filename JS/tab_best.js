@@ -1,15 +1,15 @@
 var swiper = new Swiper(".mySwiperBest", {
     slidesPerView: 5,
     slidesPerGroup: 5,
-    spaceBetween: 35,
+    spaceBetween: 30,
     freeMode: true,
     pagination: {
         el: ".mySwiperBest .swiper-pagination",
         clickable: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".mySwiperBest .swiper-button-next",
+        prevEl: ".mySwiperBest .swiper-button-prev",
     }
 });
 
@@ -43,13 +43,11 @@ async function bookDataBest() {
 
             const divs = $('.mySwiperBest').eq(i).find('.swiper-wrapper');
 
-            console.log(divs)
-
             for (let j = 0; j < 10; j++) {
                 divs.append(`
                             <div class="swiper-slide">
                                 <img src=${data.documents[j].thumbnail}/>
-                                <h5>${data.documents[j].title}</h5>
+                                <h6>${data.documents[j].title}</h6>
                                 <p>${data.documents[j].authors}</p>
                             </div>`)
             }

@@ -16,7 +16,7 @@ var swiper_weekleft = new Swiper(".week_left", {
 })
 
 var swiper_weekright = new Swiper(".week_right", {
-  spaceBetween: 20,
+  spaceBetween: 10,
   autoplay: {
     delay: 3500,
     disableOnInteraction: false,
@@ -33,6 +33,7 @@ async function fetchBooks(query) {
   const params = new URLSearchParams({
     target: "title",
     query,
+    size : 50,
   });
   const url = `https://dapi.kakao.com/v3/search/book?${params}`;
 
@@ -52,7 +53,7 @@ async function fetchBooks(query) {
 
 async function bookData_week_R() {
    try {
-      const querys = ['박경리', '기욤뮈소', '박완서','한강','교육'];
+      const querys = ['한강', '해리포터', 'AI','소설','영단어'];
 
       querys.forEach(async (query, i) => {
          const data = await fetchBooks(query);
@@ -72,8 +73,7 @@ async function bookData_week_R() {
             <div class="week_text_box">
               <h4>${book[j].title}</h4>
               <p>${book[j].authors}</p>
-            </div>
-                    
+            </div>                    
           </div>`)
       }
 
@@ -85,7 +85,7 @@ async function bookData_week_R() {
 
 async function bookData_week_L() {
 try {
-      const querys = ['박경리', '기욤뮈소', '박완서','한강','교육'];
+      const querys = ['한강', '해리포터', 'AI','소설','영단어'];
 
       querys.forEach(async (query, i) => {
          const data = await fetchBooks(query);
@@ -115,8 +115,18 @@ bookData_week_R()
 bookData_week_L()
 
 //바로가기
+// $('.catagory_tab_menu li').click(function () {
+//   let i = $(this).index();
+//   console.log();
+//   $('.weekBook_wrap').eq(i).show().siblings('.weekBook_wrap').hide();
+// });
 
-$('.catagory_tab_menu_weekBook li').click(function () {
-  let i = $(this).index();
-  $('.#weekBook_content').eq(i).show().siblings('.weekBook_list').hide();
-});
+    $('.weekBook_wrap').hide().eq(0).css('display', 'flex');
+    $('.catagory_tab_menu_week li').eq(0).addClass('active');
+
+    // 탭 클릭 이벤트
+    $('.catagory_tab_menu_week li').click(function () {
+        let i = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.weekBook_wrap').hide().eq(i).css('display', 'flex');
+    });

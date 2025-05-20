@@ -39,15 +39,15 @@ async function fetchBooks(query) {
 
 async function bookDataUp() {
     try {
-        const querys = ['청춘의 독서', '빛과 실', '어른 김장하', '모든 것이 양자 이론 - 세상을', '시간유전자', '빛과 실', '어른 김장하', '모든 것이 양자 이론 - 세상을', '시간유전자'];
+        const querys = ['헝거게임', '별별 직업 상담소', '신비마트', '긴긴밤', '시간유전자', '빛과 실', '니체 인생수업', '모든 것이 양자 이론 - 세상을', '별에게','흔한남매'];
 
         querys.forEach(async (query, i) => {
             const data = await fetchBooks(query);
             const divs = $('.mySwiperUp').find('.swiper-slide').eq(i);
             divs.append(`             
                     <img src=${data.documents[0].thumbnail}/>
-                    <h3>${data.documents[0].title}</h3>
-                    <h6>${data.documents[0].authors}</h6>         
+                    <h5>${data.documents[0].title}</h5>
+                    <p>${data.documents[0].authors}</p>         
           `);
 
     })

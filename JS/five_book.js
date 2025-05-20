@@ -29,7 +29,7 @@
                     const divs = $('.five_book .five_list').eq(i);
 
                     divs.append("<img src=" + data.documents[0].thumbnail + "/>");
-                    divs.append("<h3>" + data.documents[0].title + "</h3>");
+                    divs.append("<h4>" + data.documents[0].title + "</h3>");
                     divs.append("<h6>" + data.documents[0].authors + "</h6>");
 
                 })
@@ -47,8 +47,8 @@
                     const divs = $('.five_book_md .five_list_md').eq(i);
 
                     divs.append("<img src=" + data.documents[0].thumbnail + "/>");
-                    divs.append("<h3>" + data.documents[0].title + "</h3>");
-                    divs.append("<h6>" + data.documents[0].authors + "</h6>");
+                    divs.append("<h4>" + data.documents[0].title + "</h3>");
+                    divs.append("<p>" + data.documents[0].authors + "</p>");
 
                 })
             } catch (error) {

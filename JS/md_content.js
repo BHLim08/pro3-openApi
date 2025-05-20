@@ -6,7 +6,7 @@ $('.md_prev').click(function () {
 });
 
 $('.md_next').click(function () {
-   $('md_slide').stop().animate({ marginLeft: "-10%" }, 800, function () {
+   $('.md_slide').stop().animate({ marginLeft: "-10%" }, 800, function () {
       $('.md_slide_list:first').appendTo('.md_slide');
       $('.md_slide').css({ marginLeft: 0 });
    });
@@ -38,7 +38,7 @@ async function fetchBooks(query) {
 
 async function bookDataMd() {
    try {
-      const querys = ['박경리', '기욤뮈소', '박완서','한강'];
+      const querys = ['해리포터', '한강', '교황','바르가스','AI','둘리', '육아','류시화','백과사전','트럼프'];
 
       querys.forEach(async (query, i) => {
          const data = await fetchBooks(query);

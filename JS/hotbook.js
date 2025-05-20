@@ -46,8 +46,8 @@ async function bookDataHot() {
             const divs = $('.mySwiperHot').find('.swiper-slide').eq(i);
             divs.append(`             
                     <img src=${data.documents[0].thumbnail}/>
-                    <h3>${data.documents[0].title}</h3>
-                    <h6>${data.documents[0].authors}</h6>         
+                    <h5>${data.documents[0].title}</h5>
+                    <p>${data.documents[0].authors}</p>         
           `);
 
     })

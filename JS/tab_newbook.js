@@ -1,4 +1,21 @@
-        async function fetchBooks(query) {
+    
+    var swiper = new Swiper(".mySwiperNew", {
+    slidesPerView: 5,
+    slidesPerGroup: 5,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+        el: ".mySwiperNew .swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".mySwiperNew .swiper-button-next",
+        prevEl: ".mySwiperNew .swiper-button-prev",
+    }
+}); 
+       
+       
+       async function fetchBooks(query) {
             const params = new URLSearchParams({
                 target: "title",
                 query,
@@ -19,24 +36,23 @@
             return response.json();
         }
 
-        async function bookData() {
+        async function bookDataNew() {
             try {
-                const querys = ['안녕', '건강', '유아', '중학습', '인문'];
+                const querys = ['소설', '요리', '초등', '중학습', '인문'];
 
                 querys.forEach(async (query, i) => {
                     const data = await fetchBooks(query);
 
                     // for문 (8개)
-                    const divs = $('.mySwiper').eq(i).find('.swiper-wrapper');
+                    const divs = $('.mySwiperNew').eq(i).find('.swiper-wrapper');
 
-                    console.log(divs)
 
                     for (let j = 0; j < 10; j++) {
                         divs.append(`
                             <div class="swiper-slide">
                                 <img src=${data.documents[j].thumbnail}/>
-                                <h3>${data.documents[j].title}</h3>
-                                <h6>${data.documents[j].authors}</h6>
+                                <h5>${data.documents[j].title}</h5>
+                                <p>${data.documents[j].authors}</p>
                             </div>`)
                     }
                 })
@@ -45,27 +61,14 @@
             }
         }
 
-        bookData();
+        bookDataNew();
 
         //탭
         $('.catagory_tab_menu li').click(function () {
             let i = $(this).index();
-            $('.mySwiper').eq(i).show().siblings('.mySwiper').hide();
+            $('.mySwiperNew').eq(i).show().siblings('.mySwiperNew').hide();
         });
 
 
 
-        
-    //바로가기 탭
-$(document).ready(function () {
-    // 초기 상태 설정
-    $('.sc_tab_list').hide().eq(0).css('display', 'flex');
-    $('#sc_tab li').eq(0).addClass('active');
-
-    // 탭 클릭 이벤트
-    $('#sc_tab li').click(function () {
-        let i = $(this).index();
-        $(this).addClass('active').siblings().removeClass('active');
-        $('.sc_tab_list').hide().eq(i).css('display', 'flex');
-    });
-});
+    

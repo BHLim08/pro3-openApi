@@ -51,13 +51,15 @@ async function bookDataMd() {
             return val.thumbnail != '' && val.contents != '';
          })
     
+         console.log(book)
+         
          const divs = $('.rs_Swiper').find('.rw_box').eq(i);  
             divs.append(`
-                  <img src=${data.documents[0].thumbnail}>
+                  <img src=${book[0].thumbnail}>
                   <div class="rw_text">
-                    <p>${data.documents[0].title}</p>
-                    <p>${data.documents[0].authors}</p>
-                    <p>★★★★★</p>
+                    <h5>${book[0].title}</h5>
+                    <p>${book[0].authors}</p>
+                    <span>★★★★★</span>
                   </div>    
           `);
 
