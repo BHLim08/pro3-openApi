@@ -9,9 +9,9 @@ var swiper = new Swiper(".rs_Swiper", {
         clickable: true,
     },
     navigation: {
-        nextEl: ".rs_Swiper .swiper-button-next",
-        prevEl: ".rs_Swiper .swiper-button-prev",
-    }
+        nextEl: "#review .swiper-button-next",
+        prevEl: "#review .swiper-button-prev",
+    },
 });
 
 // 리뷰 북 데이타
@@ -40,7 +40,7 @@ async function fetchBooks(query) {
 
 async function bookDataMd() {
    try {
-      const querys = ['영어가 바로 터지는', '에코 히어로즈', '당신의 뇌를 공감합니다', '자기다움 리더쉽-왜 우리', '새벽 탐험-슷카이','초등학생을 위한 거의 모든', '웬만해선 죽을 수 없는 최고령', '친구가 상철줄때' , '큐새의 일일'];
+      const querys = ['영어가 바로 터지는', '에코 히어로즈', '당신의 뇌를 공감합니다', '자기다움 리더쉽-왜 우리', '새벽 탐험-슷카이','초등학생을 위한 거의 모든'];
 
       querys.forEach(async (query, i) => {
          const data = await fetchBooks(query);
@@ -50,8 +50,6 @@ async function bookDataMd() {
          let book = origin.filter((val) => {
             return val.thumbnail != '' && val.contents != '';
          })
-    
-         console.log(book)
          
          const divs = $('.rs_Swiper').find('.rw_box').eq(i);  
             divs.append(`

@@ -8,25 +8,26 @@ var swiper_weekleft = new Swiper(".week_left", {
     disableOnInteraction: false,
   },
   navigation: {
-    nextEl: ".week_left .swiper-button-next",
-    prevEl: ".week_left .swiper-button-prev",
+    nextEl: "#weekBook_content .swiper-button-next",
+    prevEl: "#weekBook_content .swiper-button-prev",
   },
   speed: 1800,
    loop: true,
 })
 
 var swiper_weekright = new Swiper(".week_right", {
-  spaceBetween: 10,
+  spaceBetween: 20,
   autoplay: {
     delay: 3500,
     disableOnInteraction: false,
   },
-  navigation: {
-    nextEl: ".week_right .swiper-button-next",
-    prevEl: ".week_right .swiper-button-prev",
-  }, slidesPerView: 5,
+  slidesPerView: 5,
   speed: 1800,
    loop: true,
+     navigation: {
+    nextEl: "#weekBook_content .swiper-button-next",
+    prevEl: "#weekBook_content .swiper-button-prev",
+  },
 })
 
 //주간 북 데이타
@@ -54,7 +55,7 @@ async function fetchBooks(query) {
 
 async function bookData_week_R() {
    try {
-      const querys = ['한강', '해리포터', 'AI','소설','영단어'];
+      const querys = ['AI', '해리포터', '경제','소설','영단어'];
 
       querys.forEach(async (query, i) => {
          const data = await fetchBooks(query);
@@ -86,7 +87,7 @@ async function bookData_week_R() {
 
 async function bookData_week_L() {
 try {
-      const querys = ['한강', '해리포터', 'AI','소설','영단어'];
+      const querys = ['AI', '해리포터', '경제','소설','영단어'];
 
       querys.forEach(async (query, i) => {
          const data = await fetchBooks(query);

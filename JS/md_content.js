@@ -60,6 +60,7 @@ async function bookDataMd() {
                <div class="md_list_text">
                   <h3>${data.documents[0].title}</h3>
                   <p>${data.documents[0].authors}</p>
+                  <span>${data.documents[0].contents}</span>
                </div>
                   <div class="md_list_logo">
                   <img src="	https://cdn.ypbooks.co.kr/front_web/assets/img/temp/yp_md_default.png" alt="#">

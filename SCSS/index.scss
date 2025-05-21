@@ -82,16 +82,18 @@ body {
   align-items: flex-start;
   text-align: left;
 
-  h5 {width: 100%;
+  h5 {
+    width: 100%;
     color: #444;
     height: 10%;
   }
 
-  p {width: 100%;
+  p {
+    width: 100%;
     font-size: 14px;
     color: #777;
     height: 10%;
-    
+
   }
 
 }
@@ -113,7 +115,6 @@ body {
 .swiper-pagination {
   width: 100%;
   height: 10px;
-  background-color: red;
 }
 
 :root {
@@ -150,11 +151,17 @@ body {
     height: 100%;
   }
 
-  li {
+  li {text-align: center;
+    padding: 10px;
     margin-top: 8px;
     margin-right: 8px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #eee;
   }
 }
+
+
 
 //   헤더
 header {
@@ -301,33 +308,77 @@ header {
 }
 
 //마우스오버메뉴
-#catagoryBox {background-color: #df7575;
-  width: 100%; height: 500px;
+#catagoryBox {
+  background-color: #fff;
+  width: 100%;
+  height: 450px;
   position: relative;
-
-  .catagoryimg{
-    background-color: white;
-    width: 400px; height: 500px;
-    text-align: center;
-    position: absolute; right: 580px; top: 0;
-  img{width: 200px; height: 340px; 
-    margin-top: 100px;
-  border-radius: 20px;}}
+  z-index: 20;
+  display: none;
 }
 
-.catagorybox {width: 100%; height: 450px; background-color: #eee;
+.catagory_wrap {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  font-size: 13px;
 
-  li{position: relative; cursor: pointer;
-  ul {position: absolute; top: 0; left: 10%;}}
-  
-  }
+  .catagoryimg {
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #eee;
 
-  .catagory_sc {background-color: #FFACCF;
-   width: 100%; height: 50px;
-  li{position: relative; cursor: pointer;
-  ul {position: absolute; top: 0; left: 10%;
-  li{ float: left;}}}
+    img {
+      width: 200px;
+      height: 340px;
+      margin-top: 100px;
+      border-radius: 20px;
+    }
   }
+}
+
+.catagorybox {
+  width: 20%;
+  height: 450px;
+  text-align: center;
+  position: relative;
+  background-color: #eee;
+
+  li {
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+
+
+
+    ul {
+      width: 680px;
+      height: 400px;
+      // display: flex;
+      justify-self: space-between;
+      position: absolute;
+      top: 0;
+      left: 105%;
+      display: none;
+      text-align: left;
+
+      li {
+        width: 33.3%;
+        height: 30px;
+        flex-wrap: wrap;
+      }
+
+    }
+
+    &:first-child ul.box_list {
+      display: block;
+    }
+  }
+}
 
 // 메인네비 _ 메뉴
 #menu {
@@ -456,9 +507,10 @@ header {
 
 
 .tab_items {
-  width: 5%;
+  width: 5.5%;
   height: 100px;
   text-align: center;
+
 
   a {
     width: 100%;
@@ -467,16 +519,18 @@ header {
     flex-direction: column;
 
     img {
-      width: 100%;
-      height: 100%;
+      margin: 0 auto;
+      width: 55px;
+      height: 55px;
+      padding: 7px;
       border-radius: 50%;
-      background-color: #555;
+      background-color: #f0f0f0;
     }
 
     span {
       width: 100%;
       margin-top: 8px;
-      background-color: #44940f;
+      font-size: 12px;
     }
   }
 }
@@ -520,20 +574,22 @@ header {
   height: 500px;
   margin: 0 auto;
   margin-bottom: 50px;
-  position: relative;
+  padding-top: 20px;
   background-color: #fffbf0;
+  position: relative;
 
   .swiper-button-prev {
     position: absolute;
-    left: 22%;
+    left: 10%;
     top: 60%;
   }
 
   .swiper-button-next {
     position: absolute;
-    right: 22%;
+    right: 10%;
     top: 60%;
   }
+
 }
 
 .weekBook_wrap {
@@ -541,6 +597,9 @@ header {
   height: 380px;
   position: relative;
   display: flex;
+  position: relative;
+
+
 }
 
 
@@ -576,7 +635,7 @@ header {
   height: 250px;
   position: absolute;
   right: 15px;
-  top: 38%;
+  top: 48%;
 
   .swiper {
     width: 100%;
@@ -671,8 +730,15 @@ header {
   height: 450px;
   margin-bottom: 50px;
   position: relative;
-  .swiper {height: 90%;
-  img {height: 313px;} }
+
+  .swiper {
+    height: 90%;
+
+    img {
+      height: 313px;
+    }
+  }
+
   .swiper-button-prev {
     position: absolute;
     left: -50px;
@@ -693,8 +759,17 @@ header {
   height: 450px;
   margin-bottom: 50px;
   position: relative;
-  .swiper {height: 90%;
-  img {height: 313px;} }
+
+  .swiper {
+    height: 90%;
+
+    img {
+      height: 313px;
+    }
+
+
+  }
+
   .swiper-button-prev {
     position: absolute;
     left: -50px;
@@ -712,14 +787,17 @@ header {
 // 배너2
 
 // 이런책추천슬라이드
+
 #md_content {
   width: 100%;
+  min-width: 1400px;
   height: 518px;
   margin-bottom: 50px;
   position: relative;
 
   .md_prev,
   .md_next {
+    z-index: 3;
     position: absolute;
     top: 50%;
     width: 40px;
@@ -737,11 +815,11 @@ header {
   }
 
   .md_prev {
-    left: 0%;
+    left: 15%;
   }
 
   .md_next {
-    right: 0%;
+    right: 15%;
   }
 
 }
@@ -755,9 +833,9 @@ header {
 
 #md_slide {
   position: absolute;
-  width: 250%;
+  width: 300%;
   height: 405px;
-  left: -250px;
+  left: 0;
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
@@ -768,7 +846,9 @@ header {
   width: 10%;
   height: 100%;
   min-width: 540px;
-  margin-right: 40px;
+  margin-right: 1%;
+  box-shadow: 2px 1px 5px #b1b1b1;
+  border-radius: 10px;
   color: #333;
 }
 
@@ -778,22 +858,26 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: rgba(255, 228, 196, 0.623);
 
   img {
     width: 120px;
     height: 180px;
     border-radius: 5px;
-    background-color: #df7575;
   }
 }
 
 .md_list_text {
-  width: 90%;
-  height: 30%;
+  width: 88%;
+  height: 28%;
   margin: 10px auto;
 
-  p {
-    padding: 25px 0;
+  p {width: 100%; height: auto; padding: 5px 0;}
+  span {width: 100%;
+    height: 50%;
+    display: -webkit-box;
+    overflow : hidden;
+    text-overflow: ellipsis;
   }
 
   p,
@@ -805,7 +889,7 @@ header {
 
 .md_list_logo {
   width: 90%;
-  height: 10%;
+  height: 12%;
   margin: 0 auto;
   border-top: 1px solid #777;
   display: flex;
@@ -820,9 +904,30 @@ header {
 
   span {
     font-size: 13px;
-    line-height: 30px;
+
   }
 }
+
+  #md_slide_content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 74%);
+  }
+
+  #md_slide_content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 74%);
+  }
 
 
 

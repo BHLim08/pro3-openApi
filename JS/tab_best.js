@@ -8,8 +8,8 @@ var swiper = new Swiper(".mySwiperBest", {
         clickable: true,
     },
     navigation: {
-        nextEl: ".mySwiperBest .swiper-button-next",
-        prevEl: ".mySwiperBest .swiper-button-prev",
+        nextEl: "#bestBook .swiper-button-next",
+        prevEl: "#bestBook .swiper-button-prev",
     }
 });
 
@@ -36,7 +36,7 @@ async function fetchBooks(query) {
 
 async function bookDataBest() {
     try {
-        const querys = ['시', '자녀교육', '커피', '교육', '나라'];
+        const querys = ['에세이', '자녀교육', '커피', '교육', '나라'];
 
         querys.forEach(async (query, i) => {
             const data = await fetchBooks(query);
@@ -62,5 +62,10 @@ bookDataBest();
        //탭
         $('.catagory_tab_menu_Best li').click(function () {
             let i = $(this).index();
+            
+            $(this).
             $('.mySwiperBest').eq(i).show().siblings('.mySwiperBest').hide();
         });
+
+
+   
