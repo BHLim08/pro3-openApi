@@ -12,7 +12,7 @@ var swiper_weekleft = new Swiper(".week_left", {
     prevEl: ".week_left .swiper-button-prev",
   },
   speed: 1800,
-  
+   loop: true,
 })
 
 var swiper_weekright = new Swiper(".week_right", {
@@ -26,6 +26,7 @@ var swiper_weekright = new Swiper(".week_right", {
     prevEl: ".week_right .swiper-button-prev",
   }, slidesPerView: 5,
   speed: 1800,
+   loop: true,
 })
 
 //주간 북 데이타
