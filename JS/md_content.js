@@ -1,14 +1,14 @@
 // 이런책슬라이드
 $('.md_prev').click(function () {
-   $('.md_slide_list:last').prependTo('.md_slide');
-   $('.md_slide').css('margin-left', "-10%");
-   $('.md_slide').stop().animate({ marginLeft: 0 }, 800);
+   $('.md_slide_list:last').prependTo('#md_slide');
+   $('#md_slide').css('margin-left', "-31.4%");
+   $('#md_slide').stop().animate({ marginLeft: 0 }, 800);
 });
 
 $('.md_next').click(function () {
-   $('.md_slide').stop().animate({ marginLeft: "-10%" }, 800, function () {
-      $('.md_slide_list:first').appendTo('.md_slide');
-      $('.md_slide').css({ marginLeft: 0 });
+   $('#md_slide').stop().animate({ marginLeft: "-31.4%" }, 800, function () {
+      $('.md_slide_list:first').appendTo('#md_slide');
+      $('#md_slide').css({ marginLeft: 0 });
    });
 });
 

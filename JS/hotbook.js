@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiperHot", {
     navigation: {
         nextEl: "#hotBook .swiper-button-next",
         prevEl: "#hotBook .swiper-button-prev",
-    }
+    },loop: true,
 });
 
 
@@ -39,7 +39,7 @@ async function fetchBooks(query) {
 
 async function bookDataHot() {
     try {
-        const querys = ['청춘의 독서', '빛과 실', '어른 김장하', '모든 것이 양자 이론 - 세상을', '시간유전자', '빛과 실', '어른 김장하', '모든 것이 양자 이론 - 세상을', '시간유전자'];
+        const querys = ['엄마 당신의 이야기를 들려주세요', '아빠 당신의 이야기를 들려주세요', '더 퀸', '모든 것이 양자 이론 - 세상을', '단 한번의 삶', '나만의', '어른 김장하', '건강지속력', '시간유전자', '과자사면 과자'];
 
         querys.forEach(async (query, i) => {
             const data = await fetchBooks(query);

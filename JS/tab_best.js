@@ -10,7 +10,7 @@ var swiper = new Swiper(".mySwiperBest", {
     navigation: {
         nextEl: "#bestBook .swiper-button-next",
         prevEl: "#bestBook .swiper-button-prev",
-    }
+    },loop: true,
 });
 
 async function fetchBooks(query) {
@@ -47,7 +47,7 @@ async function bookDataBest() {
                 divs.append(`
                             <div class="swiper-slide">
                                 <img src=${data.documents[j].thumbnail}/>
-                                <h6>${data.documents[j].title}</h6>
+                                <h5>${data.documents[j].title}</h5>
                                 <p>${data.documents[j].authors}</p>
                             </div>`)
             }
@@ -60,10 +60,14 @@ async function bookDataBest() {
 bookDataBest();
 
        //탭
+
+       $('.catagory_tab_menu_Best li').eq(0).addClass('active');
+
         $('.catagory_tab_menu_Best li').click(function () {
             let i = $(this).index();
             
-            $(this).
+            $(this).addClass("active").siblings().removeClass("active");
+
             $('.mySwiperBest').eq(i).show().siblings('.mySwiperBest').hide();
         });
 

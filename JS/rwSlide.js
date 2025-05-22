@@ -2,7 +2,7 @@
 
 var swiper = new Swiper(".rs_Swiper", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 15,
     freeMode: true,
     pagination: {
         el: ".rs_Swiper .swiper-pagination",
@@ -11,7 +11,7 @@ var swiper = new Swiper(".rs_Swiper", {
     navigation: {
         nextEl: "#review .swiper-button-next",
         prevEl: "#review .swiper-button-prev",
-    },
+    },loop: true,
 });
 
 // 리뷰 북 데이타

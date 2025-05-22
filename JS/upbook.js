@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiperUp", {
     navigation: {
         nextEl: "#upBook .swiper-button-next",
         prevEl: "#upBook .swiper-button-prev",
-    }
+    },loop: true,
 });
 
 

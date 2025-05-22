@@ -11,7 +11,7 @@
     navigation: {
         nextEl: "#newBook .swiper-button-next",
         prevEl: "#newBook .swiper-button-prev",
-    }
+    },loop: true,
 }); 
        
        
@@ -38,7 +38,7 @@
 
         async function bookDataNew() {
             try {
-                const querys = ['소설', '요리', '초등', '중학습', '인문'];
+                const querys = ['소설', '요리', '동화', '중학습', '인문'];
 
                 querys.forEach(async (query, i) => {
                     const data = await fetchBooks(query);
@@ -64,8 +64,11 @@
         bookDataNew();
 
         //탭
+        $('.catagory_tab_menu li').eq(0).addClass('active');
+
         $('.catagory_tab_menu li').click(function () {
             let i = $(this).index();
+            $(this).addClass("active").siblings().removeClass("active");
             $('.mySwiperNew').eq(i).show().siblings('.mySwiperNew').hide();
         });
 
