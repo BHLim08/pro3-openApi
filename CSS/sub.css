@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.view_wrap {
+  min-width: 1280px;
+  position: relative;
+  background-color: rgb(160, 132, 96);
+}
+
+.container {
+  width: 1060px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 110px;
+}
+
+.container_detail {
+  width: 800px;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#aside_bestSel {
+  z-index: 5;
+  position: absolute;
+  top: 40px;
+  right: calc(100% - 200px);
+  width: 130px;
+  height: 370px;
+  background-color: aqua;
+}
+#aside_bestSel .bestSel {
+  width: 100%;
+  height: 153px;
+  padding-top: 13px;
+  margin-bottom: 22px;
+  box-shadow: 6px 3px 20px 0 rgba(0, 0, 0, 0.08);
+  background-color: bisque;
+}
+
+#aside_view {
+  z-index: 5;
+  position: absolute;
+  top: 40px;
+  left: calc(100% - 200px);
+  width: 92px;
+  height: 268px;
+  background-color: aqua;
+}
+
+.book_head {
+  position: relative;
+  height: 932px;
+  margin: 0 auto;
+  background-color: rgb(199, 199, 82);
+}
+.book_head ul,
+.book_head li,
+.book_head ol {
+  list-style: none;
+}
+
+#book_detail {
+  display: flex;
+  height: 100%;
+  background-color: burlywood;
+}
+
+#detail_left {
+  background-color: cadetblue;
+}
+#detail_left .left_img {
+  width: 400px;
+  height: 600px;
+  background-color: cornflowerblue;
+}
+
+#detail_right {
+  margin-left: 10px;
+  background-color: chocolate;
+}
+
+#sub_nav_wrap {
+  background-color: chartreuse;
+}
+#sub_nav_wrap ul,
+#sub_nav_wrap li,
+#sub_nav_wrap ol {
+  list-style: none;
+}
+#sub_nav_wrap ul {
+  display: flex;
+  justify-content: space-between;
+}
+#sub_nav_wrap ul li {
+  padding: 20px 0;
+}
+
+#tab_contents {
+  max-width: 1280px;
+}
+
+.detail_info {
+  padding: 80px 0;
+  border-bottom: 1px solid gray;
+}
+
+.detail_table {
+  width: 100%;
+  border: 1px solid gray;
+}
+.detail_table tr > td:nth-child(1) {
+  width: 20%;
+  text-align: center;
+  background-color: gray;
+}
+.detail_table td {
+  padding: 10px 8px;
+}
+
+.detail_event {
+  padding: 80px 0;
+  border-bottom: 1px solid gray;
+}
+
+.detail_intro {
+  padding: 80px 0;
+  border-bottom: 1px solid gray;
+}
+
+.book_intro {
+  padding: 80px 0;
+  border-bottom: 1px solid gray;
+}
+
+.book_index {
+  padding: 80px 0;
+  border-bottom: 1px solid gray;
+}
+
+.book_field {
+  padding: 80px 0;
+  border-bottom: 1px solid gray;
+}
+
+.book_columns {
+  padding: 80px 0;
+  border-bottom: 1px solid gray;
+}
+
+.book_author {
+  padding: 80px 0;
+  border-bottom: 1px solid gray;
+}
+
+.review_wrap {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.review_slide {
+  width: 100%;
+  height: 365px;
+  padding: 25px;
+  border: 1px solid gray;
+  position: relative;
+  background-color: rgb(104, 202, 202);
+}
+.review_slide .swiper-button-next,
+.review_slide .swiper-button-prev {
+  position: absolute;
+  background-color: white;
+  color: #888;
+  border-radius: 20px;
+  box-shadow: 2px 1px 3px #838383;
+}
+.review_slide .swiper-button-prev::after,
+.review_slide .swiper-button-next::after {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+}
+
+.theme_wrap {
+  width: 100%;
+  background-color: pink;
+}
+
+.theme {
+  width: 100%;
+}
+
+.theme_text {
+  display: flex;
+  background-color: cadetblue;
+}
+.theme_text .theme_logo img {
+  width: 36px;
+  height: 36px;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+.theme_text .theme_info div {
+  padding: 10px;
+}
+.theme_text .theme_info ul {
+  display: flex;
+  list-style: none;
+}
+.theme_text .theme_info ul li {
+  font-size: 13px;
+  padding: 8px;
+  margin: 0 3px;
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+.theme_book {
+  width: 95%;
+  margin-left: 4.3%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rosybrown;
+}
+.theme_book img {
+  width: 118px;
+  height: 177px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgb(187, 187, 187);
+  background-color: rgb(255, 192, 192);
+}

@@ -1,0 +1,322 @@
+//all
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.view_wrap {
+    min-width: 1280px;
+    position: relative;
+    background-color: rgb(160, 132, 96);
+}
+
+.container {
+    width: 1060px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 110px;
+}
+
+.container_detail {
+    width: 800px;
+}
+
+
+// 스와이프
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+//베스트셀렉
+#aside_bestSel {
+    z-index: 5;
+    position: absolute;
+    top: 40px;
+    right: calc(100% - 200px);
+    width: 130px;
+    height: 370px;
+
+    .bestSel {
+        width: 100%;
+        height: 153px;
+        padding-top: 13px;
+        margin-bottom: 22px;
+        box-shadow: 6px 3px 20px 0 rgba(0, 0, 0, 0.08);
+        ;
+        background-color: bisque;
+    }
+
+    background-color: aqua;
+}
+
+// 최근 본 상품
+#aside_view {
+    z-index: 5;
+    position: absolute;
+    top: 40px;
+    left: calc(100% - 200px);
+    width: 92px;
+    height: 268px;
+    background-color: aqua;
+}
+
+// 북헤드
+.book_head {
+    position: relative;
+    height: 932px;
+    margin: 0 auto;
+
+    ul,
+    li,
+    ol {
+        list-style: none;
+    }
+
+    background-color: rgb(199, 199, 82);
+}
+
+//북 디테일
+#book_detail {
+    display: flex;
+    height: 100%;
+    background-color: burlywood;
+}
+
+//디테일 왼쪽
+#detail_left {
+    background-color: cadetblue;
+
+    .left_img {
+        width: 400px;
+        height: 600px;
+        background-color: cornflowerblue;
+    }
+}
+
+//디테일 오른쪽
+#detail_right {
+    margin-left: 10px;
+    background-color: chocolate;
+}
+
+//서브 네비
+#sub_nav_wrap {
+
+    ul,
+    li,
+    ol {
+        list-style: none;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            padding: 20px 0;
+        }
+    }
+
+    background-color: chartreuse;
+}
+
+//책 상세정보
+#tab_contents {
+    max-width: 1280px;
+}
+
+//상세보기 믹스인
+@mixin detail_paading {
+    padding: 80px 0;
+    border-bottom: 1px solid gray;
+}
+
+
+
+// 탭 _ 상세정보
+.detail_info {
+    @include detail_paading;
+}
+
+// 상품규격
+.detail_table {
+    width: 100%;
+    border: 1px solid gray;
+
+    tr>td:nth-child(1) {
+        width: 20%;
+        text-align: center;
+        background-color: gray;
+    }
+
+    td {
+        padding: 10px 8px;
+    }
+}
+
+//이벤트 슬라이드
+.detail_event {
+    @include detail_paading;
+}
+
+//책 상세보기
+.detail_intro {
+    @include detail_paading
+}
+
+//책 소개
+.book_intro {
+    @include detail_paading
+}
+
+//목차
+.book_index {
+    @include detail_paading
+}
+
+//분야
+.book_field {
+    @include detail_paading
+}
+
+//서평
+.book_columns {
+    @include detail_paading
+}
+
+//작가소개
+.book_author {
+    @include detail_paading;
+}
+
+//탭 리뷰
+
+//리뷰 슬라이드
+
+.review_wrap {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.review_slide {
+    width: 100%;
+    height: 365px;
+    padding: 25px;
+    border: 1px solid gray;
+    position: relative;
+    background-color: rgb(104, 202, 202);
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        background-color: white;
+        color: #888;
+        border-radius: 20px;
+        box-shadow: 2px 1px 3px #838383;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 1.1rem !important;
+        font-weight: 600 !important;
+    }
+}
+
+.theme_wrap {
+    width: 100%;
+    background-color: pink;
+}
+
+.theme {
+    width: 100%;
+}
+
+.theme_text {
+    display: flex;
+
+
+    .theme_logo {
+        img {
+            width: 36px;
+            height: 36px;
+            margin: 5px 5px;
+            border-radius: 50%;
+        }
+    }
+
+    .theme_info {
+        div {
+            padding: 10px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                font-size: 13px;
+                padding: 8px;
+                margin: 0 3px;
+                color: gray;
+                border: 1px solid gray;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    background-color: cadetblue;
+}
+
+.theme_book {
+    width: 95%;
+    margin-left: 4.3%;
+    display: flex;
+
+    justify-content: space-between;
+    img {width: 118px;
+        height: 177px;
+        border-radius: 10px ;
+        box-shadow: 3px 3px 3px rgb(187, 187, 187);
+        background-color: rgb(255, 192, 192);}
+    background-color: rosybrown;
+}
