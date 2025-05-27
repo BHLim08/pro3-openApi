@@ -27,11 +27,12 @@
                 querys.forEach(async (query, i) => {
                     const data = await fetchBooks(query);
                     const divs = $('.five_book .five_list').eq(i);
-
+                    
+               
                     divs.append("<img src=" + data.documents[0].thumbnail + "/>");
                     divs.append("<h4>" + data.documents[0].title + "</h3>");
                     divs.append("<h6>" + data.documents[0].authors + "</h6>");
-
+           
                 })
             } catch (error) {
                 console.log('에러발생', error);
