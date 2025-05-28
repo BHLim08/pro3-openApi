@@ -12,6 +12,8 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 
     <!-- 구글웹폰트 -->
     <link rel="stylesheet"
@@ -19,6 +21,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/sub.css">
+    <link rel="stylesheet" href="./CSS/commond.css">
 
 </head>
 
@@ -92,14 +95,13 @@
                     <!-- 디테일 왼쪽 -->
                     <div id="detail_left">
                         <div class="left_img">
-                            <img src="" alt="">
                         </div>
+
                         <div class="left_interactive">
-                            <div class="interactive">
-                                <span>미리보기</span>
-                                <span>내서재 담기</span>
-                            </div>
+                            <span>미리보기</span>
+                            <span>내서재 담기</span>
                         </div>
+
                         <div class="left_tag">
                             <h5>이 책의 태그</h5>
                             <ul class="tag">
@@ -120,11 +122,15 @@
                                 <span class="md_btn">베스트</span>
                             </div>
                             <div class="book_infobox">
-                                <!-- 제목 , 작가 , 출판사 ? , 출판시기 , 별 , 리뷰 -->
+                                <div class="infobox_title">
+                                    <h1>죽이고 싶은 아이</h1>
+                                    <p>이꽃님 저 | 우리학교</p>
+                                    <p>2021년 06월 07일</p>
+                                    <p>★★★★★</p>
+                                    <p>11,250원</p>
+                                </div>
                             </div>
-                            <div class="book_price">
-                                <!-- 가격 After(할인율)-->
-                            </div>
+
                         </div>
 
                         <div class="right_benefit">
@@ -161,11 +167,18 @@
                                     <td>무료(해외배송의 경우 지역에 따라 상이)</td>
                                 </tr>
                                 <tr>
+                                    <td>배송안내</td>
                                     <td>서울특별시 강남대로 542(논현동, 영풍빌딩)</td>
 
                                 </tr>
                                 <tr>
-                                    <td><button>택배배송</button>지금 태백 주문하면 내일 수령 가능</td>
+                                    <td></td>
+                                    <td>
+                                        <button>택배배송</button>지금 태백 주문하면 내일 수령 가능
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
                                     <td><button>나우드림</button>택배보다 빠른 매장 픽업 서비스</td>
                                 </tr>
                             </table>
@@ -209,10 +222,10 @@
             <div class="container">
                 <div class="container_detail">
                     <ul class="sub_nav">
-                        <li><a href="#">도서정보</a></li>
-                        <li><a href="#">리뷰</a></li>
-                        <li><a href="#">추천</a></li>
-                        <li><a href="#">교환/반품/환불불</a></li>
+                        <li><a href="#tab_detail_content">도서정보</a></li>
+                        <li><a href="#tab_review">리뷰</a></li>
+                        <li><a href="#tab_gooditems">추천</a></li>
+                        <li><a href="#tab_return">교환/반품/환불불</a></li>
                     </ul>
                 </div>
             </div>
@@ -234,7 +247,7 @@
 
                                 <!-- 상품규격 -->
                                 <div class="detail_info">
-                                    <h3>상품 규격 정보</h3>
+                                    <h2>상품 규격 정보</h2>
                                     <table class="detail_table">
                                         <tr>
                                             <td>ISBN</td>
@@ -258,19 +271,42 @@
 
                                 <!-- 이벤트슬라이드 -->
                                 <div class="detail_event">
-                                    <h3>관련 이벤트</h3>
+                                    <h2>관련 이벤트</h2>
                                     <div class="event_slide">
                                         <!-- Swiper -->
-                                        <div class="swiper mySwiper">
+                                        <div class="swiper mySwiperEvent">
                                             <div class="swiper-wrapper">
-                                                <div class="swiper-slide">Slide 1</div>
-                                                <div class="swiper-slide">Slide 2</div>
-                                                <div class="swiper-slide">Slide 2</div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://cdn.ypbooks.co.kr/image/event-online/202505/4ae77b57-9ae5-4222-9085-0b8630d0363a.png"
+                                                        alt="event">
+                                                    <button class="event_btn">사은품</button>
+                                                    <p>5월 확짝 페스타 이벤트</p>
+                                                    <p>2025.04.30~2025.05.31</p>
+
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="	https://cdn.ypbooks.co.kr/image/event-online/202504/ed3e2c64-1e49-4224-8d63-71582dd11552.jpg"
+                                                        alt="event">
+                                                    <button class="event_btn">사은품</button>
+                                                    <p>한강 신작『빛과 실』문지 에크리+사은품</p>
+                                                    <p>2025.04.30~2025.05.31</p>
+
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://cdn.ypbooks.co.kr/image/event-online/202504/a9fa0de1-a237-4d9f-9e18-93fdd9b4a3f7.png"
+                                                        alt="event">
+                                                    <button class="event_btn">사은품</button>
+                                                    <p>영풍문고 적립금 혜택</p>
+                                                    <p>2025.05.01~2025.12.31</p>
+
+                                                </div>
+
                                             </div>
-                                            <div class="swiper-button-next"></div>
-                                            <div class="swiper-button-prev"></div>
+
                                             <div class="swiper-pagination"></div>
                                         </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
                                     </div>
                                 </div>
 
@@ -279,34 +315,61 @@
 
                                     <!-- 책 소개 -->
                                     <div class="book_intro">
-                                        <h3>책 소개</h3>
+                                        <h2>책 소개</h2>
+                                        <div class="book_content">
+                                            <p>
+                                                <strong>『세계를 건너 너에게 갈게』 작가 이꽃님 신작<br>
+                                                    “팩트는 중요하지 않아. 사람들이 믿는 게 더 중요하지.”<br>
+                                                    조각난 진실과 부서진 믿음에 관한 이야기</strong><br>
+                                                <br>
+                                                십 대들의 외롭고 불안한 내면을 따뜻하게 어루만져 주는 작품으로 주목받아 온 이꽃님 작가가 결말을 예측할 수 없는, 놀랍도록
+                                                흡인력 있는 작품으로 돌아왔다. 『죽이고 싶은 아이』는 한 여고생의 죽음이라는, 결코 평범하지 않은 이야기를 통해 독자들에게
+                                                진실과 믿음에 관한 이야기를 건넨다.<br>
+                                                소설의 주인공인 주연과 서은은 둘도 없는 단짝 친구다. 두 사람이 크게 싸운 어느 날, 학교 건물 뒤 공터에서 서은이 시체로
+                                                발견되고 가장 유력한 용의자로 주연이 체포된다. 그런데 어찌 된 일인지 주연은 그날의 일이 도무지 기억나지 않는다. <br>주연은
+                                                정말
+                                                서은을 죽였을까? <br>이야기는 주연과 서은에 대해 증언하는 열일곱 명의 인터뷰와 주연의 주변 인물들의 이야기가 교차되는 독특한
+                                                방식으로 전개된다. 인터뷰이에 따라 주연과 서은이 어떤 아이였는지, 둘의 관계는 어땠는지가 시시각각 변모해 간다. 반전에 반전을
+                                                거듭하며 독자를 혼란에 빠뜨리는 예측 불가능한 전개는 독자들에게 끝까지 책을 손에서 놓지 못하게 하는 엄청난 몰입감을
+                                                선사한다.<br>
+                                                『죽이고 싶은 아이』는 보이는 대로만 보고 듣고 싶은 말만 듣고 믿고 싶은 것만 믿는 사람들로 가득한 세상이 얼마나 야만적인지를
+                                                독자들의 눈앞에 생생하게 펼쳐 보인다. 이꽃님 작가의 전작들이 십 대들에게 건네는 다정한 위로였다면, 『죽이고 싶은 아이』는 십
+                                                대들의 곁에 선 작가가 진실이 멋대로 편집되고 소비되는 세상에 던지는 서늘한 경고라고 할 수 있다.
+                                            </p>
+                                        </div>
                                         <button class="more_btn">펼쳐보기</button>
                                     </div>
 
                                     <!-- 목차 -->
                                     <div class="book_index">
-                                        <h3>목차</h3>
+                                        <h2>목차</h2>
+                                        <div class="book_content">
+                                            이 도서는 목차를 제공하지 않습니다.
+                                        </div>
                                         <button class="more_btn">펼쳐보기</button>
                                     </div>
 
                                     <!-- 분야 -->
                                     <div class="book_field">
-                                        <h3>이 책이 속한 분야</h3>
-                                        <button class="more_btn">펼쳐보기</button>
+                                        <h2>이 책이 속한 분야</h2>
+                                        <div class="book_content">
+                                           <p>소설/에세이/시>청소년</p> </div>
                                     </div>
 
                                     <!-- 서평 -->
                                     <div class="book_columns">
-                                        <h3>출판사 서평</h3>
-                                        <img src="https://cdn.ypbooks.co.kr/image/editor-contents/202404/1ba00bca-37dd-4f9b-80b0-db45535b030a.jpg"
-                                            alt="book_columns">
-                                        <div class="columns"></div>
+                                        <h2>출판사 서평</h2>
+                                        <div class="book_content">
+                                            <img src="https://cdn.ypbooks.co.kr/image/editor-contents/202404/1ba00bca-37dd-4f9b-80b0-db45535b030a.jpg"
+                                                alt="book_columns">
+                                            <div class="columns"></div>
+                                        </div>
                                         <button class="more_btn">펼쳐보기</button>
                                     </div>
 
                                     <!-- 작가소개 -->
                                     <div class="book_author">
-                                        <h3>저자 소개</h3>
+                                        <h2>저자 소개</h2>
                                         <img src="" alt="">
                                     </div>
 
@@ -314,13 +377,13 @@
                             </div>
 
                             <!-- 탭 리뷰 -->
-                            <div class="tab_review">
-                                <h3>도서리뷰(2)</h3>
+                            <div id="tab_review">
+                                <h2>도서리뷰 (2)</h2>
                                 <div class="review_btn">
                                     <span>이 책을 읽고 어떤 느낌을 받으셨나요? 리뷰를 남기고 다른 독자들과 함께 공유해보세요</span>
-                                    <button class="r_btn"><a href="#">리뷰쓰기</a></button>
+                                    <button class="r_btn">리뷰쓰기 ></button>
                                 </div>
-                                <div class="review_graph"></div>
+
                                 <div class="review_table">
                                     <ul>
                                         <li>랭킹순</li>
@@ -329,22 +392,29 @@
                                         <li>평점 낮은순</li>
                                     </ul>
 
-                                    <input type="checkbox">포토
-                                    <input type="checkbox">구매자리뷰
-
                                     <div class="review_list">
-                                        <img src="" alt="#">
-                                        <span>★★★★★ 5</span>
-                                        <span>sori7**** | 2024.12.31</span>
-                                        <span>재밋는 책이였어요 앉은 자리에서 다 읽은 책</span>
+                                        <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/temp/profile_default.png"
+                                            alt="#">
+                                        <div class="list_info">
+                                            <span>★★★★★</span>
+                                            <span>sori7**** | 2024.12.31</span>
+                                            <span>재밋는 책이였어요 앉은 자리에서 다 읽은 책</span>
+                                        </div>
+
+
                                         <span>♡ 0</span>
                                     </div>
 
                                     <div class="review_list">
-                                        <img src="" alt="#">
-                                        <span>★★★★★ 5</span>
-                                        <span>ej*** | 2024.12.25</span>
-                                        <span>초딩 아이가 재미있게 읽었어요</span>
+                                        <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/temp/profile_default.png"
+                                            alt="#">
+
+                                        <div class="list_info">
+                                            <span>★★★★★</span>
+                                            <span>ej*** | 2024.12.25</span>
+                                            <span>초딩 아이가 재미있게 읽었어요</span>
+                                        </div>
+
                                         <span>♡ 0</span>
                                     </div>
                                 </div>
@@ -353,23 +423,22 @@
 
 
                         <!-- 탭 추천 슬라이드-->
-                        <div class="tab_gooditems">
+                        <div id="tab_gooditems">
                             <div class="goodItems_wrap">
                                 <div class="goodItems_with">
                                     <h3>이 책과 함께 구매한 책</h3>
                                     <div class="goodItems_slide">
                                         <!-- Swiper -->
-                                        <div class="swiper mySwiper">
+                                        <div class="swiper mySwiperWith">
                                             <div class="swiper-wrapper">
-                                                <div class="swiper-slide">Slide 1</div>
-                                                <div class="swiper-slide">Slide 2</div>
-                                                <div class="swiper-slide">Slide 3</div>
-                                                <div class="swiper-slide">Slide 4</div>
-                                                <div class="swiper-slide">Slide 5</div>
-                                                <div class="swiper-slide">Slide 6</div>
-                                                <div class="swiper-slide">Slide 7</div>
-                                                <div class="swiper-slide">Slide 8</div>
-                                                <div class="swiper-slide">Slide 9</div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
                                             </div>
                                             <div class="swiper-pagination"></div>
                                         </div>
@@ -384,17 +453,17 @@
                                     <h3>이 분야에서 요즘 뜨는 책</h3>
                                     <div class="goodItems_slide">
                                         <!-- Swiper -->
-                                        <div class="swiper mySwiper">
+                                        <div class="swiper mySwiperUP">
                                             <div class="swiper-wrapper">
-                                                <div class="swiper-slide">Slide 1</div>
-                                                <div class="swiper-slide">Slide 2</div>
-                                                <div class="swiper-slide">Slide 3</div>
-                                                <div class="swiper-slide">Slide 4</div>
-                                                <div class="swiper-slide">Slide 5</div>
-                                                <div class="swiper-slide">Slide 6</div>
-                                                <div class="swiper-slide">Slide 7</div>
-                                                <div class="swiper-slide">Slide 8</div>
-                                                <div class="swiper-slide">Slide 9</div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                            
                                             </div>
                                             <div class="swiper-pagination"></div>
                                         </div>
@@ -409,17 +478,17 @@
                                     <h3>소설/에세이/시 분야 화제의🔥도서</h3>
                                     <div class="goodItems_slide">
                                         <!-- Swiper -->
-                                        <div class="swiper mySwiper">
+                                        <div class="swiper mySwiperhot">
                                             <div class="swiper-wrapper">
-                                                <div class="swiper-slide">Slide 1</div>
-                                                <div class="swiper-slide">Slide 2</div>
-                                                <div class="swiper-slide">Slide 3</div>
-                                                <div class="swiper-slide">Slide 4</div>
-                                                <div class="swiper-slide">Slide 5</div>
-                                                <div class="swiper-slide">Slide 6</div>
-                                                <div class="swiper-slide">Slide 7</div>
-                                                <div class="swiper-slide">Slide 8</div>
-                                                <div class="swiper-slide">Slide 9</div>
+                                                   <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+
                                             </div>
                                             <div class="swiper-pagination"></div>
                                         </div>
@@ -444,17 +513,21 @@
 
                                         <div class="theme_info">
                                             <div class="theme_title">
-                                                <h4>이꽃님 작가와 함께 여름을 찬란하게게</h4>
-                                                <span class="md_btn">MD추천</span>
+                                                <h4>이꽃님 작가와 함께 여름을 찬란하게
+                                                    <span class="md_btn">MD추천</span>
+                                                </h4>
+
                                             </div>
 
                                             <div class="theme_author">
-                                                <p></p>
-                                                <p></p>
+                                                <p>이슬
+                                                    2024.07.10</p>
+
                                             </div>
 
                                             <div class="theme_content">
-                                                <p></p>
+                                                <p>수많은 친구들이 기다린 "죽이고 싶은 아이2"로 돌아온 이꽃님 작가님! 다가오는 여름방학은 작가님의 작품과 함께 뜨겁고
+                                                    찬란한 계절을 즐겨볼까요?</p>
                                             </div>
 
                                             <div class="theme_tag">
@@ -471,11 +544,6 @@
                                     </div>
 
                                     <div class="theme_book">
-                                        <img src="" alt="theme">
-                                        <img src="" alt="theme">
-                                        <img src="" alt="theme">
-                                        <img src="" alt="theme">
-                                        <img src="" alt="theme">
                                     </div>
 
                                 </div>
@@ -485,7 +553,7 @@
 
 
                         <!-- 탭 교환반품환불 -->
-                        <div class="tab_return">
+                        <div id="tab_return">
                             <table>
                                 <tr>
                                     <td>반품/교환방법</td>
@@ -603,27 +671,142 @@
 
         </div>
 
+               <!-- 푸터 -->
+    <footer>
+
+        <div class="container">
+            <div id="footer1">
+                <div>
+                    <h3>고객센터</h3>
+                    <h1>1544-9020</h1>
+                    <table>
+                        <tr>
+                            <th>상담가능시간</th>
+                            <td>평일 09:00 ~ 18:00 / 점심시간 12:15 ~13 : 15</td>
+                        </tr>
+
+                        <tr>
+                            <th>대표 메일</th>
+                            <td>customer@ypbook.co.kr</td>
+                        </tr>
+
+                        <tr>
+                            <th>대량 주문</th>
+                            <td>webmaster@ypbooks.co.kr</td>
+                        </tr>
+
+                    </table>
+                    <div>
+                        <button>FAQ</button>
+                        <button>1:1 고객상담</button>
+                        <button>입점문의</button>
+                    </div>
+                </div>
+
+                <div>
+                    <ul class="footer_1">
+                        <li><span>영풍문고</span>
+                            <ul>
+                                <li>회사소개</li>
+                                <li>전국지점안내</li>
+                                <li>나우드림</li>
+                            </ul>
+                        </li>
+
+                        <li><span>비즈니스</span>
+                            <ul>
+                                <li>입점문의</li>
+                                <li>광고안내</li>
+                                <li>출판사통합관리 SCM</li>
+                            </ul>
+                        </li>
+
+                        <li><span>쇼핑도우미</span>
+                            <ul>
+                                <li>도서검색</li>
+                                <li>회원등급혜택</li>
+                                <li>주문/배송</li>
+                                <li>취소/교환/환불</li>
+                                <li>적립금 사용</li>
+                                <li>교환권 사용</li>
+                                <li>청약 철회</li>
+
+                            </ul>
+                        </li>
+
+                        <li><span>고객센터</span>
+                            <ul>
+                                <li>1:1 고객상담</li>
+                                <li>FAQ</li>
+                                <li>공지사항</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="footer2">
+                <div>
+                    <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/yp_logo.png" alt="">
+                </div>
+
+                <div>
+                    <ul>
+                        <li>이용약관</li>
+                        <li>개인정보처리방침</li>
+                        <li>영상정보관리방침</li>
+                        <li>청소년보호정책</li>
+                        <li>이메일 무단 수집거부</li>
+
+                    </ul>
+
+                    <div class="footer_icon">
+                        <i></i>
+                    </div>
+
+                    <ul>
+                        <li>(주)영풍문고</li>
+                        <li>주소 서울특별시 강남구 강남대로 542(논현동,영풍빌딩) (우)06110</li>
+                        <li>대표이사 김경환</li>
+                        <li>사업자 등록번호 773-86-01800 사업자정보확인</li>
+                        <li>통신판매등록번호 2027-서울강남-06241</li>
+                        <li>개인정보관리 책임자 조순제</li>
+                    </ul>
+
+                    <span>COPYRIGHT © YOUNGPOONG BOOKSTORE INC. ALL RIGHTS RESERVED.</span>
+                </div>
+
+            </div>
+        </div>
+    </footer>
     </div>
+
+ 
+
 
 
 
     <!-- 스와이퍼JS -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            cssMode: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-            mousewheel: true,
-            keyboard: true,
-            slidesPerView: 3,
-            loop: true,
-        });
-    </script>
+    <!-- 이벤트슬라이드 -->
+    <script src="./JS/sub_event.js"></script>
+
+    <!-- 추천 슬라이드 -->
+    <!-- 함께 구매 with -->
+    <script src="./JS/sub_good_with.js"></script>
+    <!-- 이분야뜨는책 -->
+     <script src="./JS/sub_good_up.js"></script>
+     <!-- 소설화제의도서 -->
+     <script src="./JS/sub_good_hot.js"></script>
+     <!-- 테마 -->
+    <script src="./JS/sub_theme.js"></script>
+
+    
+    <!-- 인포박스 -->
+    <script src="./JS/sub_infobox.js"></script>
+    <!-- 서브네비 -->
+     <script src="./JS/sub_nav.js"></script>
+     <!-- 디테일 토글버튼 -->
+      <script src="./JS/sub_togle.js"></script>
 
 </body>
 
