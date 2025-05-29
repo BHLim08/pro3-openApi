@@ -17,7 +17,15 @@
 
     <!-- 구글웹폰트 -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_circle" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check_circle" />
+    
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/7b6d17b275.js" crossorigin="anonymous"></script>
+
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/sub.css">
@@ -28,166 +36,882 @@
 <body>
 
     <div class="view_wrap">
-
-        <!-- 컨테이너 밖 items -->
-        <!-- 베스트셀렉 -->
-        <div id="aside_bestSel">
-
-            <div class="bestSel">
-                <div class="bestSel_img">
-                    <img src="" alt="">
-                </div>
-                <div class="bestSel_text">
-                    <h6></h6>
-                    <div class="sel_title"></div>
-                </div>
-            </div>
-
-            <div class="bestSel">
-                <div class="bestSel_img">
-                    <img src="" alt="">
-                </div>
-                <div class="bestSel_text">
-                    <h6></h6>
-                    <div class="sel_title"></div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- 최근 본 상품 -->
-
-        <div id="aside_view">
-
-            <div class="view_top"></div>
-            <div class="view_img"></div>
-            <button>+더보기</button>
-
-        </div>
-
-        <div class="book_head">
+        <header>
             <div class="container">
-                <!-- 탑 셀렉 -->
-                <div id="top_select">
-                    <div class="select_option">
-                        <span><a href="#"></a></span>
-                        <select name="book" id="lang">
-                            <option value="kor">국내도서</option>
-                        </select>
-                        <select name="book" id="catagory">
-                            <option value="소설/에세이/시">소설/에세이/시</option>
-                        </select>
-                        <select name="book_catagory_class" id="catagory_class">
-                            <option value="all">전체</option>
-                        </select>
-                        <select name="book_class_detail" id="catagory_class_detail">
-                            <option value="all">전체</option>
-                        </select>
-                        <select name="book_last_detail" id="last_detail">
-                            <option value="all">전체</option>
-                        </select>
-                        <button>선택분야조회</button>
+                <div id="topNav">
+                    <ul>
+                        <li><a href="#">매장안내</a></li>
+                        <li><a href="#">혜택안내</a></li>
+                        <li><a href="#">나우드림</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">주문배송</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+
+                <div id="topSearch">
+                    <div id="logo">
+                        <a href="#">
+                            <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/yp_logo.png" alt="logo">
+
+                        </a>
+                    </div>
+                    <div id="search">
+                        <input type="text" placeholder="    쇼펜하우어 인생 수업, 10만부 판매 기념 리커버!">
+                        <button></button>
+
+                        <ul>
+                            <li>한강<빛과 실>
+                            </li>
+                            <li>유시민 청춘의 독서</li>
+                            <li>기울어진 평등</li>
+                            <li>김영하 신간</li>
+                            <li>프란치스코 교황</li>
+
+                        </ul>
+
+                        <div>
+                            <span>&lt</span>
+                            <span>&gt</span>
+                        </div>
+
+                    </div>
+                    <div id="ad">
+                        <img src="./img/topmd.jpg" alt="md">
+                        <h6>사랑하는 엄마에게 가장
+                            <br>
+                            특별한 선물!
+                        </h6>
                     </div>
                 </div>
 
-                <!-- 북 디테일 -->
-                <div id="book_detail">
-                    <!-- 디테일 왼쪽 -->
-                    <div id="detail_left">
-                        <div class="left_img">
+            </div>
+        </header>
+
+        <div id="main">
+
+            <!-- 메인네비 -->
+            <div id="mainNav">
+                <div class="container">
+                    <div id="m_Nav">
+                        <!-- 햄버거카데고리메뉴 -->
+                        <div id="catagory">
+                            <button type="button">
+                                <span class="material-symbols-outlined">menu
+                                </span>
+                                <p>전체카테고리</p>
+
+                            </button>
+
+
                         </div>
 
-                        <div class="left_interactive">
-                            <span>미리보기</span>
-                            <span>내서재 담기</span>
-                        </div>
+                        <!-- 메뉴 -->
+                        <ul id="menu">
+                            <li><a href="#">베스트</a></li>
+                            <li><a href="#">신상품</a></li>
+                            <li><a href="#">추천</a></li>
+                            <li><a href="#">기프티콘</a></li>
+                            <li><a href="#">컬쳐페이지</a></li>
+                        </ul>
 
-                        <div class="left_tag">
-                            <h5>이 책의 태그</h5>
-                            <ul class="tag">
-                                <li>#청소년소설</li>
-                                <li>#반전소설</li>
-                                <li>#청소년문제</li>
-                                <li>#친구</li>
-                                <li>#마녀사냥</li>
+                        <ul id="menu_other">
+                            <li><a href="#">혜택</a></li>
+                            <li><a href="#">사은품</a></li>
+                            <li><a href="#">문화행사</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">출석체크</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 카테고리 마우스오버 메뉴 -->
+                <div id="catagoryBox">
+                    <div class="container">
+                        <div class="catagory_wrap">
+                            <ul class="catagorybox">
+                                <li>국내도서
+                                    <ul class="box_list">
+                                        <li>소설/에세이/시</li>
+                                        <li>자녀교육/건강/여행/요리</li>
+                                        <li>유아/어린이/초등학습</li>
+                                        <li>중/고학습</li>
+                                        <li>인문/역사</li>
+                                        <li>외국어</li>
+                                        <li>예술</li>
+                                        <li>컴퓨터/IT</li>
+                                        <li>종교</li>
+                                        <li>기술/공학</li>
+                                    </ul>
+                                </li>
+
+                                <li>외국도서
+                                    <ul class="box_list">
+                                        <li>외서 일반서적</li>
+                                        <li>외서 전문서적</li>
+                                        <li>외서 컴퓨터</li>
+                                    </ul>
+                                </li>
+
+                                <li>영품문고 매장
+                                    <ul class="box_list">
+                                        <li>가산마리오점</li>
+                                        <li>강남롯데점</li>
+                                        <li>김포공항롯데점</li>
+                                        <li>미아롯데점</li>
+                                        <li>사당역점</li>
+                                        <li>스타필드코엑스몰점</li>
+                                        <li>신림타임스트림점</li>
+                                        <li>여의도IFC몰점</li>
+                                        <li>왕십리역점</li>
+                                        <li>용산아이파크몰점</li>
+                                    </ul>
+                                </li>
                             </ul>
+
+
+                            <div class="catagoryimg">
+
+                                <img src="https://cdn.ypbooks.co.kr/image/product/202504/0e59ba62-2b57-434e-a6ce-75e4e3ade5e0_512.jpg"
+                                    alt="catagoryimg">
+                                <div class="catagory_text">
+                                    <h2>아빠 당신의 이야기를 들려주세요</h2>
+                                    <p>세상 오직 한 권 뿐인 아빠를 위한 선물!</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 컨테이너 밖 items -->
+            <!-- 베스트셀렉 -->
+            <div id="aside_bestSel">
+
+                <div class="bestSel">
+                </div>
+
+                <div class="bestSel">
+                </div>
+
+            </div>
+
+            <!-- 최근 본 상품 -->
+
+            <div id="aside_view">
+
+                <div class="aside_wrap">
+                    <div class="view_top">
+                        <span>최근 본 상품</span>
+                    </div>
+
+                    <div class="view_img">
+                    </div>
+
+                    <div class="view_img">
+                    </div>
+
+              
+                </div>
+                
+                <button>+더보기</button>
+
+            </div>
+
+            <div class="book_head">
+                <div class="container">
+                    <!-- 탑 셀렉 -->
+                    <div id="top_select">
+                        <div class="select_option">
+                            <span><a href="#"></a></span>
+                            <select name="book" id="lang">
+                                <option value="kor">국내도서</option>
+                            </select>
+                            <select name="book" id="catagory">
+                                <option value="소설/에세이/시">소설/에세이/시</option>
+                            </select>
+                            <select name="book_catagory_class" id="catagory_class">
+                                <option value="all">전체</option>
+                            </select>
+                            <select name="book_class_detail" id="catagory_class_detail">
+                                <option value="all">전체</option>
+                            </select>
+                            <select name="book_last_detail" id="last_detail">
+                                <option value="all">전체</option>
+                            </select>
+                            <button>선택분야조회</button>
                         </div>
                     </div>
 
-                    <!-- 디테일 오른쪽 -->
-                    <div id="detail_right">
-                        <div class="right_info">
-                            <div class="right_tag">
-                                <span class="md_btn">MD추천</span>
-                                <span class="md_btn">베스트</span>
+                    <!-- 북 디테일 -->
+                    <div id="book_detail">
+                        <!-- 디테일 왼쪽 -->
+                        <div id="detail_left">
+                            <div class="left_img">
                             </div>
-                            <div class="book_infobox">
-                                <div class="infobox_title">
-                                    <h1>죽이고 싶은 아이</h1>
-                                    <p>이꽃님 저 | 우리학교</p>
-                                    <p>2021년 06월 07일</p>
-                                    <p>★★★★★</p>
-                                    <p>11,250원</p>
+
+                            <div class="left_interactive">
+                                <span>미리보기</span>
+                                <span>내서재 담기</span>
+                            </div>
+
+                            <div class="left_tag">
+                                <h4>이 책의 태그</h4>
+                                <ul class="tag">
+                                    <li>#청소년소설</li>
+                                    <li>#반전소설</li>
+                                    <li>#청소년문제</li>
+                                    <li>#친구</li>
+                                    <li>#마녀사냥</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 디테일 오른쪽 -->
+                        <div id="detail_right">
+                            <div class="right_info">
+                                <div class="right_tag">
+                                    <span class="md_btn">MD추천</span>
+                                    <span class="md_btn">베스트</span>
+                                </div>
+                                <div class="book_infobox">
+                                    <div class="infobox_title">
+                                        <h1>죽이고 싶은 아이</h1>
+                                        <p>이꽃님 저 | 우리학교</p>
+                                        <p>2021년 06월 07일</p>
+                                        <p class="info_star">★★★★★</p>
+                                        <p class="info_price">11,250원</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="right_benefit">
+
+                                <h4>혜택안내</h4>
+
+                                <table class="benefit_table">
+                                    <tr>
+                                        <td>적립금</td>
+                                        <td>625원 (5%적립)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>결제혜택</td>
+                                        <td>무이자할부<i class="fa-solid fa-circle-check"></i>결제사 혜택<i class="fa-solid fa-circle-check"></i>쿠폰<i class="fa-solid fa-circle-check"></i></td>
+                                    </tr>
+                                </table>
+
+                                <div class="member_box">
+                                    <span><a href="#">회원 가입 즉시 지급되는 적립금과 등급별 다양한 회원 혜택 보기</a></span>
                                 </div>
                             </div>
 
+                            <div class="right_delivery">
+                                <h4>배송정보</h4>
+                                <table class="delivery_table">
+                                    <tr>
+                                        <td>배송비</td>
+                                        <td>무료(해외배송의 경우 지역에 따라 상이)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>배송안내</td>
+                                        <td>서울특별시 강남대로 542(논현동, 영풍빌딩)</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <button>택배배송</button>지금 태백 주문하면 내일 수령 가능
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><button>나우드림</button>택배보다 빠른 매장 픽업 서비스</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="right_payment">
+
+                                <div class="payment">
+
+                                    <div class="payment_count">
+                                        <button class="minus">-</button>
+                                        <input type="text" placeholder="1">
+                                        <button class="add">+</button>
+                                    </div>
+
+
+                                    <div class="payment_price">
+                                        <span class="payment_value">11,250</span>
+                                        <span>원</span>
+                                    </div>
+                                </div>
+
+                                <div class="payment_btn">
+                                    <button class="payment_cart">장바구니</button>
+                                    <button class="payment_buy">바로구매</button>
+                                    <button class="payment_now">나우드림</button>
+                                </div>
+
+                            </div>
+
                         </div>
 
-                        <div class="right_benefit">
+                    </div>
 
-                            <h5>혜택안내</h5>
+                </div>
+            </div>
 
-                            <table class="benefit_table">
-                                <tr>
-                                    <td>적립금</td>
-                                    <td>625원 (5%적립)</td>
-                                </tr>
-                                <tr>
-                                    <td>결제혜택</td>
-                                    <td>무이자할부<span class="material-symbols-outlined">
-                                            check_circle
-                                        </span>결제사 혜택<span class="material-symbols-outlined">
-                                            check_circle
-                                        </span>쿠폰<span class="material-symbols-outlined">
-                                            check_circle
-                                        </span></td>
-                                </tr>
-                            </table>
 
-                            <div class="member_box">
-                                <span>회원 가입 즉시 지급되는 적립금과 등급별 다양한 회원 혜택 보기</span>
+            <!-- 서브 네비 -->
+            <div id="sub_nav_wrap">
+                <div class="container">
+                    <div class="container_detail">
+                        <ul class="sub_nav">
+                           <a href="#tab_detail_content"> <li>도서정보</li></a>
+                            <a href="#tab_review"><li>리뷰</li></a>
+                           <a href="#tab_gooditems"> <li>추천</li></a>
+                            <a href="#tab_return"><li>교환/반품/환불불</li></a>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="content_wrap">
+                    <div class="container_detail">
+
+                        <!-- 책 상세정보 -->
+                        <div id="tab_contents">
+
+                            <!-- 상세정보 -->
+                            <div id="tab_detail_content">
+
+                                <!-- 탭 도서정보 -->
+                                <div class="tab_detail">
+
+                                    <!-- 상품규격 -->
+                                    <div class="detail_info">
+                                        <h2>상품 규격 정보</h2>
+                                        <table class="detail_table">
+                                            <tr>
+                                                <td>ISBN</td>
+                                                <td>ISBN-13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>쪽수</td>
+                                                <td>200쪽</td>
+                                            </tr>
+                                            <tr>
+                                                <td>크기</td>
+                                                <td>기타 규격</td>
+                                            </tr>
+                                            <tr>
+                                                <td>제품구성</td>
+                                                <td>단행본</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+
+                                    <!-- 이벤트슬라이드 -->
+                                    <div class="detail_event">
+                                        <h2>관련 이벤트</h2>
+                                        <div class="event_slide">
+                                            <!-- Swiper -->
+                                            <div class="swiper mySwiperEvent">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="https://cdn.ypbooks.co.kr/image/event-online/202505/4ae77b57-9ae5-4222-9085-0b8630d0363a.png"
+                                                            alt="event">
+                                                        <button class="event_btn">사은품</button>
+                                                        <p>5월 확짝 페스타 이벤트</p>
+                                                        <p>2025.04.30~2025.05.31</p>
+
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="	https://cdn.ypbooks.co.kr/image/event-online/202504/ed3e2c64-1e49-4224-8d63-71582dd11552.jpg"
+                                                            alt="event">
+                                                        <button class="event_btn">사은품</button>
+                                                        <p>한강 신작『빛과 실』문지 에크리+사은품</p>
+                                                        <p>2025.04.30~2025.05.31</p>
+
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="https://cdn.ypbooks.co.kr/image/event-online/202504/a9fa0de1-a237-4d9f-9e18-93fdd9b4a3f7.png"
+                                                            alt="event">
+                                                        <button class="event_btn">사은품</button>
+                                                        <p>영풍문고 적립금 혜택</p>
+                                                        <p>2025.05.01~2025.12.31</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 책 상세보기 -->
+                                    <div class="detail_intro">
+
+                                        <!-- 책 소개 -->
+                                        <div class="book_intro">
+                                            <h2>책 소개</h2>
+                                            <div class="book_content">
+                                                <p>
+                                                    <strong>『세계를 건너 너에게 갈게』 작가 이꽃님 신작<br>
+                                                        “팩트는 중요하지 않아. 사람들이 믿는 게 더 중요하지.”<br>
+                                                        조각난 진실과 부서진 믿음에 관한 이야기</strong><br>
+                                                    <br>
+                                                    십 대들의 외롭고 불안한 내면을 따뜻하게 어루만져 주는 작품으로 주목받아 온 이꽃님 작가가 결말을 예측할 수 없는,
+                                                    놀랍도록
+                                                    흡인력 있는 작품으로 돌아왔다. 『죽이고 싶은 아이』는 한 여고생의 죽음이라는, 결코 평범하지 않은 이야기를 통해
+                                                    독자들에게
+                                                    진실과 믿음에 관한 이야기를 건넨다.<br>
+                                                    소설의 주인공인 주연과 서은은 둘도 없는 단짝 친구다. 두 사람이 크게 싸운 어느 날, 학교 건물 뒤 공터에서 서은이
+                                                    시체로
+                                                    발견되고 가장 유력한 용의자로 주연이 체포된다. 그런데 어찌 된 일인지 주연은 그날의 일이 도무지 기억나지 않는다.
+                                                    <br>주연은
+                                                    정말
+                                                    서은을 죽였을까? <br>이야기는 주연과 서은에 대해 증언하는 열일곱 명의 인터뷰와 주연의 주변 인물들의 이야기가 교차되는
+                                                    독특한
+                                                    방식으로 전개된다. 인터뷰이에 따라 주연과 서은이 어떤 아이였는지, 둘의 관계는 어땠는지가 시시각각 변모해 간다. 반전에
+                                                    반전을
+                                                    거듭하며 독자를 혼란에 빠뜨리는 예측 불가능한 전개는 독자들에게 끝까지 책을 손에서 놓지 못하게 하는 엄청난 몰입감을
+                                                    선사한다.<br>
+                                                    『죽이고 싶은 아이』는 보이는 대로만 보고 듣고 싶은 말만 듣고 믿고 싶은 것만 믿는 사람들로 가득한 세상이 얼마나
+                                                    야만적인지를
+                                                    독자들의 눈앞에 생생하게 펼쳐 보인다. 이꽃님 작가의 전작들이 십 대들에게 건네는 다정한 위로였다면, 『죽이고 싶은
+                                                    아이』는 십
+                                                    대들의 곁에 선 작가가 진실이 멋대로 편집되고 소비되는 세상에 던지는 서늘한 경고라고 할 수 있다.
+                                                </p>
+                                            </div>
+                                            <button class="more_btn">펼쳐보기</button>
+                                        </div>
+
+                                        <!-- 목차 -->
+                                        <div class="book_index">
+                                            <h2>목차</h2>
+                                            <div class="book_content">
+                                                이 도서는 목차를 제공하지 않습니다.
+                                            </div>
+                                        </div>
+
+                                        <!-- 분야 -->
+                                        <div class="book_field">
+                                            <h2>이 책이 속한 분야</h2>
+                                            <div class="book_content">
+                                                <p>소설/에세이/시>청소년</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- 서평 -->
+                                        <div class="book_columns">
+                                            <h2>출판사 서평</h2>
+                                            <div class="book_content">
+                                                <img src="https://cdn.ypbooks.co.kr/image/editor-contents/202404/1ba00bca-37dd-4f9b-80b0-db45535b030a.jpg"
+                                                    alt="book_columns">
+                                                <p>〈세계를 건너 너에게 갈게〉 작가 이꽃님의 신작
+                                                    조각난 진실과 부서진 믿음에 관한 이야기<br>
+                                                    <br>
+                                                    2018년 『세계를 건너 너에게 갈게』를 발표한 이후 독자들의 뜨거운 호응을 받아온 이꽃님 작가가 전작들과는 사뭇 다른
+                                                    결의
+                                                    강렬한 신작으로 돌아왔다. 여전히 지금 십 대들이 놓인 팍팍한 현실과 이들의 외롭고 불안한 내면을 다루고 있다는 점은
+                                                    같지만,
+                                                    이번에 작가가 선택한 방식은 다정한 위로가 아닌 서늘한 경고이다. <br>
+                                                    『죽이고 싶은 아이』는 한 여고생의 죽음을 둘러싼, 결코 평범하지 않은 이야기를 담아낸 작품이다. 작가는 이 소설이
+                                                    ‘진실과
+                                                    믿음에 관한 이야기’라고 말하며 이렇게 고백한다. <br>
+                                                    <br>
+                                                    이 소설은 진실과 믿음에 대한 이야기이다. 나는 종종 진실에 대해 생각하곤 한다. 진실은 사실 그대로인 것인지, 아니면
+                                                    사람들이
+                                                    원하는 대로 만들어지는 것인지. 이 이야기는 여기서부터 시작되었다. <br>
+                                                    _작가의 말 중에서<br>
+                                                    <br>
+                                                    <br>
+                                                    “17세 소녀가 유력한 용의자입니다” <br>
+                                                    결말을 예측할 수 없는, 놀랍도록 흡인력 있는 이야기<br>
+                                                    <br>
+                                                    소설의 중심인물인 주연과 서은은 중학교 때부터 지금까지 둘도 없는 단짝 친구다. 두 사람이 크게 싸운 어느 날, 학교 건물
+                                                    뒤
+                                                    공터에서 서은이 시체로 발견되고 가장 유력한 용의자로 주연이 체포된다. 그런데 어찌 된 일인지 주연은 그날의 일이 도무지
+                                                    기억나지
+                                                    않는다.
+                                                    ‘학교에서 죽어 간 열일곱 살 소녀’ <br>
+                                                    한 기자의 보도로 알려진 이 사건은 많은 이들의 공분을 사게 되고 방송국은 앞다투어 특집 프로그램까지 편성해 가며 주변
+                                                    인물들을
+                                                    인터뷰하고 선정적인 보도를 내보낸다. 시간이 흐를수록 주변 사람들의 증언은 점점 주연을 범인으로 가리킨다. <br>
+                                                    주연은 정말 서은을 죽였을까? 소설은 주연과 서은에 대해 증언하는 열일곱 명의 인터뷰와 용의자인 주연의 주변 인물들의
+                                                    이야기가
+                                                    교차되는 독특한 방식으로 전개된다. 인터뷰이에 따라 주연과 서은이 어떤 아이였는지, 둘의 관계는 어땠는지가 시시각각 변모해
+                                                    간다.
+                                                    작가는 독자들의 호기심을 충족시켜 주는 듯하다가도 영리하게 비껴간다. 인터뷰가 거듭될수록 점점 주연이 어떤 아이인지 알 수
+                                                    없다.
+                                                    <br>
+                                                    이처럼 반전에 반전을 거듭하며 독자를 혼란에 빠뜨리는 예측 불가능한 전개는 독자들에게 읽는 내내 심장이 쫄깃거리는 긴장감과
+                                                    끝까지
+                                                    책을 손에서 놓지 못하게 하는 엄청난 몰입감을 선사한다. <br>
+                                                    <br>
+                                                    <br>
+                                                    “팩트는 중요하지 않아. 사람들이 믿는 게 더 중요하지.”
+                                                    진실이 멋대로 편집되고 소비되는 세상 <br>
+                                                    <br>
+                                                    이 소설은 심리 미스터리 소설의 형식을 취하고 있다. 주위의 부러움과 시샘을 한몸에 받던 주연의 숨겨진 얼굴이 주변
+                                                    사람들의
+                                                    증언을 통해 속속 밝혀지는 장면을 보며 성급한 독자들은 ‘결국 진실은 언제가 밝혀진다’는 오래된 명제를 떠올리며 안심할
+                                                    수도 있을
+                                                    것이다. 그런데 찬찬히 들여다보면 작가는 범인이 누군지 혹은 사건의 진실이 무엇인지를 밝히는 데 그다지 관심이 없어
+                                                    보인다.
+                                                    <br>
+                                                    오히려 사건의 실마리를 추적해 가는 과정에서 드러나는 다양한 인간들의 모습과 그 속에 담긴 각각의 욕망에 더 초점을 두고
+                                                    있다.
+                                                    <br>
+                                                    이는 주연의 부모와 변호사의 모습을 통해 극명하게 드러난다.
+                                                    주연의 부모는 주연을 자신들의 욕망을 투사하는 대상으로만 여길 뿐 정작 주연이 원하는 것에는 아무런 관심이 없다. 변호사
+                                                    역시
+                                                    자신의 커리어에만 온통 신경이 가 있을 뿐 주연이 비명처럼 외치는 호소에도 귀를 열지 않는다. 자신은 서은을 죽이지
+                                                    않았다고
+                                                    절규하는 주연에게 변호사는 사무적인 목소리로 이렇게 말한다. <br>
+                                                    “사람들이 믿으면 그게 사실이 되는 거야. 팩트는 중요한 게 아니라고.” <br>
+                                                    재판에서 한 번도 진 적이 없다는 변호사의 말에는 거부할 수 없는 위력이 담겨 있다. 그 말이 단지 소설 속 이야기만이
+                                                    아님을 알
+                                                    만한 사람은 다 알기 때문이다. <br>
+                                                    우리가 사는 세계에서 이제 더 이상 미디어는 진실이 아니며 여론은 정의가 아니다. 가짜뉴스, 유언비어, 악성 루머는
+                                                    네트워크를
+                                                    타고 순식간에 퍼져나가고 타인의 불행을 먹이 삼아 이어지는 댓글 테러, 신상털이, 마녀사냥은 그칠 줄을 모른다. 온갖
+                                                    예단과
+                                                    억측이 강물처럼 흘러 다니지만 누구도 그걸 막을 생각은 없어 보인다. 자기 일이 아니라는 이유로 그저 기분 내키는 대로
+                                                    농담처럼
+                                                    즐기고 가볍게 소비할 뿐이다. 청소년들의 놀이터인 인터넷 공간은 마녀사냥을 하기에 최적의 장소이다. 어른들도 속절없이
+                                                    끌려가는
+                                                    깨진 거울과도 같은 세계에서, 청소년들은 더 쉽게 휘둘리고 더 쉽게 상처받는다. <br>
+                                                    『죽이고 싶은 아이』는 이런 적나라한 현실을 가감 없이 보여준다. 보이는 대로만 보고, 듣고 싶은 말만 듣고, 믿고 싶은
+                                                    것만
+                                                    믿는 사람들로 가득한 세상이 얼마나 야만적인지를 독자들의 눈앞에 생생하게 펼쳐 보인다. 또한 조각난 진실의 파편이 멋대로
+                                                    편집되고
+                                                    소비되는 세상에서는 그 누구도 평온할 수 없음을 섬뜩하게 경고한다. <br>
+                                                    <br>
+                                                    <br>
+                                                    “나한테 네가 필요한 것처럼, 너한테도 내가 필요해!”
+                                                    잔인한 서사를 지탱하는 건 결국, 서로를 향한 마음<br>
+                                                    <br>
+                                                    『죽이고 싶은 아이』는 비극적 사건을 통해 우리가 믿어 의심치 않았던 가치들이 어떻게 무너지는지를 보여준다. 빗나간
+                                                    인과응보,
+                                                    잘못된 모성애, 어긋난 가족 관계, 조각난 진실 속에서 독자들이 선명하게 알게 되는 것은 용의자인 주연이 몹시 외로운
+                                                    아이였으며,
+                                                    아이러니하게도 주연의 마음을 제일 잘 알고 이해해 준 사람은 서은 하나뿐이라는 점이다. <br>
+                                                    마음 둘 곳 없는 외로운 아이 주연은 유일하게 마음을 내어 준 서은이 자신을 등졌다고 느낀 순간 무섭게 폭주한다. 서은에
+                                                    대한
+                                                    애정이 과도한 집착으로 변한 것이다. 관계에 서툰 주연에게는 서은의 급작스러운 변모가 감당할 수 없는 두려움으로
+                                                    다가갔으리라.
+                                                    <br>
+                                                    주연에 비할 수는 없지만 관계에 서툴기는 서은 역시 마찬가지였다. 비록 경제적인 어려움은 있었지만 정서적으로는 누구보다
+                                                    건강하고
+                                                    따듯한 환경에서 성장한 서은은 주연과 달리 이해심도 많고 사람을 보듬을 줄 아는 아이였다. 그러나 주연의 끝없는 투정과
+                                                    안하무인까지 참아내기에는 서은 역시 불안한 십 대 소녀일 뿐이었다. <br>
+                                                    십 대 청소년에게 친구는 지극히 현실적이고 예민한 과제이다. 속마음을 터놓고 이야기할 친구가 한 사람만 있어도 불안은
+                                                    누그러들고
+                                                    어려움도 견딜 만해진다. 주연과 서은의 관계도 처음엔 그랬다. 하지만 관계 맺기에 서툰 아이들의 우정은 조그마한 균열에도
+                                                    쉽사리
+                                                    흔들리고 깨지기 마련이다. <br>
+                                                    누구나 살아가면서 이별을 겪는다. 특히 자기 정체성이 형성되어 가는 청소년기에 겪는 이별은 더 가슴 저미는 상실감으로
+                                                    다가올
+                                                    것이다. 주연의 폭주는 상실감을 충분히 애도하지 못한 이들에게서 나오는 전형적인 모습이다. 충분히 슬퍼할 시간을 가지며
+                                                    상실을
+                                                    애도한 사람만이 다시 길을 갈 수 있고 먼 길을 거쳐 이윽고 어른이 될 수 있다. 그러나 오늘날 우리 사회는 청소년들에게
+                                                    그런
+                                                    시간을 허락하지 않는다. <br>
+                                                    『죽이고 싶은 아이』는 강렬한 서사와 독특한 소설적 구조 속에 우리 사회의 근원적인 문제를 잘 녹여 내는 동시에 오늘의
+                                                    청소년
+                                                    문제가 비단 그들만의 문제가 아님을 다시 한번 깨닫게 해 주는 작품이다. <br>
+
+                                                </p>
+                                                <div class="columns"></div>
+                                            </div>
+                                            <button class="more_col_btn">펼쳐보기</button>
+                                        </div>
+
+                                        <!-- 작가소개 -->
+                                        <div class="book_author">
+                                            <h2>저자 소개</h2>
+                                            <img src="" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- 탭 리뷰 -->
+                                <div id="tab_review">
+                                    <h2>도서리뷰 (2)</h2>
+                                    <div class="review_btn">
+                                        <span>이 책을 읽고 어떤 느낌을 받으셨나요? 리뷰를 남기고 다른 독자들과 함께 공유해보세요</span>
+                                        <button class="r_btn">리뷰쓰기 ></button>
+                                    </div>
+
+                                    <div class="review_table">
+                                        <ul>
+                                            <li>랭킹순</li>
+                                            <li>최신순</li>
+                                            <li>평점 높은순</li>
+                                            <li>평점 낮은순</li>
+                                        </ul>
+
+                                        <div class="review_list">
+                                            <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/temp/profile_default.png"
+                                                alt="#">
+                                            <div class="list_info">
+                                                <span>★★★★★</span>
+                                                <span>sori7**** | 2024.12.31</span>
+                                                <span>재밋는 책이였어요 앉은 자리에서 다 읽은 책</span>
+                                            </div>
+
+
+                                            <span>♡ 0</span>
+                                        </div>
+
+                                        <div class="review_list">
+                                            <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/temp/profile_default.png"
+                                                alt="#">
+
+                                            <div class="list_info">
+                                                <span>★★★★★</span>
+                                                <span>ej*** | 2024.12.25</span>
+                                                <span>초딩 아이가 재미있게 읽었어요</span>
+                                            </div>
+
+                                            <span>♡ 0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- 탭 추천 슬라이드-->
+                            <div id="tab_gooditems">
+                                <div class="goodItems_wrap">
+                                    <div class="goodItems_with">
+                                        <h3>이 책과 함께 구매한 책</h3>
+                                        <div class="goodItems_slide">
+                                            <!-- Swiper -->
+                                            <div class="swiper mySwiperWith">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                </div>
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="goodItems_wrap">
+                                    <div class="goodItems_up">
+                                        <h3>이 분야에서 요즘 뜨는 책</h3>
+                                        <div class="goodItems_slide">
+                                            <!-- Swiper -->
+                                            <div class="swiper mySwiperUP">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+
+                                                </div>
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="goodItems_wrap">
+                                    <div class="goodItems_hot">
+                                        <h3>소설/에세이/시 분야 화제의🔥도서</h3>
+                                        <div class="goodItems_slide">
+                                            <!-- Swiper -->
+                                            <div class="swiper mySwiperhot">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+                                                    <div class="swiper-slide"></div>
+
+                                                </div>
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="theme_wrap">
+                                    <h3>이 책이 포함된 테마</h3>
+                                    <div class="theme">
+                                        <div class="theme_text">
+
+                                            <div class="theme_logo">
+                                                <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/temp/yp_md_default.png"
+                                                    alt="logo">
+                                            </div>
+
+                                            <div class="theme_info">
+                                                <div class="theme_title">
+                                                    <h4>이꽃님 작가와 함께 여름을 찬란하게
+                                                        <span class="md_btn">MD추천</span>
+                                                    </h4>
+
+                                                </div>
+
+                                                <div class="theme_author">
+                                                    <p>이슬
+                                                        2024.07.10</p>
+
+                                                </div>
+
+                                                <div class="theme_content">
+                                                    <p>수많은 친구들이 기다린 "죽이고 싶은 아이2"로 돌아온 이꽃님 작가님! 다가오는 여름방학은 작가님의 작품과 함께
+                                                        뜨겁고
+                                                        찬란한 계절을 즐겨볼까요?</p>
+                                                </div>
+
+                                                <div class="theme_tag">
+                                                    <ul class="tag">
+                                                        <li>#이꽃님</li>
+                                                        <li>#죽이고싶은아이2</li>
+                                                        <li>#죽이고싶은아이</li>
+                                                        <li>#여름을한입베어물었더니</li>
+                                                        <li>#청소년소설</li>
+                                                        <li>#청소년추천도서</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="theme_book">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- 탭 교환반품환불 -->
+                            <div id="tab_return">
+                                <h3>교환/반품/환불</h3>
+                                <table>
+                                    <tr>
+                                        <td>반품/교환방법</td>
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    마이페이지 > 주문관리 > 주문/배송조회 > 주문조회 후 [1:1상담신청] 또는 고객센터 (1544-9020)</li>
+                                                <li>※ 오픈마켓, 해외배송 주문상품 문의 시 [1:1상담신청] 또는 고객센터 (1544-9020)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>.sub_nav a
+                                    <tr>
+                                        <td>반품/교환 가능기간</td>
+                                        <td>
+                                            <ul>
+                                                <li>변심반품의 경우 수령 후 7일 이내</li>
+                                                <li>상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내</li>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>반품/교환비용</td>
+                                        <td>
+                                            <ul>
+                                                <li>단순변심 혹은 구매착오로 인한 반품/교환은 반송료 고객 부담</li>
+                                                <li>해외직배송 도서 구매 후 단순변심에 의한 취소 및 반품 시 도서판매가의 20% 수수료 부과</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>반품/교환 불각 사유</td>
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우</li>
+                                                <li>소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우 예) 만화, 잡지, 수험서 및 문제집류</li>
+                                                <li>복제가 가능한 상품 등의 포장을 훼손한 경우
+                                                    예) 음반/DVD/비디오, 소프트웨어, 만화책, 잡지, 영상 화보집</li>
+                                                <li>소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우</li>
+                                                <li>디지털 컨텐츠인 eBook, 오디오북 등을 1회 이상 다운로드를 받았을 경우</li>
+                                                <li>시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우</li>
+                                                <li>전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우</li>
+
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>상품 품절</td>
+                                        <td>
+                                            <ul>
+                                                <li>공급사(출판사) 재고 사정에 의해 품절/지연될 수 있으며, 품절 시 관련 사항에 대해서는 이메일과 문자로 안내드리겠습니다.
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>소비자 피해보상 환불지연에 따른 배상</td>
+                                        <td>
+                                            <ul>
+                                                <li>상품의 불량에 의한 교환, A/S, 환불, 품질보증 및 피해보상 등에 관한 사항은 소비자분쟁 해결 기준 (공정거래위원회
+                                                    고시)에
+                                                    준하여
+                                                    처리됨</li>
+                                                <li>대금 환불 및 환불지연에 따른 배상금 지급 조건, 절차 등은 전자상거래 등에서의 소비자 보호에 관한 법률에 따라 처리함
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                </table>
                             </div>
                         </div>
 
-                        <div class="right_delivery">
-                            <h5>배송정보</h5>
-                            <table class="delivery_table">
-                                <tr>
-                                    <td>배송비</td>
-                                    <td>무료(해외배송의 경우 지역에 따라 상이)</td>
-                                </tr>
-                                <tr>
-                                    <td>배송안내</td>
-                                    <td>서울특별시 강남대로 542(논현동, 영풍빌딩)</td>
 
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>
-                                        <button>택배배송</button>지금 태백 주문하면 내일 수령 가능
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td><button>나우드림</button>택배보다 빠른 매장 픽업 서비스</td>
-                                </tr>
-                            </table>
-                        </div>
+                    </div>
+                    <!-- 컨텐츠 결제창 -->
+                    <div id="content_payment_wrap">
 
-                        <div class="right_payment">
+                        <!-- 컨턴츠츠 결제창 정보 -->
+                        <div class="content_payment">
 
+
+                            <div class="payment_img">
+                                <img src="https://cdn.ypbooks.co.kr/admin/image/product/202309/09db994b-0ca6-4f45-ac1c-bdc1cd8bd8e9_192.jpg"
+                                    alt="#">
+                                <h3>죽이고 싶은 아이</h3>
+                            </div>
                             <div class="payment">
-
                                 <div class="payment_count">
                                     <button class="minus">-</button>
                                     <input type="text" placeholder="1">
@@ -207,680 +931,156 @@
                                 <button class="payment_now">나우드림</button>
                             </div>
 
-                        </div>
+                            <div class="member_box">
+                                <span><a href="#">회원 가입 즉시 지급되는 적립금과 등급별 다양한 회원 혜택 보기</a></span>
+                            </div>
 
+                        </div>
                     </div>
 
                 </div>
 
-            </div>
-        </div>
 
-
-        <!-- 서브 네비 -->
-        <div id="sub_nav_wrap">
-            <div class="container">
-                <div class="container_detail">
-                    <ul class="sub_nav">
-                        <li><a href="#tab_detail_content">도서정보</a></li>
-                        <li><a href="#tab_review">리뷰</a></li>
-                        <li><a href="#tab_gooditems">추천</a></li>
-                        <li><a href="#tab_return">교환/반품/환불불</a></li>
-                    </ul>
-                </div>
             </div>
 
-        </div>
+            <!-- 푸터 -->
+            <footer>
 
-        <div class="container">
-            <div class="content_wrap">
-                <div class="container_detail">
-
-                    <!-- 책 상세정보 -->
-                    <div id="tab_contents">
-
-                        <!-- 상세정보 -->
-                        <div id="tab_detail_content">
-
-                            <!-- 탭 도서정보 -->
-                            <div class="tab_detail">
-
-                                <!-- 상품규격 -->
-                                <div class="detail_info">
-                                    <h2>상품 규격 정보</h2>
-                                    <table class="detail_table">
-                                        <tr>
-                                            <td>ISBN</td>
-                                            <td>ISBN-13</td>
-                                        </tr>
-                                        <tr>
-                                            <td>쪽수</td>
-                                            <td>200쪽</td>
-                                        </tr>
-                                        <tr>
-                                            <td>크기</td>
-                                            <td>기타 규격</td>
-                                        </tr>
-                                        <tr>
-                                            <td>제품구성</td>
-                                            <td>단행본</td>
-                                        </tr>
-                                    </table>
-                                </div>
-
-
-                                <!-- 이벤트슬라이드 -->
-                                <div class="detail_event">
-                                    <h2>관련 이벤트</h2>
-                                    <div class="event_slide">
-                                        <!-- Swiper -->
-                                        <div class="swiper mySwiperEvent">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="https://cdn.ypbooks.co.kr/image/event-online/202505/4ae77b57-9ae5-4222-9085-0b8630d0363a.png"
-                                                        alt="event">
-                                                    <button class="event_btn">사은품</button>
-                                                    <p>5월 확짝 페스타 이벤트</p>
-                                                    <p>2025.04.30~2025.05.31</p>
-
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="	https://cdn.ypbooks.co.kr/image/event-online/202504/ed3e2c64-1e49-4224-8d63-71582dd11552.jpg"
-                                                        alt="event">
-                                                    <button class="event_btn">사은품</button>
-                                                    <p>한강 신작『빛과 실』문지 에크리+사은품</p>
-                                                    <p>2025.04.30~2025.05.31</p>
-
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="https://cdn.ypbooks.co.kr/image/event-online/202504/a9fa0de1-a237-4d9f-9e18-93fdd9b4a3f7.png"
-                                                        alt="event">
-                                                    <button class="event_btn">사은품</button>
-                                                    <p>영풍문고 적립금 혜택</p>
-                                                    <p>2025.05.01~2025.12.31</p>
-
-                                                </div>
-
-                                            </div>
-
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                    </div>
-                                </div>
-
-                                <!-- 책 상세보기 -->
-                                <div class="detail_intro">
-
-                                    <!-- 책 소개 -->
-                                    <div class="book_intro">
-                                        <h2>책 소개</h2>
-                                        <div class="book_content">
-                                            <p>
-                                                <strong>『세계를 건너 너에게 갈게』 작가 이꽃님 신작<br>
-                                                    “팩트는 중요하지 않아. 사람들이 믿는 게 더 중요하지.”<br>
-                                                    조각난 진실과 부서진 믿음에 관한 이야기</strong><br>
-                                                <br>
-                                                십 대들의 외롭고 불안한 내면을 따뜻하게 어루만져 주는 작품으로 주목받아 온 이꽃님 작가가 결말을 예측할 수 없는, 놀랍도록
-                                                흡인력 있는 작품으로 돌아왔다. 『죽이고 싶은 아이』는 한 여고생의 죽음이라는, 결코 평범하지 않은 이야기를 통해 독자들에게
-                                                진실과 믿음에 관한 이야기를 건넨다.<br>
-                                                소설의 주인공인 주연과 서은은 둘도 없는 단짝 친구다. 두 사람이 크게 싸운 어느 날, 학교 건물 뒤 공터에서 서은이 시체로
-                                                발견되고 가장 유력한 용의자로 주연이 체포된다. 그런데 어찌 된 일인지 주연은 그날의 일이 도무지 기억나지 않는다. <br>주연은
-                                                정말
-                                                서은을 죽였을까? <br>이야기는 주연과 서은에 대해 증언하는 열일곱 명의 인터뷰와 주연의 주변 인물들의 이야기가 교차되는 독특한
-                                                방식으로 전개된다. 인터뷰이에 따라 주연과 서은이 어떤 아이였는지, 둘의 관계는 어땠는지가 시시각각 변모해 간다. 반전에 반전을
-                                                거듭하며 독자를 혼란에 빠뜨리는 예측 불가능한 전개는 독자들에게 끝까지 책을 손에서 놓지 못하게 하는 엄청난 몰입감을
-                                                선사한다.<br>
-                                                『죽이고 싶은 아이』는 보이는 대로만 보고 듣고 싶은 말만 듣고 믿고 싶은 것만 믿는 사람들로 가득한 세상이 얼마나 야만적인지를
-                                                독자들의 눈앞에 생생하게 펼쳐 보인다. 이꽃님 작가의 전작들이 십 대들에게 건네는 다정한 위로였다면, 『죽이고 싶은 아이』는 십
-                                                대들의 곁에 선 작가가 진실이 멋대로 편집되고 소비되는 세상에 던지는 서늘한 경고라고 할 수 있다.
-                                            </p>
-                                        </div>
-                                        <button class="more_btn">펼쳐보기</button>
-                                    </div>
-
-                                    <!-- 목차 -->
-                                    <div class="book_index">
-                                        <h2>목차</h2>
-                                        <div class="book_content">
-                                            이 도서는 목차를 제공하지 않습니다.
-                                        </div>
-                                    </div>
-
-                                    <!-- 분야 -->
-                                    <div class="book_field">
-                                        <h2>이 책이 속한 분야</h2>
-                                        <div class="book_content">
-                                            <p>소설/에세이/시>청소년</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 서평 -->
-                                    <div class="book_columns">
-                                        <h2>출판사 서평</h2>
-                                        <div class="book_content">
-                                            <img src="https://cdn.ypbooks.co.kr/image/editor-contents/202404/1ba00bca-37dd-4f9b-80b0-db45535b030a.jpg"
-                                                alt="book_columns">
-                                            <p>〈세계를 건너 너에게 갈게〉 작가 이꽃님의 신작
-                                                조각난 진실과 부서진 믿음에 관한 이야기<br>
-                                                <br>
-                                                2018년 『세계를 건너 너에게 갈게』를 발표한 이후 독자들의 뜨거운 호응을 받아온 이꽃님 작가가 전작들과는 사뭇 다른 결의
-                                                강렬한 신작으로 돌아왔다. 여전히 지금 십 대들이 놓인 팍팍한 현실과 이들의 외롭고 불안한 내면을 다루고 있다는 점은 같지만,
-                                                이번에 작가가 선택한 방식은 다정한 위로가 아닌 서늘한 경고이다. <br>
-                                                『죽이고 싶은 아이』는 한 여고생의 죽음을 둘러싼, 결코 평범하지 않은 이야기를 담아낸 작품이다. 작가는 이 소설이 ‘진실과
-                                                믿음에 관한 이야기’라고 말하며 이렇게 고백한다. <br>
-                                                <br>
-                                                이 소설은 진실과 믿음에 대한 이야기이다. 나는 종종 진실에 대해 생각하곤 한다. 진실은 사실 그대로인 것인지, 아니면 사람들이
-                                                원하는 대로 만들어지는 것인지. 이 이야기는 여기서부터 시작되었다. <br>
-                                                _작가의 말 중에서<br>
-                                                <br>
-                                                <br>
-                                                “17세 소녀가 유력한 용의자입니다” <br>
-                                                결말을 예측할 수 없는, 놀랍도록 흡인력 있는 이야기<br>
-                                                <br>
-                                                소설의 중심인물인 주연과 서은은 중학교 때부터 지금까지 둘도 없는 단짝 친구다. 두 사람이 크게 싸운 어느 날, 학교 건물 뒤
-                                                공터에서 서은이 시체로 발견되고 가장 유력한 용의자로 주연이 체포된다. 그런데 어찌 된 일인지 주연은 그날의 일이 도무지 기억나지
-                                                않는다.
-                                                ‘학교에서 죽어 간 열일곱 살 소녀’ <br>
-                                                한 기자의 보도로 알려진 이 사건은 많은 이들의 공분을 사게 되고 방송국은 앞다투어 특집 프로그램까지 편성해 가며 주변 인물들을
-                                                인터뷰하고 선정적인 보도를 내보낸다. 시간이 흐를수록 주변 사람들의 증언은 점점 주연을 범인으로 가리킨다. <br>
-                                                주연은 정말 서은을 죽였을까? 소설은 주연과 서은에 대해 증언하는 열일곱 명의 인터뷰와 용의자인 주연의 주변 인물들의 이야기가
-                                                교차되는 독특한 방식으로 전개된다. 인터뷰이에 따라 주연과 서은이 어떤 아이였는지, 둘의 관계는 어땠는지가 시시각각 변모해 간다.
-                                                작가는 독자들의 호기심을 충족시켜 주는 듯하다가도 영리하게 비껴간다. 인터뷰가 거듭될수록 점점 주연이 어떤 아이인지 알 수 없다.
-                                                <br>
-                                                이처럼 반전에 반전을 거듭하며 독자를 혼란에 빠뜨리는 예측 불가능한 전개는 독자들에게 읽는 내내 심장이 쫄깃거리는 긴장감과 끝까지
-                                                책을 손에서 놓지 못하게 하는 엄청난 몰입감을 선사한다. <br>
-                                                <br>
-                                                <br>
-                                                “팩트는 중요하지 않아. 사람들이 믿는 게 더 중요하지.”
-                                                진실이 멋대로 편집되고 소비되는 세상 <br>
-                                                <br>
-                                                이 소설은 심리 미스터리 소설의 형식을 취하고 있다. 주위의 부러움과 시샘을 한몸에 받던 주연의 숨겨진 얼굴이 주변 사람들의
-                                                증언을 통해 속속 밝혀지는 장면을 보며 성급한 독자들은 ‘결국 진실은 언제가 밝혀진다’는 오래된 명제를 떠올리며 안심할 수도 있을
-                                                것이다. 그런데 찬찬히 들여다보면 작가는 범인이 누군지 혹은 사건의 진실이 무엇인지를 밝히는 데 그다지 관심이 없어 보인다.
-                                                <br>
-                                                오히려 사건의 실마리를 추적해 가는 과정에서 드러나는 다양한 인간들의 모습과 그 속에 담긴 각각의 욕망에 더 초점을 두고 있다.
-                                                <br>
-                                                이는 주연의 부모와 변호사의 모습을 통해 극명하게 드러난다.
-                                                주연의 부모는 주연을 자신들의 욕망을 투사하는 대상으로만 여길 뿐 정작 주연이 원하는 것에는 아무런 관심이 없다. 변호사 역시
-                                                자신의 커리어에만 온통 신경이 가 있을 뿐 주연이 비명처럼 외치는 호소에도 귀를 열지 않는다. 자신은 서은을 죽이지 않았다고
-                                                절규하는 주연에게 변호사는 사무적인 목소리로 이렇게 말한다. <br>
-                                                “사람들이 믿으면 그게 사실이 되는 거야. 팩트는 중요한 게 아니라고.” <br>
-                                                재판에서 한 번도 진 적이 없다는 변호사의 말에는 거부할 수 없는 위력이 담겨 있다. 그 말이 단지 소설 속 이야기만이 아님을 알
-                                                만한 사람은 다 알기 때문이다. <br>
-                                                우리가 사는 세계에서 이제 더 이상 미디어는 진실이 아니며 여론은 정의가 아니다. 가짜뉴스, 유언비어, 악성 루머는 네트워크를
-                                                타고 순식간에 퍼져나가고 타인의 불행을 먹이 삼아 이어지는 댓글 테러, 신상털이, 마녀사냥은 그칠 줄을 모른다. 온갖 예단과
-                                                억측이 강물처럼 흘러 다니지만 누구도 그걸 막을 생각은 없어 보인다. 자기 일이 아니라는 이유로 그저 기분 내키는 대로 농담처럼
-                                                즐기고 가볍게 소비할 뿐이다. 청소년들의 놀이터인 인터넷 공간은 마녀사냥을 하기에 최적의 장소이다. 어른들도 속절없이 끌려가는
-                                                깨진 거울과도 같은 세계에서, 청소년들은 더 쉽게 휘둘리고 더 쉽게 상처받는다. <br>
-                                                『죽이고 싶은 아이』는 이런 적나라한 현실을 가감 없이 보여준다. 보이는 대로만 보고, 듣고 싶은 말만 듣고, 믿고 싶은 것만
-                                                믿는 사람들로 가득한 세상이 얼마나 야만적인지를 독자들의 눈앞에 생생하게 펼쳐 보인다. 또한 조각난 진실의 파편이 멋대로 편집되고
-                                                소비되는 세상에서는 그 누구도 평온할 수 없음을 섬뜩하게 경고한다. <br>
-                                                <br>
-                                                <br>
-                                                “나한테 네가 필요한 것처럼, 너한테도 내가 필요해!”
-                                                잔인한 서사를 지탱하는 건 결국, 서로를 향한 마음<br>
-                                                <br>
-                                                『죽이고 싶은 아이』는 비극적 사건을 통해 우리가 믿어 의심치 않았던 가치들이 어떻게 무너지는지를 보여준다. 빗나간 인과응보,
-                                                잘못된 모성애, 어긋난 가족 관계, 조각난 진실 속에서 독자들이 선명하게 알게 되는 것은 용의자인 주연이 몹시 외로운 아이였으며,
-                                                아이러니하게도 주연의 마음을 제일 잘 알고 이해해 준 사람은 서은 하나뿐이라는 점이다. <br>
-                                                마음 둘 곳 없는 외로운 아이 주연은 유일하게 마음을 내어 준 서은이 자신을 등졌다고 느낀 순간 무섭게 폭주한다. 서은에 대한
-                                                애정이 과도한 집착으로 변한 것이다. 관계에 서툰 주연에게는 서은의 급작스러운 변모가 감당할 수 없는 두려움으로 다가갔으리라.
-                                                <br>
-                                                주연에 비할 수는 없지만 관계에 서툴기는 서은 역시 마찬가지였다. 비록 경제적인 어려움은 있었지만 정서적으로는 누구보다 건강하고
-                                                따듯한 환경에서 성장한 서은은 주연과 달리 이해심도 많고 사람을 보듬을 줄 아는 아이였다. 그러나 주연의 끝없는 투정과
-                                                안하무인까지 참아내기에는 서은 역시 불안한 십 대 소녀일 뿐이었다. <br>
-                                                십 대 청소년에게 친구는 지극히 현실적이고 예민한 과제이다. 속마음을 터놓고 이야기할 친구가 한 사람만 있어도 불안은 누그러들고
-                                                어려움도 견딜 만해진다. 주연과 서은의 관계도 처음엔 그랬다. 하지만 관계 맺기에 서툰 아이들의 우정은 조그마한 균열에도 쉽사리
-                                                흔들리고 깨지기 마련이다. <br>
-                                                누구나 살아가면서 이별을 겪는다. 특히 자기 정체성이 형성되어 가는 청소년기에 겪는 이별은 더 가슴 저미는 상실감으로 다가올
-                                                것이다. 주연의 폭주는 상실감을 충분히 애도하지 못한 이들에게서 나오는 전형적인 모습이다. 충분히 슬퍼할 시간을 가지며 상실을
-                                                애도한 사람만이 다시 길을 갈 수 있고 먼 길을 거쳐 이윽고 어른이 될 수 있다. 그러나 오늘날 우리 사회는 청소년들에게 그런
-                                                시간을 허락하지 않는다. <br>
-                                                『죽이고 싶은 아이』는 강렬한 서사와 독특한 소설적 구조 속에 우리 사회의 근원적인 문제를 잘 녹여 내는 동시에 오늘의 청소년
-                                                문제가 비단 그들만의 문제가 아님을 다시 한번 깨닫게 해 주는 작품이다. <br>
-
-                                            </p>
-                                            <div class="columns"></div>
-                                        </div>
-                                        <button class="more_col_btn">펼쳐보기</button>
-                                    </div>
-
-                                    <!-- 작가소개 -->
-                                    <div class="book_author">
-                                        <h2>저자 소개</h2>
-                                        <img src="" alt="">
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- 탭 리뷰 -->
-                            <div id="tab_review">
-                                <h2>도서리뷰 (2)</h2>
-                                <div class="review_btn">
-                                    <span>이 책을 읽고 어떤 느낌을 받으셨나요? 리뷰를 남기고 다른 독자들과 함께 공유해보세요</span>
-                                    <button class="r_btn">리뷰쓰기 ></button>
-                                </div>
-
-                                <div class="review_table">
-                                    <ul>
-                                        <li>랭킹순</li>
-                                        <li>최신순</li>
-                                        <li>평점 높은순</li>
-                                        <li>평점 낮은순</li>
-                                    </ul>
-
-                                    <div class="review_list">
-                                        <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/temp/profile_default.png"
-                                            alt="#">
-                                        <div class="list_info">
-                                            <span>★★★★★</span>
-                                            <span>sori7**** | 2024.12.31</span>
-                                            <span>재밋는 책이였어요 앉은 자리에서 다 읽은 책</span>
-                                        </div>
-
-
-                                        <span>♡ 0</span>
-                                    </div>
-
-                                    <div class="review_list">
-                                        <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/temp/profile_default.png"
-                                            alt="#">
-
-                                        <div class="list_info">
-                                            <span>★★★★★</span>
-                                            <span>ej*** | 2024.12.25</span>
-                                            <span>초딩 아이가 재미있게 읽었어요</span>
-                                        </div>
-
-                                        <span>♡ 0</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- 탭 추천 슬라이드-->
-                        <div id="tab_gooditems">
-                            <div class="goodItems_wrap">
-                                <div class="goodItems_with">
-                                    <h3>이 책과 함께 구매한 책</h3>
-                                    <div class="goodItems_slide">
-                                        <!-- Swiper -->
-                                        <div class="swiper mySwiperWith">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="goodItems_wrap">
-                                <div class="goodItems_up">
-                                    <h3>이 분야에서 요즘 뜨는 책</h3>
-                                    <div class="goodItems_slide">
-                                        <!-- Swiper -->
-                                        <div class="swiper mySwiperUP">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="goodItems_wrap">
-                                <div class="goodItems_hot">
-                                    <h3>소설/에세이/시 분야 화제의🔥도서</h3>
-                                    <div class="goodItems_slide">
-                                        <!-- Swiper -->
-                                        <div class="swiper mySwiperhot">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-                                                <div class="swiper-slide"></div>
-
-                                            </div>
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="theme_wrap">
-                                <h3>이 책이 포함된 테마</h3>
-                                <div class="theme">
-                                    <div class="theme_text">
-
-                                        <div class="theme_logo">
-                                            <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/temp/yp_md_default.png"
-                                                alt="logo">
-                                        </div>
-
-                                        <div class="theme_info">
-                                            <div class="theme_title">
-                                                <h4>이꽃님 작가와 함께 여름을 찬란하게
-                                                    <span class="md_btn">MD추천</span>
-                                                </h4>
-
-                                            </div>
-
-                                            <div class="theme_author">
-                                                <p>이슬
-                                                    2024.07.10</p>
-
-                                            </div>
-
-                                            <div class="theme_content">
-                                                <p>수많은 친구들이 기다린 "죽이고 싶은 아이2"로 돌아온 이꽃님 작가님! 다가오는 여름방학은 작가님의 작품과 함께 뜨겁고
-                                                    찬란한 계절을 즐겨볼까요?</p>
-                                            </div>
-
-                                            <div class="theme_tag">
-                                                <ul class="tag">
-                                                    <li>#이꽃님</li>
-                                                    <li>#죽이고싶은아이2</li>
-                                                    <li>#죽이고싶은아이</li>
-                                                    <li>#여름을한입베어물었더니</li>
-                                                    <li>#청소년소설</li>
-                                                    <li>#청소년추천도서</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="theme_book">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- 탭 교환반품환불 -->
-                        <div id="tab_return">
+                <div class="container">
+                    <div id="footer1">
+                        <div>
+                            <h3>고객센터</h3>
+                            <h1>1544-9020</h1>
                             <table>
                                 <tr>
-                                    <td>반품/교환방법</td>
-                                    <td>
-                                        <ul>
-                                            <li>
-                                                마이페이지 > 주문관리 > 주문/배송조회 > 주문조회 후 [1:1상담신청] 또는 고객센터 (1544-9020)</li>
-                                            <li>※ 오픈마켓, 해외배송 주문상품 문의 시 [1:1상담신청] 또는 고객센터 (1544-9020)</li>
-                                        </ul>
-                                    </td>
+                                    <th>상담가능시간</th>
+                                    <td>평일 09:00 ~ 18:00 / 점심시간 12:15 ~13 : 15</td>
                                 </tr>
-                                <tr>
-                                    <td>반품/교환 가능기간</td>
-                                    <td>
-                                        <ul>
-                                            <li>변심반품의 경우 수령 후 7일 이내</li>
-                                            <li>상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내</li>
-                                            <!-- </ul> -->
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>반품/교환비용</td>
-                                    <td>
-                                        <ul>
-                                            <li>단순변심 혹은 구매착오로 인한 반품/교환은 반송료 고객 부담</li>
-                                            <li>해외직배송 도서 구매 후 단순변심에 의한 취소 및 반품 시 도서판매가의 20% 수수료 부과</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>반품/교환 불각 사유</td>
-                                    <td>
-                                        <ul>
-                                            <li>
-                                                소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우</li>
-                                            <li>소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우 예) 만화, 잡지, 수험서 및 문제집류</li>
-                                            <li>복제가 가능한 상품 등의 포장을 훼손한 경우
-                                                예) 음반/DVD/비디오, 소프트웨어, 만화책, 잡지, 영상 화보집</li>
-                                            <li>소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우</li>
-                                            <li>디지털 컨텐츠인 eBook, 오디오북 등을 1회 이상 다운로드를 받았을 경우</li>
-                                            <li>시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우</li>
-                                            <li>전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우</li>
 
-                                        </ul>
-                                    </td>
-                                </tr>
                                 <tr>
-                                    <td>상품 품절</td>
-                                    <td>
-                                        <ul>
-                                            <li>공급사(출판사) 재고 사정에 의해 품절/지연될 수 있으며, 품절 시 관련 사항에 대해서는 이메일과 문자로 안내드리겠습니다.
-                                            </li>
-                                        </ul>
-                                    </td>
+                                    <th>대표 메일</th>
+                                    <td>customer@ypbook.co.kr</td>
                                 </tr>
+
                                 <tr>
-                                    <td>소비자 피해보상 환불지연에 따른 배상</td>
-                                    <td>
-                                        <ul>
-                                            <li>상품의 불량에 의한 교환, A/S, 환불, 품질보증 및 피해보상 등에 관한 사항은 소비자분쟁 해결 기준 (공정거래위원회 고시)에
-                                                준하여
-                                                처리됨</li>
-                                            <li>대금 환불 및 환불지연에 따른 배상금 지급 조건, 절차 등은 전자상거래 등에서의 소비자 보호에 관한 법률에 따라 처리함</li>
-                                        </ul>
-                                    </td>
+                                    <th>대량 주문</th>
+                                    <td>webmaster@ypbooks.co.kr</td>
                                 </tr>
 
                             </table>
-                        </div>
-                    </div>
-
-
-                </div>
-                <!-- 컨텐츠 결제창 -->
-                <div id="content_payment_wrap">
-
-                    <!-- 컨턴츠츠 결제창 정보 -->
-                    <div class="content_payment">
-
-                        <div class="payment">
-                            <div class="payment_img">
-                                <img src="https://cdn.ypbooks.co.kr/admin/image/product/202309/09db994b-0ca6-4f45-ac1c-bdc1cd8bd8e9_192.jpg"
-                                    alt="#">
-                                <h3>죽이고 싶은 아이</h3>
-                            </div>
-
-                            <div class="payment_count">
-                                <button class="minus">-</button>
-                                <input type="text" placeholder="1">
-                                <button class="add">+</button>
-                            </div>
-
-
-                            <div class="payment_price">
-                                <span class="payment_value">11,250</span>
-                                <span>원</span>
+                            <div>
+                                <button>FAQ</button>
+                                <button>1:1 고객상담</button>
+                                <button>입점문의</button>
                             </div>
                         </div>
 
-                        <div class="payment_btn">
-                            <button class="payment_cart">장바구니</button>
-                            <button class="payment_buy">바로구매</button>
-                            <button class="payment_now">나우드림</button>
-                        </div>
-
-                    </div>
-
-                    <!-- 컨텐츠 박스 -->
-                    <div class="member_box">
-                        <span></span>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-        <!-- 푸터 -->
-        <footer>
-
-            <div class="container">
-                <div id="footer1">
-                    <div>
-                        <h3>고객센터</h3>
-                        <h1>1544-9020</h1>
-                        <table>
-                            <tr>
-                                <th>상담가능시간</th>
-                                <td>평일 09:00 ~ 18:00 / 점심시간 12:15 ~13 : 15</td>
-                            </tr>
-
-                            <tr>
-                                <th>대표 메일</th>
-                                <td>customer@ypbook.co.kr</td>
-                            </tr>
-
-                            <tr>
-                                <th>대량 주문</th>
-                                <td>webmaster@ypbooks.co.kr</td>
-                            </tr>
-
-                        </table>
                         <div>
-                            <button>FAQ</button>
-                            <button>1:1 고객상담</button>
-                            <button>입점문의</button>
+                            <ul class="footer_1">
+                                <li><span>영풍문고</span>
+                                    <ul>
+                                        <li>회사소개</li>
+                                        <li>전국지점안내</li>
+                                        <li>나우드림</li>
+                                    </ul>
+                                </li>
+
+                                <li><span>비즈니스</span>
+                                    <ul>
+                                        <li>입점문의</li>
+                                        <li>광고안내</li>
+                                        <li>출판사통합관리 SCM</li>
+                                    </ul>
+                                </li>
+
+                                <li><span>쇼핑도우미</span>
+                                    <ul>
+                                        <li>도서검색</li>
+                                        <li>회원등급혜택</li>
+                                        <li>주문/배송</li>
+                                        <li>취소/교환/환불</li>
+                                        <li>적립금 사용</li>
+                                        <li>교환권 사용</li>
+                                        <li>청약 철회</li>
+
+                                    </ul>
+                                </li>
+
+                                <li><span>고객센터</span>
+                                    <ul>
+                                        <li>1:1 고객상담</li>
+                                        <li>FAQ</li>
+                                        <li>공지사항</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
-                    <div>
-                        <ul class="footer_1">
-                            <li><span>영풍문고</span>
-                                <ul>
-                                    <li>회사소개</li>
-                                    <li>전국지점안내</li>
-                                    <li>나우드림</li>
-                                </ul>
-                            </li>
-
-                            <li><span>비즈니스</span>
-                                <ul>
-                                    <li>입점문의</li>
-                                    <li>광고안내</li>
-                                    <li>출판사통합관리 SCM</li>
-                                </ul>
-                            </li>
-
-                            <li><span>쇼핑도우미</span>
-                                <ul>
-                                    <li>도서검색</li>
-                                    <li>회원등급혜택</li>
-                                    <li>주문/배송</li>
-                                    <li>취소/교환/환불</li>
-                                    <li>적립금 사용</li>
-                                    <li>교환권 사용</li>
-                                    <li>청약 철회</li>
-
-                                </ul>
-                            </li>
-
-                            <li><span>고객센터</span>
-                                <ul>
-                                    <li>1:1 고객상담</li>
-                                    <li>FAQ</li>
-                                    <li>공지사항</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div id="footer2">
-                    <div>
-                        <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/yp_logo.png" alt="">
-                    </div>
-
-                    <div>
-                        <ul>
-                            <li>이용약관</li>
-                            <li>개인정보처리방침</li>
-                            <li>영상정보관리방침</li>
-                            <li>청소년보호정책</li>
-                            <li>이메일 무단 수집거부</li>
-
-                        </ul>
-
-                        <div class="footer_icon">
-                            <i></i>
+                    <div id="footer2">
+                        <div>
+                            <img src="https://cdn.ypbooks.co.kr/front_web/assets/img/yp_logo.png" alt="">
                         </div>
 
-                        <ul>
-                            <li>(주)영풍문고</li>
-                            <li>주소 서울특별시 강남구 강남대로 542(논현동,영풍빌딩) (우)06110</li>
-                            <li>대표이사 김경환</li>
-                            <li>사업자 등록번호 773-86-01800 사업자정보확인</li>
-                            <li>통신판매등록번호 2027-서울강남-06241</li>
-                            <li>개인정보관리 책임자 조순제</li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li>이용약관</li>
+                                <li>개인정보처리방침</li>
+                                <li>영상정보관리방침</li>
+                                <li>청소년보호정책</li>
+                                <li>이메일 무단 수집거부</li>
 
-                        <span>COPYRIGHT © YOUNGPOONG BOOKSTORE INC. ALL RIGHTS RESERVED.</span>
+                            </ul>
+
+                            <div class="footer_icon">
+                                <i></i>
+                            </div>
+
+                            <ul>
+                                <li>(주)영풍문고</li>
+                                <li>주소 서울특별시 강남구 강남대로 542(논현동,영풍빌딩) (우)06110</li>
+                                <li>대표이사 김경환</li>
+                                <li>사업자 등록번호 773-86-01800 사업자정보확인</li>
+                                <li>통신판매등록번호 2027-서울강남-06241</li>
+                                <li>개인정보관리 책임자 조순제</li>
+                            </ul>
+
+                            <span>COPYRIGHT © YOUNGPOONG BOOKSTORE INC. ALL RIGHTS RESERVED.</span>
+                        </div>
+
                     </div>
-
                 </div>
-            </div>
-        </footer>
-    </div>
+            </footer>
 
 
 
 
+            <!-- 햄버거 메뉴 -->
+            <script src="./JS/catagory.js"></script>
+            <!-- 스와이퍼JS -->
+            <!-- 이벤트슬라이드 -->
+            <script src="./JS/sub_event.js"></script>
+
+            <!-- 사이드바 -->
+             <!-- 베스트셀렉 -->
+            <script src="./JS/sub_aside.js"></script>
+            <!-- 추천 슬라이드 -->
+            <!-- 함께 구매 with -->
+            <script src="./JS/sub_good_with.js"></script>
+            <!-- 이분야뜨는책 -->
+            <script src="./JS/sub_good_up.js"></script>
+            <!-- 소설화제의도서 -->
+            <script src="./JS/sub_good_hot.js"></script>
+            <!-- 테마 -->
+            <script src="./JS/sub_theme.js"></script>
 
 
-    <!-- 스와이퍼JS -->
-    <!-- 이벤트슬라이드 -->
-    <script src="./JS/sub_event.js"></script>
-
-    <!-- 추천 슬라이드 -->
-    <!-- 함께 구매 with -->
-    <script src="./JS/sub_good_with.js"></script>
-    <!-- 이분야뜨는책 -->
-    <script src="./JS/sub_good_up.js"></script>
-    <!-- 소설화제의도서 -->
-    <script src="./JS/sub_good_hot.js"></script>
-    <!-- 테마 -->
-    <script src="./JS/sub_theme.js"></script>
-
-
-    <!-- 인포박스 -->
-    <script src="./JS/sub_infobox.js"></script>
-    <!-- 서브네비 -->
-    <script src="./JS/sub_nav.js"></script>
-    <!-- 디테일 토글버튼 -->
-    <script src="./JS/sub_togle.js"></script>
+            <!-- 인포박스 -->
+            <script src="./JS/sub_infobox.js"></script>
+            <!-- 서브네비 -->
+            <script src="./JS/sub_nav.js"></script>
+            <!-- 디테일 토글버튼 -->
+            <script src="./JS/sub_togle.js"></script>
 
 </body>
 

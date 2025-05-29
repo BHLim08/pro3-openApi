@@ -116,12 +116,6 @@ try {
 bookData_week_R()
 bookData_week_L()
 
-//바로가기
-// $('.catagory_tab_menu li').click(function () {
-//   let i = $(this).index();
-//   console.log();
-//   $('.weekBook_wrap').eq(i).show().siblings('.weekBook_wrap').hide();
-// });
 
     $('.weekBook_wrap').hide().eq(0).css('display', 'flex');
     $('.catagory_tab_menu_week li').eq(0).addClass('active');

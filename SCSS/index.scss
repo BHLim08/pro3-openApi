@@ -12,11 +12,7 @@
     text-overflow: ellipsis;}
 }
 
-.container {
-  width: 1200px;
-  min-width: 900px;
-  margin: 0 auto;
-}
+
 
 ul,
 ol,
@@ -168,8 +164,6 @@ body {
     &.active {background-color: green; color: #eee; }
   }
 }
-
- 
 
 
 //   헤더

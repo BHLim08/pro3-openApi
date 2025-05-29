@@ -1,3 +1,33 @@
+#main {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 50px;
+  position: relative;
+  background-color: rgb(192, 218, 134);
+}
+#main ul,
+#main ol,
+#main li {
+  list-style: none;
+}
+
+#mainNav {
+  width: 100%;
+  height: 40px;
+}
+
+#m_Nav {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  font-weight: bold;
+}
+#m_Nav a,
+#m_Nav button,
+#m_Nav li {
+  color: #fff;
+}
+
 .view_wrap {
   min-width: 1280px;
   height: 100%;
@@ -5,7 +35,7 @@
 }
 
 .container {
-  width: 1060px;
+  width: 1200px;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 110px;
@@ -13,11 +43,9 @@
 
 .md_btn {
   border: 1px solid #4aaf70;
+  padding: 4px 6px;
+  font-size: 12px;
   color: #4aaf70;
-}
-
-.payment_btn {
-  width: 100%;
 }
 
 .payment_cart,
@@ -31,6 +59,7 @@
 
 .payment_cart {
   border: 1px solid #888;
+  background-color: white;
 }
 
 .payment_buy {
@@ -42,6 +71,7 @@
 .payment_now {
   border: 1px solid darkred;
   color: darkred;
+  background-color: white;
 }
 
 .tag {
@@ -99,28 +129,93 @@ body {
   z-index: 5;
   position: absolute;
   top: 40px;
-  right: calc(100% - 100px);
+  right: calc(100% - 200px);
   width: 130px;
-  height: 370px;
-  background-color: aqua;
 }
 #aside_bestSel .bestSel {
   width: 100%;
-  height: 153px;
-  padding-top: 13px;
-  margin-bottom: 22px;
-  box-shadow: 6px 3px 20px 0 rgba(0, 0, 0, 0.08);
-  background-color: bisque;
+  height: 180px;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 6px 3px 10px 0 rgba(189, 189, 189, 0.651);
+  position: relative;
+}
+#aside_bestSel .bestSel .bestSel_img {
+  width: 100%;
+  height: 80%;
+  border-radius: 15px 15px 0 0;
+}
+#aside_bestSel .bestSel .bestSel_img img {
+  width: 85%;
+  height: 85%;
+  margin: 10px;
+}
+#aside_bestSel .bestSel_text {
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  padding: 0 5px;
+  border-radius: 0 0 15px 15px;
+  bottom: 0;
+}
+#aside_bestSel .bestSel_text h4 {
+  width: 85%;
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#aside_bestSel .bestSel_text .best_btn {
+  background-color: #fe5a5a;
+  width: 90%;
+  padding: 5px;
+  margin: 6px;
+  color: #eee;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 #aside_view {
   z-index: 5;
   position: absolute;
-  top: 40px;
-  left: calc(100% - 100px);
-  width: 92px;
-  height: 268px;
-  background-color: aqua;
+  top: 50px;
+  left: calc(100% - 200px);
+  width: 150px;
+  border-radius: 15px;
+}
+#aside_view .aside_wrap {
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgb(240, 240, 240);
+}
+#aside_view .aside_wrap .view_top {
+  width: 150px;
+  border-radius: 15px 15px 0 0;
+  background-color: #444;
+}
+#aside_view .aside_wrap .view_top span {
+  color: #fff;
+  font-weight: bold;
+  line-height: 40px;
+}
+#aside_view .view_img {
+  background-color: #4aaf70;
+  width: 100px;
+  height: 150px;
+  margin: 10px 25px;
+}
+#aside_view .view_img img {
+  width: 100%;
+  height: 100%;
+}
+#aside_view button {
+  width: 90%;
+  margin: 10px 5px;
+  padding: 5px;
+  border: 1px solid #d8d8d8;
+  background-color: #fcfcfc;
 }
 
 .book_head {
@@ -131,6 +226,25 @@ body {
 .book_head li,
 .book_head ol {
   list-style: none;
+}
+
+#top_select {
+  width: 100%;
+  height: 35px;
+  margin: 15px 0;
+}
+#top_select select,
+#top_select button {
+  padding: 5px;
+  margin: 0 3px;
+  border: 1px solid #c7c7c7;
+  font-size: 12px;
+  color: #727272;
+  border-radius: 3px;
+}
+#top_select button {
+  padding: 4.3px;
+  border: none;
 }
 
 #book_detail {
@@ -144,11 +258,12 @@ body {
 #detail_left .left_img {
   width: 400px;
   height: 500px;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(243, 243, 243);
 }
 #detail_left .left_img img {
   width: 100%;
   height: 100%;
+  padding: 10%;
 }
 #detail_left .left_interactive {
   width: 100%;
@@ -167,22 +282,48 @@ body {
 #detail_left .left_tag {
   padding: 20px 0;
 }
-#detail_left .left_tag h5 {
+#detail_left .left_tag h4 {
   padding: 20px 0;
 }
 
 #detail_right {
-  margin-left: 10px;
+  margin-left: 70px;
 }
 #detail_right .payment_btn {
+  width: 102%;
   display: flex;
-  justify-content: space-between;
+  margin: 10px 0;
+}
+#detail_right .payment_btn button {
+  width: 32%;
+  margin-right: 9px;
+}
+
+.book_infobox {
+  width: 100%;
+  margin-top: 20px;
+  border-bottom: 1px solid #888;
+}
+.book_infobox p {
+  font-size: 13px;
+  color: #8d8d8d;
+}
+.book_infobox .info_star {
+  font-size: 15px;
+  color: #4aaf70;
+}
+.book_infobox .info_price {
+  font-size: 30px;
+  color: rgb(207, 43, 43);
+  font-weight: bold;
+  padding: 20px 0;
 }
 
 .right_benefit {
   width: 100%;
+  margin: 15px 0;
 }
-.right_benefit h5 {
+.right_benefit h4 {
   padding: 10px 0;
 }
 
@@ -192,32 +333,29 @@ body {
 .benefit_table td {
   font-size: 14px;
 }
-.benefit_table td span {
+.benefit_table td i {
+  color: #b6b6b6;
   font-size: 14px;
   padding: 10px;
-}
-
-.member_box {
-  width: 100%;
 }
 
 .right_delivery {
   width: 100%;
 }
-.right_delivery h5 {
-  padding: 20px 0;
+.right_delivery h4 {
+  padding: 8px 0;
 }
 
 .delivery_table {
   width: 100%;
-  font-size: 14px;
+  font-size: 12px;
 }
 .delivery_table td {
   padding: 5px;
 }
 .delivery_table tr > td:nth-child(1) {
   width: 80px;
-  line-height: 30px;
+  line-height: 25px;
 }
 .delivery_table button {
   padding: 5px 5px;
@@ -228,8 +366,18 @@ body {
   color: green;
 }
 
+.member_box {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px 5px;
+  border: 1px solid rgba(74, 175, 112, 0.2);
+  font-size: 13px;
+  background-color: #f5fbf7;
+}
+
 #sub_nav_wrap {
   width: 100%;
+  margin: 100px 0;
   z-index: 20;
   background-color: rgb(228, 228, 228);
 }
@@ -238,17 +386,31 @@ body {
 #sub_nav_wrap ol {
   list-style: none;
 }
-#sub_nav_wrap ul {
+
+.sub_nav {
+  width: 100%;
+  height: 50px;
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  line-height: 50px;
 }
-#sub_nav_wrap ul li {
-  padding: 20px 0;
+.sub_nav ul {
+  width: 100%;
+  height: 100%;
+}
+.sub_nav a {
+  width: 100%;
+  height: 100%;
 }
 
 .scroll {
   position: fixed;
-  top: 0;
+  top: -100px;
+}
+
+.active_suv_nav {
+  background-color: #4aaf70;
 }
 
 .content_wrap {
@@ -279,15 +441,16 @@ body {
 
 .detail_table {
   width: 100%;
-  border: 1px solid gray;
 }
 .detail_table tr > td:nth-child(1) {
   width: 20%;
   text-align: center;
-  background-color: gray;
+  background-color: #d3d3d3;
 }
 .detail_table td {
-  padding: 10px 8px;
+  padding: 15px;
+  border-bottom: 1px solid #b8b8b8;
+  border-top: 1px solid #b8b8b8;
 }
 
 .detail_event {
@@ -359,7 +522,8 @@ body {
   width: 100%;
 }
 
-.more_btn, .more_col_btn {
+.more_btn,
+.more_col_btn {
   cursor: pointer;
   font-size: 14px;
   color: #686868;
@@ -429,7 +593,6 @@ body {
   border-bottom: 1px solid rgb(207, 207, 207);
   width: 100%;
   position: relative;
-  height: 300px;
   overflow: hidden;
 }
 .book_columns h2 {
@@ -442,6 +605,7 @@ body {
   font-size: 13px;
   line-height: 20px;
   color: #555;
+  padding-bottom: 20px;
 }
 
 .book_author {
@@ -570,7 +734,11 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.goodItems_slide .swiper-slide h6 {
+  color: #333;
+}
 .goodItems_slide .swiper-slide p {
+  color: #888;
   font-size: 14px;
 }
 .goodItems_slide .swiper-button-next {
@@ -595,11 +763,19 @@ body {
 
 .theme_wrap {
   width: 100%;
-  padding-bottom: 80px;
+  margin-bottom: 150px;
 }
 
 .theme {
   width: 100%;
+}
+.theme h4 {
+  color: #333;
+}
+.theme p {
+  color: #686868;
+  font-size: 13px;
+  line-height: 25px;
 }
 
 .theme_text {
@@ -629,8 +805,11 @@ body {
 
 #tab_return {
   width: 100%;
-  margin-bottom: 150px;
   font-size: 14px;
+  margin-bottom: 150px;
+}
+#tab_return h3 {
+  padding: 10px 0;
 }
 #tab_return table {
   font-size: 13px;
@@ -650,23 +829,35 @@ body {
 }
 
 #content_payment_wrap {
-  background-color: brown;
   width: 279px;
+  margin-top: 20px;
   margin-left: 70px;
+  position: sticky;
+  top: 280px;
 }
 
 .content_payment {
-  padding: 20px;
+  padding: 30px 10px;
+  border: 1px solid #bdbdbd;
 }
 
 .payment_img {
   display: flex;
+  padding: 10px 10px;
   border-bottom: 1px solid #555;
 }
 .payment_img img {
-  width: 60px;
-  height: 90px;
-  padding-bottom: 20px;
+  width: 80px;
+  height: 110px;
+  margin-right: 10px;
+}
+
+.payment {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border-top: 1px solid #777;
 }
 
 .payment_count {

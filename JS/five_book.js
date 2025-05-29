@@ -29,9 +29,11 @@
                     const divs = $('.five_book .five_list').eq(i);
                     
                
-                    divs.append("<img src=" + data.documents[0].thumbnail + "/>");
-                    divs.append("<h4>" + data.documents[0].title + "</h3>");
-                    divs.append("<h6>" + data.documents[0].authors + "</h6>");
+                    divs.append(`<a href="#">
+                                    <img src=${data.documents[0].thumbnail}>
+                                    <h5>${data.documents[0].title}</h5>
+                                    <p> ${data.documents[0].authors}</p>
+                                </a>`)
            
                 })
             } catch (error) {
@@ -47,9 +49,11 @@
                     const data = await fetchBooks(query);
                     const divs = $('.five_book_md .five_list_md').eq(i);
 
-                    divs.append("<img src=" + data.documents[0].thumbnail + "/>");
-                    divs.append("<h5>" + data.documents[0].title + "</h5>");
-                    divs.append("<p>" + data.documents[0].authors + "</p>");
+                    divs.append(`<a href="#">
+                                    <img src=${data.documents[0].thumbnail}>
+                                    <h5>${data.documents[0].title}</h5>
+                                    <p> ${data.documents[0].authors}</p>
+                                </a>`)
 
                 })
             } catch (error) {

@@ -10,3 +10,13 @@ $(document).ready(function () {
 
     });
 });
+
+// 탭 클릭 bg배경
+  
+    $('.sub_nav a').eq(0).addClass('active_sc');
+
+    $('.sub_nav a').click(function () {
+        
+        $(this).addClass('active_suv_nav').siblings().removeClass('active_suv_nav');
+    });
+
