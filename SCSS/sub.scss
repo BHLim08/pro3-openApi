@@ -343,7 +343,7 @@ top:0; }
 .detail_intro {
     width: 100%; 
 }
-.more_btn {cursor: pointer;
+.more_btn , .more_col_btn {cursor: pointer;
     font-size: 14px; color: #686868;
     padding: 10px 20px; 
     border-radius: 20px;
@@ -386,8 +386,10 @@ margin-top: 10px; padding: 20px 0;}
 .book_columns {
     @include detail_paading;
     height: 300px;
-    overflow: hidden;   
-    img {width: 100%;}
+    overflow: hidden;
+
+    img {width: 80%; }
+    p {font-size: 13px; line-height: 20px; color: #555;}
 }
 
 //작가소개
@@ -553,12 +555,13 @@ p {font-size: 14px;}
 
 #tab_return {
     width: 100%;
-
+    margin-bottom: 150px;
+    font-size: 14px;
     table {
         font-size: 13px;
 
         td {
-            padding: 20px;
+            padding: 20px 0 20px 20px;
             line-height: 20px;
             border-bottom: 1px solid #888;
             border-top: 1px solid #888;
