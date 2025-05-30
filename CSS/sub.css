@@ -124,7 +124,7 @@ body {
   z-index: 20;
   position: fixed;
   top: 280px;
-  right: 150px;
+  left: 150px;
   width: 130px;
 }
 #aside_bestSel .bestSel {
@@ -175,7 +175,7 @@ body {
   z-index: 20;
   position: fixed;
   top: 280px;
-  left: 150px;
+  right: 150px;
   width: 150px;
   border-radius: 15px;
 }
