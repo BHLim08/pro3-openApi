@@ -28,12 +28,6 @@
   color: #fff;
 }
 
-.view_wrap {
-  min-width: 1280px;
-  height: 100%;
-  position: relative;
-}
-
 .container {
   width: 1200px;
   max-width: 1280px;
@@ -55,6 +49,7 @@
   padding: 10px 0;
   margin: 5px 0;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .payment_cart {
@@ -127,9 +122,9 @@ body {
 
 #aside_bestSel {
   z-index: 5;
-  position: absolute;
-  top: 40px;
-  right: calc(100% - 200px);
+  position: fixed;
+  top: 280px;
+  right: 150px;
   width: 130px;
 }
 #aside_bestSel .bestSel {
@@ -142,7 +137,7 @@ body {
 }
 #aside_bestSel .bestSel .bestSel_img {
   width: 100%;
-  height: 80%;
+  height: 90%;
   border-radius: 15px 15px 0 0;
 }
 #aside_bestSel .bestSel .bestSel_img img {
@@ -178,9 +173,9 @@ body {
 
 #aside_view {
   z-index: 5;
-  position: absolute;
-  top: 50px;
-  left: calc(100% - 200px);
+  position: fixed;
+  top: 280px;
+  left: 150px;
   width: 150px;
   border-radius: 15px;
 }
@@ -287,6 +282,7 @@ body {
 }
 
 #detail_right {
+  width: 100%;
   margin-left: 70px;
 }
 #detail_right .payment_btn {
@@ -619,6 +615,32 @@ body {
   padding: 20px 0;
 }
 
+.author {
+  display: flex;
+}
+.author img {
+  width: 118px;
+  height: 118px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.author p, .author h4 {
+  margin: 10px;
+  line-height: 30px;
+}
+.author p {
+  font-size: 15px;
+}
+
+.author_book {
+  margin-top: 20px;
+  line-height: 30px;
+}
+.author_book p {
+  color: #555;
+  font-size: 14px;
+}
+
 #tab_review {
   padding: 50px 0;
   position: relative;
@@ -832,13 +854,13 @@ body {
   width: 279px;
   margin-top: 20px;
   margin-left: 70px;
-  position: sticky;
-  top: 280px;
 }
 
 .content_payment {
   padding: 30px 10px;
   border: 1px solid #bdbdbd;
+  position: sticky;
+  top: 50px;
 }
 
 .payment_img {
@@ -876,4 +898,8 @@ body {
 .payment_price {
   font-size: 18px;
   color: rgb(199, 12, 12);
+}
+
+.payment_value {
+  font-weight: bold;
 }

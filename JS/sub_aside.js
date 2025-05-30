@@ -33,7 +33,7 @@ async function infoBox() {
          })
     
          const divs = $('#aside_bestSel').find('.bestSel').eq(i);
-         const divs_view = $('.view_wrap').find('.view_img').eq(i);
+         const divs_view = $('.aside_wrap').find('.view_img').eq(i);
 
            divs.append (` <div class="bestSel_img">
                         <img src= ${book[0].thumbnail} >

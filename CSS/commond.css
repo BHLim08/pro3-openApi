@@ -195,7 +195,7 @@ header li {
 .catagorybox li ul {
   width: 680px;
   height: 400px;
-  justify-self: space-between;
+  justify-content: space-between;
   position: absolute;
   top: 0;
   left: 105%;
