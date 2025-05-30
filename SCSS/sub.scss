@@ -102,7 +102,7 @@ body {
 
 body {
 
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: Helvetica 'Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
     margin: 0;
@@ -133,7 +133,7 @@ body {
 
 //베스트셀렉
 #aside_bestSel {
-    z-index: 5;
+    z-index: 20;
     position: fixed;
     top: 280px;
     right: 150px;
@@ -177,7 +177,7 @@ border-radius: 5px;}}
 
 // 최근 본 상품
 #aside_view {
-    z-index: 5;
+    z-index: 20;
     position: fixed;
     top: 280px;
     left: 150px;
@@ -877,7 +877,6 @@ p {color: #555; font-size: 14px;}}
 }
 
 .content_payment {
-   
     padding: 30px 10px;
     border: 1px solid #bdbdbd;
     position: sticky;

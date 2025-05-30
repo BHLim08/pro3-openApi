@@ -595,7 +595,7 @@ body {
 .md_list_text span {
   width: 100%;
   height: 50%;
-  display: -webkit-box;
+  display: flex;
   overflow: hidden;
   text-overflow: ellipsis;
 }
